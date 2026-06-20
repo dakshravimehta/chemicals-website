@@ -1,0 +1,37 @@
+.header {
+  position: relative;
+  background:
+    radial-gradient(120% 130% at 92% 0%, oklch(0.66 0.192 42 / 0.14), transparent 52%),
+    var(--graphite);
+  color: var(--on-graphite);
+  overflow: hidden;
+}
+.header::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(oklch(1 0 0 / 0.022) 1px, transparent 1px),
+    linear-gradient(90deg, oklch(1 0 0 / 0.022) 1px, transparent 1px);
+  background-size: 56px 56px;
+  mask-image: radial-gradient(80% 120% at 20% 0%, #000, transparent 75%);
+  pointer-events: none;
+}
+.inner {
+  position: relative;
+  z-index: 1;
+  padding-block: clamp(3rem, 2rem + 5vw, 6rem);
+}
+.eyebrow { margin-bottom: var(--sp-5, 1.25rem); }
+.title {
+  font-size: var(--t-h1);
+  color: var(--on-graphite);
+  max-width: 20ch;
+}
+.subtitle {
+  margin-top: var(--sp-5, 1.25rem);
+  max-width: 52ch;
+  color: var(--on-graphite-2);
+  font-size: clamp(1.05rem, 1rem + 0.4vw, 1.2rem);
+  line-height: 1.55;
+}

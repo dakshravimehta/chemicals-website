@@ -1,198 +1,169 @@
 "use client";
 
-import { useState, useMemo } from 'react';
-import { Search, Filter, ChevronRight, Download } from 'lucide-react';
-import Link from 'next/link';
-import { motion, AnimatePresence } from 'framer-motion';
-import styles from './page.module.css';
+import { useState, useMemo } from "react";
+import Link from "next/link";
+import { Search, ArrowUpRight, X, Package } from "lucide-react";
+import PageHeader from "@/components/PageHeader/PageHeader";
+import productsData from "@/data/products.json";
+import styles from "./page.module.css";
 
-// Import the parsed products data
-import productsData from '@/data/products.json';
-
-const fadeUp = {
-  hidden: { opacity: 0, y: 20 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.5 } }
-};
+const PAGE_SIZE = 24;
 
 export default function Products() {
-  const [searchTerm, setSearchTerm] = useState('');
-  const [activeCategory, setActiveCategory] = useState('All');
+  const [search, setSearch] = useState("");
+  const [category, setCategory] = useState("All");
+  const [visible, setVisible] = useState(PAGE_SIZE);
 
-  // Extract unique categories from data
   const categories = useMemo(() => {
-    const cats = new Set(productsData.map(p => p.category));
-    return ['All', ...Array.from(cats)].sort();
+    const set = new Set(productsData.map((p) => p.category));
+    return ["All", ...Array.from(set).sort()];
   }, []);
 
-  const filteredProducts = productsData.filter((product) => {
-    const matchesSearch = product.name.toLowerCase().includes(searchTerm.toLowerCase()) || 
-                          product.code.toLowerCase().includes(searchTerm.toLowerCase());
-    const matchesCategory = activeCategory === 'All' || product.category === activeCategory;
-    return matchesSearch && matchesCategory;
-  });
+  const filtered = useMemo(() => {
+    const q = search.trim().toLowerCase();
+    return productsData.filter((p) => {
+      const matchesQuery =
+        !q ||
+        p.name.toLowerCase().includes(q) ||
+        p.code.toLowerCase().includes(q);
+      const matchesCategory = category === "All" || p.category === category;
+      return matchesQuery && matchesCategory;
+    });
+  }, [search, category]);
+
+  const shown = filtered.slice(0, visible);
+
+  const resetPaging = () => setVisible(PAGE_SIZE);
 
   return (
-    <div className={styles.productsPage}>
-      {/* Page Header */}
-      <section className={styles.pageHeader}>
-        <div className={styles.headerBackground}></div>
-        <div className={`container ${styles.headerContent}`}>
-          <motion.h1 
-            className={styles.pageTitle}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-          >
-            Our Product Catalog
-          </motion.h1>
-          <motion.p 
-            className={styles.pageSubtitle}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-          >
-            Explore our extensive inventory of {productsData.length}+ premium chemicals and raw materials, sourced for excellence.
-          </motion.p>
-        </div>
-      </section>
+    <div>
+      <PageHeader
+        eyebrow="Product catalog"
+        title={`${productsData.length} products, organized to find fast.`}
+        subtitle="Search by name or product code, or filter by category. Need something not listed? Our procurement team sources custom grades on request."
+      />
 
-      {/* Catalog Section */}
-      <section className={`section ${styles.catalogSection}`}>
-        <div className={`container ${styles.catalogContainer}`}>
-          
-          {/* Sidebar / Filters */}
-          <aside className={styles.sidebar}>
-            <motion.div 
-              className={styles.filterBox}
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.5 }}
-            >
-              <h3 className={styles.filterTitle}>
-                <Filter size={18} /> Categories
-              </h3>
-              <ul className={styles.categoryList}>
-                {categories.map((cat) => (
-                  <li key={cat}>
-                    <button 
-                      className={`${styles.categoryBtn} ${activeCategory === cat ? styles.active : ''}`}
-                      onClick={() => setActiveCategory(cat)}
-                    >
-                      {cat}
-                    </button>
-                  </li>
-                ))}
-              </ul>
-            </motion.div>
-            
-            <motion.div 
-              className={styles.helpBox}
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-            >
-              <h3>Need Custom Sourcing?</h3>
-              <p>Can&apos;t find exactly what you need? Our global procurement team can source custom compounds and rare chemicals.</p>
-              <Link href="/contact" className={`btn btn-secondary ${styles.helpBtn}`}>
-                Contact Our Experts
-              </Link>
-            </motion.div>
-          </aside>
-
-          {/* Main Content */}
-          <main className={styles.mainContent}>
-            
-            {/* Search Bar */}
-            <motion.div 
-              className={styles.searchContainer}
-              initial={{ opacity: 0, y: -20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-            >
-              <div className={styles.searchInputWrapper}>
-                <Search className={styles.searchIcon} size={20} />
-                <input 
-                  type="text" 
-                  className={styles.searchInput}
-                  placeholder="Search by chemical name or CAS / product code..." 
-                  value={searchTerm}
-                  onChange={(e) => setSearchTerm(e.target.value)}
-                />
-              </div>
-              <div className={styles.resultActions}>
-                <span className={styles.resultCount}>
-                  Showing <strong>{filteredProducts.length}</strong> products
-                </span>
-                <button className={`btn btn-outline ${styles.downloadBtn}`}>
-                  <Download size={16} style={{ marginRight: '0.5rem' }} /> Download PDF Catalog
+      <section className={styles.catalog}>
+        <div className="container">
+          {/* Toolbar */}
+          <div className={styles.toolbar}>
+            <div className={styles.searchWrap}>
+              <Search size={18} className={styles.searchIcon} />
+              <input
+                type="text"
+                className={styles.search}
+                placeholder="Search by chemical name or product code…"
+                value={search}
+                onChange={(e) => {
+                  setSearch(e.target.value);
+                  resetPaging();
+                }}
+              />
+              {search && (
+                <button
+                  className={styles.clear}
+                  onClick={() => {
+                    setSearch("");
+                    resetPaging();
+                  }}
+                  aria-label="Clear search"
+                >
+                  <X size={16} />
                 </button>
-              </div>
-            </motion.div>
+              )}
+            </div>
+            <p className={styles.count}>
+              <strong>{filtered.length}</strong>{" "}
+              {filtered.length === 1 ? "product" : "products"}
+            </p>
+          </div>
 
-            {/* Product Grid */}
-            {filteredProducts.length > 0 ? (
-              <motion.div 
-                className={styles.productGrid}
-                initial="hidden"
-                animate="visible"
-                variants={{
-                  visible: { transition: { staggerChildren: 0.05 } }
+          {/* Category filter */}
+          <div className={styles.filters} role="tablist" aria-label="Categories">
+            {categories.map((cat) => (
+              <button
+                key={cat}
+                role="tab"
+                aria-selected={category === cat}
+                className={`${styles.chip} ${category === cat ? styles.chipActive : ""}`}
+                onClick={() => {
+                  setCategory(cat);
+                  resetPaging();
                 }}
               >
-                <AnimatePresence>
-                  {filteredProducts.slice(0, 50).map((product) => (
-                    <motion.div 
-                      key={product.id} 
-                      className={styles.productCard}
-                      variants={fadeUp}
-                      layout
-                      initial={{ opacity: 0, scale: 0.9 }}
-                      animate={{ opacity: 1, scale: 1 }}
-                      exit={{ opacity: 0, scale: 0.9 }}
-                      transition={{ duration: 0.2 }}
+                {cat}
+              </button>
+            ))}
+          </div>
+
+          {/* Grid */}
+          {shown.length > 0 ? (
+            <>
+              <div className={styles.grid}>
+                {shown.map((p) => (
+                  <article key={p.id} className={styles.card}>
+                    <div className={styles.cardTop}>
+                      <span className={styles.cardCat}>{p.category}</span>
+                      <span className={styles.cardCode}>{p.code}</span>
+                    </div>
+                    <h3 className={styles.cardName}>{p.name}</h3>
+                    <ul className={styles.specs}>
+                      <li>Bulk &amp; drums</li>
+                      <li>Global shipping</li>
+                      <li>Spec sheet on request</li>
+                    </ul>
+                    <Link
+                      href="/contact"
+                      className={styles.quote}
+                      aria-label={`Request a quote for ${p.name}`}
                     >
-                      <div className={styles.productBadge}>{product.category}</div>
-                      <h3 className={styles.productName}>{product.name}</h3>
-                      <p className={styles.productCode}>Product Code: <span className="text-gold">{product.code}</span></p>
-                      <div className={styles.productFeatures}>
-                        <span className={styles.featureBadge}>📦 Bulk & Drums</span>
-                        <span className={styles.featureBadge}>🌐 Global Shipping</span>
-                        <span className={styles.featureBadge}>🔬 Premium Grade</span>
-                      </div>
-                      <div className={styles.productActions}>
-                        <Link href={`/contact?subject=Quote Request for ${encodeURIComponent(product.name)}`} className={styles.quoteBtn}>
-                          Request Quote <ChevronRight size={16} className={styles.quoteIcon} />
-                        </Link>
-                      </div>
-                    </motion.div>
-                  ))}
-                </AnimatePresence>
-                {filteredProducts.length > 50 && (
-                  <div className={styles.loadMoreContainer}>
-                    <p className={styles.loadMoreText}>Showing top 50 results. Please refine your search to see more specific products.</p>
-                  </div>
-                )}
-              </motion.div>
-            ) : (
-              <motion.div 
-                className={styles.noResults}
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-              >
-                <div className={styles.noResultsIcon}>🔍</div>
-                <h3>No chemicals found</h3>
-                <p>We couldn&apos;t find any products matching your current search criteria.</p>
-                <button 
-                  className="btn btn-primary" 
-                  onClick={() => { setSearchTerm(''); setActiveCategory('All'); }}
-                  style={{marginTop: '1.5rem'}}
+                      Request quote <ArrowUpRight size={15} />
+                    </Link>
+                  </article>
+                ))}
+              </div>
+
+              {visible < filtered.length && (
+                <div className={styles.loadMore}>
+                  <p className={styles.loadMoreText}>
+                    Showing {shown.length} of {filtered.length}
+                  </p>
+                  <button
+                    className="btn btn-outline"
+                    onClick={() => setVisible((v) => v + PAGE_SIZE)}
+                  >
+                    Load more products
+                  </button>
+                </div>
+              )}
+            </>
+          ) : (
+            <div className={styles.empty}>
+              <span className={styles.emptyIcon}>
+                <Package size={28} strokeWidth={1.5} />
+              </span>
+              <h3 className={styles.emptyTitle}>No products match that search</h3>
+              <p className={styles.emptyText}>
+                Try a different term or clear the filters. We may still stock it, ask our
+                team directly.
+              </p>
+              <div className={styles.emptyActions}>
+                <button
+                  className="btn btn-dark"
+                  onClick={() => {
+                    setSearch("");
+                    setCategory("All");
+                    resetPaging();
+                  }}
                 >
-                  Clear All Filters
+                  Clear filters
                 </button>
-              </motion.div>
-            )}
-            
-          </main>
+                <Link href="/contact" className="btn btn-outline">
+                  Ask for custom sourcing
+                </Link>
+              </div>
+            </div>
+          )}
         </div>
       </section>
     </div>

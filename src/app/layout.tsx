@@ -1,25 +1,31 @@
 import type { Metadata } from "next";
-import { Inter, Roboto } from "next/font/google";
+import { Archivo, Hanken_Grotesk, Martian_Mono } from "next/font/google";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 import "./globals.css";
 
-const inter = Inter({
-  variable: "--font-heading",
+const archivo = Archivo({
+  variable: "--font-display",
   subsets: ["latin"],
   display: "swap",
 });
 
-const roboto = Roboto({
+const hanken = Hanken_Grotesk({
   variable: "--font-body",
-  weight: ["300", "400", "500", "700"],
+  subsets: ["latin"],
+  display: "swap",
+});
+
+const martianMono = Martian_Mono({
+  variable: "--font-mono",
   subsets: ["latin"],
   display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "Aurelis Chemicals | Premium Chemical Distribution",
-  description: "Aurelis Chemicals specializes in the bulk trade and distribution of chemicals, solvents, polymers, and specialty chemicals globally.",
+  title: "Aurelis Chemicals | Bulk Solvents, Polymers & Specialty Chemicals",
+  description:
+    "Aurelis Chemicals supplies bulk solvents, polymers, and specialty chemicals to industrial buyers worldwide. Reliable sourcing, drum-to-bulk packaging, and fast quotes.",
 };
 
 export default function RootLayout({
@@ -28,11 +34,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${roboto.variable}`}>
+    <html
+      lang="en"
+      className={`${archivo.variable} ${hanken.variable} ${martianMono.variable}`}
+    >
       <body>
+        <a href="#main" className="skip-link">
+          Skip to content
+        </a>
         <div className="app-wrapper">
           <Header />
-          <main className="main-content">
+          <main id="main" className="main-content">
             {children}
           </main>
           <Footer />

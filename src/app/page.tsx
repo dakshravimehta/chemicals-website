@@ -1,186 +1,280 @@
-"use client";
+import Link from "next/link";
+import {
+  ArrowUpRight,
+  ArrowRight,
+  Droplets,
+  Layers,
+  FlaskConical,
+  TestTube,
+  Truck,
+  Boxes,
+  ShieldCheck,
+  Globe,
+} from "lucide-react";
+import Reveal from "@/components/Reveal/Reveal";
+import productsData from "@/data/products.json";
+import styles from "./page.module.css";
 
-import Link from 'next/link';
-import { ArrowRight, Globe, Award, Users, Droplets, Target, ShieldCheck } from 'lucide-react';
-import { motion } from 'framer-motion';
-import styles from './page.module.css';
+const productCount = productsData.length;
 
-const fadeIn = {
-  hidden: { opacity: 0, y: 30 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
-};
+const metrics = [
+  { value: `${productCount}+`, label: "Products in catalog" },
+  { value: "40+", label: "Markets served" },
+  { value: "24h", label: "Quote turnaround" },
+  { value: "100%", label: "Spec-compliant supply" },
+];
 
-const staggerContainer = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: { staggerChildren: 0.2 }
-  }
-};
+const categories = [
+  {
+    icon: Droplets,
+    name: "Solvents & Alcohols",
+    desc: "Acetone, IPA, MEK, toluene, glycols and more, in drums to ISO tanks.",
+  },
+  {
+    icon: Layers,
+    name: "Polymers & Resins",
+    desc: "PVC, PET, EVA and engineering resins for processors and compounders.",
+  },
+  {
+    icon: FlaskConical,
+    name: "Specialty & Fine Chemicals",
+    desc: "Performance additives, intermediates and reagents for formulators.",
+  },
+  {
+    icon: TestTube,
+    name: "Acids & Intermediates",
+    desc: "Organic and inorganic acids and building blocks for synthesis.",
+  },
+];
+
+const capabilities = [
+  {
+    icon: Globe,
+    title: "Sourcing without the lag",
+    body: "A live network of vetted producers across Asia, the Gulf and Europe means we source fast and quote inside a day, not a week.",
+  },
+  {
+    icon: Boxes,
+    title: "Packaged to your line",
+    body: "Drums, IBCs, ISO tanks, bulk bags, full or part loads. We supply in the format your process actually runs on.",
+  },
+  {
+    icon: Truck,
+    title: "Logistics, handled",
+    body: "Hazardous and non-hazardous freight, documentation and customs coordinated end to end, port to plant.",
+  },
+  {
+    icon: ShieldCheck,
+    title: "Documented and compliant",
+    body: "SDS, CoA and regulatory paperwork supplied up front, so QA signs off without chasing.",
+  },
+];
+
+const industries = [
+  { name: "Pharmaceuticals", img: "/images/ind_pharma.png" },
+  { name: "Personal Care", img: "/images/ind_personal_care.png" },
+  { name: "Paints & Coatings", img: "/images/ind_coatings.png" },
+  { name: "Water Treatment", img: "/images/ind_water.png" },
+  { name: "Agriculture", img: "/images/ind_agri.png" },
+  { name: "Food & Nutrition", img: "/images/ind_food.png" },
+];
 
 export default function Home() {
   return (
-    <div className={styles.home}>
-      {/* Hero Section */}
+    <div>
+      {/* ---------- Hero ---------- */}
       <section className={styles.hero}>
-        <div className={styles.heroImageWrapper}>
-          <img src="/images/hero_bg.png" alt="Premium abstract molecular background" className={styles.heroBgImage} />
-        </div>
-        <div className={styles.heroOverlay}></div>
-        <div className={`container ${styles.heroContentContainer}`}>
-          <motion.div 
-            className={styles.heroGlassCard}
-            initial="hidden"
-            animate="visible"
-            variants={staggerContainer}
-          >
-            <motion.span variants={fadeIn} className={styles.heroBadge}>
-              Next-Generation Global Distributor
-            </motion.span>
-            <motion.h1 variants={fadeIn} className={styles.heroTitle}>
-              Powering Industries with<br/>
-              <span className="text-gold">Modern Agility</span>
-            </motion.h1>
-            <motion.p variants={fadeIn} className={styles.heroDescription}>
-              Aurelis Chemicals is your innovative new partner for the bulk trade and distribution of solvents, polymers, and specialty chemicals globally. We bring a fresh, agile approach to a traditional industry.
-            </motion.p>
-            <motion.div variants={fadeIn} className={styles.heroActions}>
+        <div className={`container ${styles.heroGrid}`}>
+          <div className={styles.heroCopy}>
+            <p className={`eyebrow eyebrow--on-dark ${styles.heroEyebrow}`}>
+              Global bulk chemical distribution
+            </p>
+            <h1 className={styles.heroTitle}>
+              Bulk chemicals,
+              <br />
+              supplied without<br />
+              the <span className={styles.heroAccent}>lag</span>.
+            </h1>
+            <p className={styles.heroLead}>
+              Aurelis sources and ships solvents, polymers and specialty chemicals to
+              industrial buyers worldwide, with the speed a modern supply chain should
+              have.
+            </p>
+            <div className={styles.heroActions}>
               <Link href="/products" className="btn btn-primary">
-                Explore Our Catalog
+                Explore the catalog <ArrowUpRight size={16} />
               </Link>
-              <Link href="/contact" className="btn btn-secondary">
-                Request a Quote
-              </Link>
-            </motion.div>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* Statistics Section */}
-      <section className={`section ${styles.statsSection}`}>
-        <div className="container">
-          <motion.div 
-            className={styles.statsGrid}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
-            variants={staggerContainer}
-          >
-            {[
-              { icon: Globe, num: "40+", label: "Target Markets" },
-              { icon: Droplets, num: "300+", label: "Premium Products" },
-              { icon: ShieldCheck, num: "100%", label: "Quality Compliant" },
-              { icon: Target, num: "24/7", label: "Agile Sourcing" },
-            ].map((stat, idx) => (
-              <motion.div key={idx} variants={fadeIn} className={styles.statCard}>
-                <div className={styles.statIconWrapper}>
-                  <stat.icon size={32} className={styles.statIcon} />
-                </div>
-                <h3 className={styles.statNumber}>{stat.num}</h3>
-                <p className={styles.statLabel}>{stat.label}</p>
-              </motion.div>
-            ))}
-          </motion.div>
-        </div>
-      </section>
-
-      {/* About Preview Section */}
-      <section className={`section ${styles.aboutPreview}`}>
-        <div className={`container ${styles.aboutGrid}`}>
-          <motion.div 
-            className={styles.aboutContent}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={fadeIn}
-          >
-            <h2 className={styles.sectionTitle}>A New Era of Reliability</h2>
-            <p className={styles.aboutText}>
-              Aurelis Chemicals was founded with a single, clear vision: to modernize the chemical distribution landscape. In a fast-moving world, traditional supply chains can be slow. We leverage agile methodologies, global networks, and deep market intelligence to ensure you get what you need, exactly when you need it.
-            </p>
-            <p className={styles.aboutText}>
-              Whether it&apos;s bulk solvents or rare specialty polymers, our dynamic infrastructure allows us to import and stock products efficiently, passing cost savings directly to our partners.
-            </p>
-            <Link href="/about" className={`btn btn-outline ${styles.aboutBtn}`}>
-              Learn More About Us <ArrowRight size={16} />
-            </Link>
-          </motion.div>
-          
-          <motion.div 
-            className={styles.aboutImageWrapper}
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-          >
-            <img src="/images/about_facility.png" alt="Aurelis Chemicals Premium Facility" className={styles.aboutImg} />
-          </motion.div>
-        </div>
-      </section>
-
-      {/* Industries Preview - Redesigned to use Images */}
-      <section className={`section ${styles.industriesPreview}`}>
-        <div className="container">
-          <div className={styles.sectionHeader}>
-            <h2 className={styles.sectionTitle}>Industries We Serve</h2>
-            <Link href="/industries" className={styles.viewAllLink}>
-              View All Industries <ArrowRight size={16} />
-            </Link>
-          </div>
-          <motion.div 
-            className={styles.industriesGrid}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
-            variants={staggerContainer}
-          >
-            {[
-              { name: 'Pharmaceuticals', img: '/images/ind_pharma.png' },
-              { name: 'Personal Care', img: '/images/ind_personal_care.png' },
-              { name: 'Paints & Coatings', img: '/images/ind_coatings.png' },
-              { name: 'Water Treatment', img: '/images/ind_water.png' },
-            ].map((industry, idx) => (
-              <motion.div key={idx} variants={fadeIn}>
-                <Link href="/industries" className={styles.industryImageCard}>
-                  <div className={styles.industryImageWrapper}>
-                    <img src={industry.img} alt={industry.name} className={styles.industryPreviewImg} />
-                  </div>
-                  <div className={styles.industryOverlay}>
-                    <h3 className={styles.industryImageName}>{industry.name}</h3>
-                    <div className={styles.industryImageArrow}>
-                      <ArrowRight size={24} />
-                    </div>
-                  </div>
-                </Link>
-              </motion.div>
-            ))}
-          </motion.div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className={`section ${styles.ctaSection}`}>
-        <div className={styles.ctaOverlay}></div>
-        <motion.div 
-          className={`container ${styles.ctaContainer}`}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          variants={fadeIn}
-        >
-          <div className="glass-dark" style={{ padding: 'var(--space-xl)', borderRadius: 'var(--radius-xl)' }}>
-            <h2 className={styles.ctaTitle}>Ready to Source Premium Chemicals?</h2>
-            <p className={styles.ctaText}>
-              Connect with our experts today to discuss your requirements, request samples, or get a competitive quote.
-            </p>
-            <div className={styles.ctaActions}>
-              <Link href="/contact" className="btn btn-secondary">Contact Our Team</Link>
-              <Link href="/products" className="btn btn-outline" style={{ borderColor: 'var(--color-secondary)', color: 'var(--color-secondary)' }}>
-                Browse Catalog
+              <Link href="/contact" className="btn btn-on-dark">
+                Request a quote
               </Link>
             </div>
+            <ul className={styles.heroSpec}>
+              <li>
+                <span className={styles.heroSpecNum}>{productCount}+</span> products
+              </li>
+              <li>
+                <span className={styles.heroSpecNum}>40+</span> markets
+              </li>
+              <li>
+                <span className={styles.heroSpecNum}>Drum</span> to ISO-tank
+              </li>
+            </ul>
           </div>
-        </motion.div>
+
+          <div className={styles.heroVisual}>
+            <div className={styles.heroFrame}>
+              <img
+                src="/images/hero_bg.png"
+                alt="Industrial chemical storage and process infrastructure"
+                className={styles.heroImg}
+              />
+              <div className={styles.heroFrameTag}>
+                <span>SUPPLY · 001</span>
+                <span>EST. WORLDWIDE</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ---------- Metrics band ---------- */}
+      <section className={styles.metrics}>
+        <div className={`container ${styles.metricsRow}`}>
+          {metrics.map((m) => (
+            <div key={m.label} className={styles.metricCell}>
+              <div className={styles.metricValue}>{m.value}</div>
+              <div className={styles.metricLabel}>{m.label}</div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* ---------- What we supply ---------- */}
+      <section className="section">
+        <div className="container">
+          <Reveal className={styles.blockHead}>
+            <div>
+              <p className="eyebrow">01 / What we supply</p>
+              <h2 className={styles.blockTitle}>
+                Four core lines, one organized catalog.
+              </h2>
+            </div>
+            <p className={styles.blockIntro}>
+              The full range of industrial chemistry, grouped so procurement teams find
+              the right grade fast, not buried in an endless list.
+            </p>
+          </Reveal>
+
+          <div className={styles.catList}>
+            {categories.map((c, i) => (
+              <Reveal as="article" key={c.name} className={styles.catRow} delay={i * 70}>
+                <span className={styles.catIndex}>{String(i + 1).padStart(2, "0")}</span>
+                <span className={styles.catIcon}>
+                  <c.icon size={22} strokeWidth={1.6} />
+                </span>
+                <div className={styles.catBody}>
+                  <h3 className={styles.catName}>{c.name}</h3>
+                  <p className={styles.catDesc}>{c.desc}</p>
+                </div>
+                <Link href="/products" className={styles.catLink} aria-label={`Browse ${c.name}`}>
+                  Browse <ArrowRight size={16} />
+                </Link>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ---------- Capabilities ---------- */}
+      <section className={styles.capSection}>
+        <div className="container">
+          <Reveal className={styles.blockHead}>
+            <div>
+              <p className="eyebrow eyebrow--on-dark">02 / Why Aurelis</p>
+              <h2 className={`${styles.blockTitle} ${styles.onDark}`}>
+                Built to move faster than the industry expects.
+              </h2>
+            </div>
+            <p className={`${styles.blockIntro} ${styles.onDarkMuted}`}>
+              We are the newer name on the supplier list, and we earn the order by being
+              quicker, clearer and easier to work with than the incumbents.
+            </p>
+          </Reveal>
+
+          <div className={styles.capGrid}>
+            {capabilities.map((cap, i) => (
+              <Reveal as="article" key={cap.title} className={styles.capCard} delay={i * 70}>
+                <span className={styles.capIcon}>
+                  <cap.icon size={24} strokeWidth={1.6} />
+                </span>
+                <h3 className={styles.capTitle}>{cap.title}</h3>
+                <p className={styles.capBody}>{cap.body}</p>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ---------- Operation / about preview ---------- */}
+      <section className="section">
+        <div className={`container ${styles.opGrid}`}>
+          <Reveal className={styles.opVisual}>
+            <img
+              src="/images/about_facility.png"
+              alt="Aurelis Chemicals warehousing and distribution facility"
+              className={styles.opImg}
+            />
+          </Reveal>
+          <Reveal className={styles.opCopy} delay={80}>
+            <p className="eyebrow">03 / The operation</p>
+            <h2 className={styles.blockTitle}>
+              A traditional trade, run on modern infrastructure.
+            </h2>
+            <p className={styles.opText}>
+              Chemical distribution has long been slow and opaque. Aurelis was built to
+              change that: a lean operation backed by a deep producer network, real-time
+              stock visibility and logistics that move on your timeline.
+            </p>
+            <p className={styles.opText}>
+              The result is a supplier that behaves less like a broker and more like an
+              extension of your procurement team.
+            </p>
+            <Link href="/about" className="btn btn-outline">
+              More about Aurelis <ArrowRight size={16} />
+            </Link>
+          </Reveal>
+        </div>
+      </section>
+
+      {/* ---------- Industries ---------- */}
+      <section className={styles.indSection}>
+        <div className="container">
+          <Reveal className={styles.blockHead}>
+            <div>
+              <p className="eyebrow">04 / Industries</p>
+              <h2 className={styles.blockTitle}>Where our chemistry goes to work.</h2>
+            </div>
+            <Link href="/industries" className={styles.viewAll}>
+              All industries <ArrowRight size={16} />
+            </Link>
+          </Reveal>
+
+          <div className={styles.indGrid}>
+            {industries.map((ind, i) => (
+              <Reveal as="div" key={ind.name} delay={i * 50}>
+                <Link href="/industries" className={styles.indCard}>
+                  <img src={ind.img} alt={ind.name} className={styles.indImg} />
+                  <div className={styles.indVeil} />
+                  <span className={styles.indNum}>{String(i + 1).padStart(2, "0")}</span>
+                  <span className={styles.indName}>
+                    {ind.name}
+                    <ArrowUpRight size={18} />
+                  </span>
+                </Link>
+              </Reveal>
+            ))}
+          </div>
+        </div>
       </section>
     </div>
   );

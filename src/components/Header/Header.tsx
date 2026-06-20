@@ -1,68 +1,110 @@
 "use client";
 
-import Link from 'next/link';
-import { Menu, X, Phone, Mail } from 'lucide-react';
-import { useState } from 'react';
-import styles from './Header.module.css';
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { Menu, X, Phone, Mail, ArrowUpRight } from "lucide-react";
+import { useEffect, useState } from "react";
+import styles from "./Header.module.css";
+
+const NAV = [
+  { href: "/", label: "Home" },
+  { href: "/about", label: "About" },
+  { href: "/products", label: "Products" },
+  { href: "/industries", label: "Industries" },
+  { href: "/contact", label: "Contact" },
+];
 
 export default function Header() {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const pathname = usePathname();
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 12);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  useEffect(() => setOpen(false), [pathname]);
+
+  const isActive = (href: string) =>
+    href === "/" ? pathname === "/" : pathname.startsWith(href);
 
   return (
-    <header className={styles.header}>
-      <div className={styles.topBar}>
-        <div className={`container ${styles.topBarContainer}`}>
-          <div className={styles.contactInfo}>
-            <a href="mailto:dakshravimehta@gmail.com" className={styles.contactItem}>
-              <Mail size={14} /> dakshravimehta@gmail.com
-            </a>
-            <a href="tel:+917021065036" className={styles.contactItem}>
-              <Phone size={14} /> +91 7021065036
-            </a>
+    <header className={`${styles.header} ${scrolled ? styles.scrolled : ""}`}>
+      {/* Utility bar */}
+      <div className={styles.utility}>
+        <div className={`container ${styles.utilityRow}`}>
+          <div className={styles.utilityLeft}>
+            <span className={styles.utilityTag}>Bulk Solvents · Polymers · Specialty</span>
           </div>
-          <div className={styles.topLinks}>
-            <Link href="/contact" className={styles.topLink}>Request a Quote</Link>
+          <div className={styles.utilityContacts}>
+            <a href="mailto:dakshravimehta@gmail.com" className={styles.utilityLink}>
+              <Mail size={13} /> dakshravimehta@gmail.com
+            </a>
+            <a href="tel:+917021065036" className={styles.utilityLink}>
+              <Phone size={13} /> +91 70210 65036
+            </a>
           </div>
         </div>
       </div>
-      
-      <div className={`container ${styles.mainHeader}`}>
-        <Link href="/" className={styles.logo}>
-          <span className={styles.logoText}>Aurelis</span>
-          <span className={styles.logoSubtext}>Chemicals</span>
+
+      {/* Main bar */}
+      <div className={`container ${styles.bar}`}>
+        <Link href="/" className={styles.logo} aria-label="Aurelis Chemicals home">
+          <span className={styles.mark} aria-hidden="true" />
+          <span className={styles.logoText}>
+            <span className={styles.logoName}>Aurelis</span>
+            <span className={styles.logoSub}>Chemicals</span>
+          </span>
         </Link>
 
-        <nav className={styles.desktopNav}>
-          <Link href="/" className={styles.navLink}>Home</Link>
-          <Link href="/about" className={styles.navLink}>About Us</Link>
-          <Link href="/products" className={styles.navLink}>Products</Link>
-          <Link href="/industries" className={styles.navLink}>Industries</Link>
-          <Link href="/contact" className={styles.navLink}>Contact</Link>
+        <nav className={styles.nav} aria-label="Primary">
+          {NAV.map((item) => (
+            <Link
+              key={item.href}
+              href={item.href}
+              className={`${styles.navLink} ${isActive(item.href) ? styles.navActive : ""}`}
+            >
+              {item.label}
+            </Link>
+          ))}
         </nav>
 
-        <div className={styles.headerActions}>
-          <Link href="/products" className="btn btn-primary">Our Catalog</Link>
-          
-          <button 
-            className={styles.mobileMenuBtn}
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            aria-label="Toggle menu"
+        <div className={styles.actions}>
+          <Link href="/contact" className={`btn btn-primary ${styles.cta}`}>
+            Request a Quote <ArrowUpRight size={16} />
+          </Link>
+          <button
+            className={styles.menuBtn}
+            onClick={() => setOpen((v) => !v)}
+            aria-label={open ? "Close menu" : "Open menu"}
+            aria-expanded={open}
           >
-            {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            {open ? <X size={22} /> : <Menu size={22} />}
           </button>
         </div>
       </div>
 
-      {/* Mobile Menu */}
-      {isMobileMenuOpen && (
-        <div className={styles.mobileNav}>
-          <Link href="/" className={styles.mobileNavLink} onClick={() => setIsMobileMenuOpen(false)}>Home</Link>
-          <Link href="/about" className={styles.mobileNavLink} onClick={() => setIsMobileMenuOpen(false)}>About Us</Link>
-          <Link href="/products" className={styles.mobileNavLink} onClick={() => setIsMobileMenuOpen(false)}>Products</Link>
-          <Link href="/industries" className={styles.mobileNavLink} onClick={() => setIsMobileMenuOpen(false)}>Industries</Link>
-          <Link href="/contact" className={styles.mobileNavLink} onClick={() => setIsMobileMenuOpen(false)}>Contact</Link>
-        </div>
-      )}
+      {/* Mobile drawer */}
+      <div className={`${styles.drawer} ${open ? styles.drawerOpen : ""}`}>
+        <nav className={styles.drawerNav} aria-label="Mobile">
+          {NAV.map((item, i) => (
+            <Link
+              key={item.href}
+              href={item.href}
+              className={`${styles.drawerLink} ${isActive(item.href) ? styles.drawerActive : ""}`}
+            >
+              <span className={styles.drawerIndex}>{String(i + 1).padStart(2, "0")}</span>
+              {item.label}
+            </Link>
+          ))}
+          <Link href="/contact" className={`btn btn-primary ${styles.drawerCta}`}>
+            Request a Quote <ArrowUpRight size={16} />
+          </Link>
+        </nav>
+      </div>
     </header>
   );
 }

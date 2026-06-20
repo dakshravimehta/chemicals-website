@@ -2,167 +2,151 @@
   position: sticky;
   top: 0;
   z-index: 100;
-  background-color: rgba(255, 255, 255, 0.85);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-  box-shadow: var(--shadow-sm);
+  background: oklch(0.976 0.006 75 / 0.85);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--line);
+  transition: box-shadow 0.3s var(--ease), background-color 0.3s var(--ease);
+}
+.header.scrolled {
+  background: oklch(0.976 0.006 75 / 0.96);
+  box-shadow: var(--shadow-2);
 }
 
-.topBar {
-  background-color: var(--color-primary-dark);
-  color: var(--color-text-inverse);
-  padding: 0.5rem 0;
-  font-size: 0.875rem;
+/* Utility bar */
+.utility {
+  background: var(--graphite);
+  color: var(--on-graphite-2);
 }
-
-.topBarContainer {
+.utilityRow {
   display: flex;
+  align-items: center;
   justify-content: space-between;
+  min-height: 36px;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.04em;
+}
+.utilityTag { text-transform: uppercase; letter-spacing: 0.16em; }
+.utilityContacts { display: flex; gap: var(--sp-6); }
+.utilityLink {
+  display: inline-flex;
   align-items: center;
+  gap: 0.4rem;
+  color: var(--on-graphite-2);
 }
+.utilityLink:hover { color: var(--signal); }
 
-.contactInfo {
-  display: flex;
-  gap: 1.5rem;
-}
-
-.contactItem {
+/* Main bar */
+.bar {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  opacity: 0.9;
-  transition: opacity 0.2s;
-}
-
-.contactItem:hover {
-  opacity: 1;
-  color: var(--color-secondary);
-}
-
-.topLinks {
-  display: flex;
-  gap: 1rem;
-}
-
-.topLink {
-  color: var(--color-secondary);
-  font-weight: 500;
-}
-
-.topLink:hover {
-  color: var(--color-secondary-light);
-}
-
-.mainHeader {
-  display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 1rem var(--space-md);
-  height: 80px;
+  gap: var(--sp-6);
+  min-height: 74px;
 }
 
-.logo {
-  display: flex;
-  flex-direction: column;
-  line-height: 1;
+.logo { display: inline-flex; align-items: center; gap: 0.7rem; }
+.mark {
+  width: 16px;
+  height: 16px;
+  background: var(--signal);
+  transform: rotate(45deg);
+  box-shadow: inset 0 0 0 3px oklch(0.976 0.006 75), 0 0 0 1.5px var(--signal);
+  flex-shrink: 0;
 }
-
-.logoText {
-  font-family: var(--font-heading);
-  font-size: 1.75rem;
-  font-weight: 700;
-  color: var(--color-primary);
+.logoText { display: flex; flex-direction: column; line-height: 1; }
+.logoName {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 1.32rem;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+}
+.logoSub {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.34em;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  color: var(--ink-3);
+  margin-top: 3px;
 }
 
-.logoSubtext {
-  font-size: 0.75rem;
-  color: var(--color-secondary-dark);
-  font-weight: 600;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-}
-
-.desktopNav {
-  display: none;
-  gap: 2rem;
-}
-
-@media (min-width: 768px) {
-  .desktopNav {
-    display: flex;
-  }
-}
-
+.nav { display: flex; align-items: center; gap: clamp(0.5rem, 1.5vw, 1.4rem); }
 .navLink {
-  font-weight: 500;
-  color: var(--color-text);
   position: relative;
-  padding: 0.5rem 0;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.92rem;
+  color: var(--ink-2);
+  padding: 0.4rem 0.2rem;
 }
-
 .navLink::after {
-  content: '';
+  content: "";
   position: absolute;
-  bottom: 0;
   left: 0;
-  width: 0;
+  bottom: -2px;
   height: 2px;
-  background-color: var(--color-secondary);
-  transition: width 0.3s ease;
+  width: 0;
+  background: var(--signal);
+  transition: width 0.28s var(--ease);
+}
+.navLink:hover { color: var(--ink); }
+.navLink:hover::after { width: 100%; }
+.navActive { color: var(--ink); }
+.navActive::after { width: 100%; }
+
+.actions { display: flex; align-items: center; gap: var(--sp-4); }
+.cta { padding: 0.7rem 1.15rem; }
+
+.menuBtn {
+  display: none;
+  color: var(--ink);
+  padding: 0.4rem;
 }
 
-.navLink:hover {
-  color: var(--color-primary);
+/* Mobile drawer */
+.drawer {
+  display: none;
+  overflow: hidden;
+  max-height: 0;
+  border-top: 1px solid transparent;
+  transition: max-height 0.4s var(--ease);
+  background: var(--surface);
 }
-
-.navLink:hover::after {
-  width: 100%;
+.drawerOpen {
+  max-height: 460px;
+  border-top-color: var(--line);
 }
-
-.headerActions {
+.drawerNav { display: flex; flex-direction: column; padding: var(--sp-4) var(--sp-6) var(--sp-8); }
+.drawerLink {
   display: flex;
-  align-items: center;
-  gap: 1rem;
+  align-items: baseline;
+  gap: var(--sp-4);
+  padding: var(--sp-4) 0;
+  border-bottom: 1px solid var(--line);
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.35rem;
+  color: var(--ink);
+}
+.drawerIndex {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--signal-strong);
+}
+.drawerActive { color: var(--signal-strong); }
+.drawerCta { margin-top: var(--sp-6); width: 100%; }
+
+@media (max-width: 900px) {
+  .nav { display: none; }
+  .cta { display: none; }
+  .menuBtn { display: inline-flex; }
+  .drawer { display: block; }
+  .utilityContacts { gap: var(--sp-4); }
+  .utilityTag { display: none; }
+  .utilityRow { justify-content: center; }
 }
 
-.mobileMenuBtn {
-  display: block;
-  color: var(--color-primary);
-}
-
-@media (min-width: 768px) {
-  .mobileMenuBtn {
-    display: none;
-  }
-}
-
-.mobileNav {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  background-color: var(--color-background);
-  box-shadow: var(--shadow-md);
-  display: flex;
-  flex-direction: column;
-  padding: 1rem 0;
-  border-top: 1px solid var(--color-border);
-}
-
-.mobileNavLink {
-  padding: 1rem var(--space-md);
-  font-weight: 500;
-  border-bottom: 1px solid var(--color-surface-alt);
-}
-
-.mobileNavLink:last-child {
-  border-bottom: none;
-}
-
-.mobileNavLink:hover {
-  background-color: var(--color-surface);
-  color: var(--color-primary);
+@media (max-width: 540px) {
+  .utilityLink { font-size: 0.62rem; }
 }

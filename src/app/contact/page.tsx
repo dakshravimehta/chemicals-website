@@ -1,127 +1,144 @@
-import { MapPin, Phone, Mail, MessageCircle } from 'lucide-react';
-import styles from './page.module.css';
+import { MapPin, Phone, Mail, MessageCircle, Clock, ArrowUpRight } from "lucide-react";
+import PageHeader from "@/components/PageHeader/PageHeader";
+import styles from "./page.module.css";
 
 export const metadata = {
-  title: 'Contact Us | Aurelis Chemicals',
-  description: 'Get in touch with Aurelis Chemicals for inquiries, quotes, or support. Connect via WhatsApp, Email, or Phone.',
+  title: "Contact | Aurelis Chemicals",
+  description:
+    "Request a quote or product sample from Aurelis Chemicals. Reach us by WhatsApp, email, or phone, with quotes turned around inside a day.",
 };
+
+const methods = [
+  {
+    icon: MessageCircle,
+    label: "WhatsApp",
+    value: "Message us instantly",
+    href: "https://wa.me/917021065036",
+    accent: true,
+  },
+  {
+    icon: Mail,
+    label: "Email",
+    value: "dakshravimehta@gmail.com",
+    href: "mailto:dakshravimehta@gmail.com",
+  },
+  {
+    icon: Phone,
+    label: "Phone",
+    value: "+91 70210 65036",
+    href: "tel:+917021065036",
+  },
+];
 
 export default function Contact() {
   return (
-    <div className={styles.contactPage}>
-      {/* Page Header */}
-      <section className={styles.pageHeader}>
-        <div className="container">
-          <h1 className={styles.pageTitle}>Contact Us</h1>
-          <p className={styles.pageSubtitle}>We are here to assist you with all your chemical sourcing needs</p>
-        </div>
-      </section>
+    <div>
+      <PageHeader
+        eyebrow="Contact"
+        title="Tell us the spec. We'll quote the supply."
+        subtitle="Quotes, samples, or a question about availability, our team turns inquiries around inside a day."
+      />
 
-      <section className={`section ${styles.contactSection}`}>
-        <div className={`container ${styles.contactGrid}`}>
-          
-          {/* Contact Information */}
-          <div className={styles.contactInfo}>
-            <h2 className={styles.sectionTitle}>Get In Touch</h2>
-            <p className={styles.contactText}>
-              Whether you need to request a quote, ask for a product sample, or simply learn more about our distribution capabilities, our team is ready to help.
-            </p>
+      <section className="section">
+        <div className={`container ${styles.grid}`}>
+          {/* Left: methods */}
+          <div className={styles.infoCol}>
+            <p className="eyebrow">Direct lines</p>
+            <h2 className={styles.h2}>Reach the desk that handles your order.</h2>
 
-            <div className={styles.methodsGrid}>
-              {/* WhatsApp */}
-              <a href="https://wa.me/917021065036" target="_blank" rel="noopener noreferrer" className={styles.methodCard}>
-                <div className={`${styles.iconWrapper} ${styles.whatsappIcon}`}>
-                  <MessageCircle size={28} />
-                </div>
+            <ul className={styles.methods}>
+              {methods.map((m) => (
+                <li key={m.label}>
+                  <a
+                    href={m.href}
+                    target={m.href.startsWith("http") ? "_blank" : undefined}
+                    rel={m.href.startsWith("http") ? "noopener noreferrer" : undefined}
+                    className={styles.method}
+                  >
+                    <span
+                      className={`${styles.methodIcon} ${m.accent ? styles.methodIconAccent : ""}`}
+                    >
+                      <m.icon size={22} strokeWidth={1.7} />
+                    </span>
+                    <span className={styles.methodText}>
+                      <span className={styles.methodLabel}>{m.label}</span>
+                      <span className={styles.methodValue}>{m.value}</span>
+                    </span>
+                    <ArrowUpRight size={18} className={styles.methodArrow} />
+                  </a>
+                </li>
+              ))}
+            </ul>
+
+            <div className={styles.detailRow}>
+              <div className={styles.detail}>
+                <span className={styles.detailIcon}><MapPin size={18} /></span>
                 <div>
-                  <h3 className={styles.methodTitle}>WhatsApp</h3>
-                  <p className={styles.methodDetail}>Message us instantly</p>
+                  <p className={styles.detailLabel}>Based in</p>
+                  <p className={styles.detailValue}>Mumbai, India · Shipping worldwide</p>
                 </div>
-              </a>
-
-              {/* Email */}
-              <a href="mailto:dakshravimehta@gmail.com" className={styles.methodCard}>
-                <div className={styles.iconWrapper}>
-                  <Mail size={28} />
-                </div>
+              </div>
+              <div className={styles.detail}>
+                <span className={styles.detailIcon}><Clock size={18} /></span>
                 <div>
-                  <h3 className={styles.methodTitle}>Email</h3>
-                  <p className={styles.methodDetail}>dakshravimehta@gmail.com</p>
+                  <p className={styles.detailLabel}>Quote turnaround</p>
+                  <p className={styles.detailValue}>Within 24 hours, business days</p>
                 </div>
-              </a>
-
-              {/* Phone */}
-              <a href="tel:+917021065036" className={styles.methodCard}>
-                <div className={styles.iconWrapper}>
-                  <Phone size={28} />
-                </div>
-                <div>
-                  <h3 className={styles.methodTitle}>Phone</h3>
-                  <p className={styles.methodDetail}>+91 7021065036</p>
-                </div>
-              </a>
-            </div>
-
-            <div className={styles.officeBox}>
-              <h3 className={styles.officeTitle}>
-                <MapPin size={20} className={styles.officeIcon} /> Global Headquarters
-              </h3>
-              <p className={styles.officeAddress}>
-                123 Chemical Avenue<br />
-                Industrial District, Building B<br />
-                Business City, 10001<br />
-                Country
-              </p>
+              </div>
             </div>
           </div>
 
-          {/* Contact Form */}
-          <div className={styles.formContainer}>
-            <h2 className={styles.formTitle}>Send an Inquiry</h2>
+          {/* Right: form */}
+          <div className={styles.formPanel}>
+            <h2 className={styles.formTitle}>Send an inquiry</h2>
+            <p className={styles.formNote}>
+              Share quantity and specification, the more detail, the sharper the quote.
+            </p>
             <form className={styles.form}>
-              <div className={styles.formGroup}>
-                <label htmlFor="name" className={styles.label}>Full Name</label>
-                <input type="text" id="name" className={styles.input} placeholder="John Doe" required />
+              <div className={styles.field}>
+                <label htmlFor="name" className={styles.label}>Full name</label>
+                <input id="name" type="text" className={styles.input} placeholder="Jane Doe" required />
               </div>
-              
-              <div className={styles.formGroup}>
-                <label htmlFor="company" className={styles.label}>Company Name</label>
-                <input type="text" id="company" className={styles.input} placeholder="Acme Corp" required />
+              <div className={styles.field}>
+                <label htmlFor="company" className={styles.label}>Company</label>
+                <input id="company" type="text" className={styles.input} placeholder="Acme Manufacturing" required />
               </div>
-
-              <div className={styles.formRow}>
-                <div className={styles.formGroup}>
-                  <label htmlFor="email" className={styles.label}>Email Address</label>
-                  <input type="email" id="email" className={styles.input} placeholder="john@example.com" required />
+              <div className={styles.row}>
+                <div className={styles.field}>
+                  <label htmlFor="email" className={styles.label}>Email</label>
+                  <input id="email" type="email" className={styles.input} placeholder="jane@acme.com" required />
                 </div>
-                <div className={styles.formGroup}>
-                  <label htmlFor="phone" className={styles.label}>Phone Number</label>
-                  <input type="tel" id="phone" className={styles.input} placeholder="+1 234 567 8900" />
+                <div className={styles.field}>
+                  <label htmlFor="phone" className={styles.label}>Phone</label>
+                  <input id="phone" type="tel" className={styles.input} placeholder="+91 00000 00000" />
                 </div>
               </div>
-
-              <div className={styles.formGroup}>
-                <label htmlFor="interest" className={styles.label}>Product Interest</label>
-                <select id="interest" className={styles.input}>
-                  <option value="">Select a category</option>
-                  <option value="solvents">Solvents</option>
-                  <option value="polymers">Polymers</option>
-                  <option value="specialty">Specialty Chemicals</option>
-                  <option value="other">Other / Not Sure</option>
+              <div className={styles.field}>
+                <label htmlFor="interest" className={styles.label}>Product interest</label>
+                <select id="interest" className={styles.input} defaultValue="">
+                  <option value="" disabled>Select a category</option>
+                  <option value="solvents">Solvents &amp; Alcohols</option>
+                  <option value="polymers">Polymers &amp; Resins</option>
+                  <option value="specialty">Specialty &amp; Fine Chemicals</option>
+                  <option value="acids">Acids &amp; Intermediates</option>
+                  <option value="other">Other / Not sure</option>
                 </select>
               </div>
-
-              <div className={styles.formGroup}>
-                <label htmlFor="message" className={styles.label}>Message / Requirements</label>
-                <textarea id="message" className={styles.textarea} placeholder="Please detail your quantity and specification requirements..." rows={5} required></textarea>
+              <div className={styles.field}>
+                <label htmlFor="message" className={styles.label}>Requirements</label>
+                <textarea
+                  id="message"
+                  className={styles.textarea}
+                  rows={5}
+                  placeholder="e.g. 5 MT Acetone, technical grade, drums, delivered Pune."
+                  required
+                />
               </div>
-
-              <button type="submit" className={`btn btn-primary ${styles.submitBtn}`}>
-                Submit Inquiry
+              <button type="submit" className={`btn btn-primary ${styles.submit}`}>
+                Submit inquiry <ArrowUpRight size={16} />
               </button>
             </form>
           </div>
-
         </div>
       </section>
     </div>

@@ -1,186 +1,142 @@
-"use client";
+import Link from "next/link";
+import { Target, Eye, ShieldCheck, Zap, Truck, ArrowRight } from "lucide-react";
+import PageHeader from "@/components/PageHeader/PageHeader";
+import Reveal from "@/components/Reveal/Reveal";
+import styles from "./page.module.css";
 
-import Link from 'next/link';
-import { Target, Eye, ShieldCheck, Truck, Zap } from 'lucide-react';
-import { motion } from 'framer-motion';
-import styles from './page.module.css';
-
-const fadeUp = {
-  hidden: { opacity: 0, y: 30 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
+export const metadata = {
+  title: "About | Aurelis Chemicals",
+  description:
+    "Aurelis Chemicals is a modern bulk chemical distributor: agile sourcing, reliable supply, and documentation done right.",
 };
 
-const staggerContainer = {
-  hidden: { opacity: 0 },
-  visible: { opacity: 1, transition: { staggerChildren: 0.2 } }
-};
+const values = [
+  {
+    icon: ShieldCheck,
+    title: "Quality, documented",
+    body: "Every shipment ships with SDS and CoA, tested against spec and international standards before it leaves.",
+  },
+  {
+    icon: Zap,
+    title: "Agility as standard",
+    body: "Modern logistics and live market intelligence let us re-route and re-quote in hours, not weeks.",
+  },
+  {
+    icon: Truck,
+    title: "Supply you can plan around",
+    body: "A deep producer network across Asia, the Gulf and Europe keeps stock moving and lead times honest.",
+  },
+];
 
 export default function About() {
   return (
-    <div className={styles.aboutPage}>
-      {/* Page Header */}
-      <section className={styles.pageHeader}>
-        <div className={styles.headerBackground}></div>
-        <div className={`container ${styles.headerContent}`}>
-          <motion.h1 
-            className={styles.pageTitle}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-          >
-            About Aurelis Chemicals
-          </motion.h1>
-          <motion.p 
-            className={styles.pageSubtitle}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-          >
-            A New Era in Modern Chemical Distribution
-          </motion.p>
-        </div>
-      </section>
+    <div>
+      <PageHeader
+        eyebrow="About Aurelis"
+        title="A modern operation in a traditional trade."
+        subtitle="Chemical distribution has long been slow and opaque. Aurelis was built to run it differently: lean, fast, and straight with its buyers."
+      />
 
-      {/* Intro Section */}
+      {/* Who we are */}
       <section className="section">
         <div className={`container ${styles.introGrid}`}>
-          <motion.div 
-            className={styles.introContent}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={fadeUp}
-          >
-            <h2 className={styles.sectionTitle}>Who We Are</h2>
-            <div className={styles.introText}>
+          <Reveal className={styles.introCopy}>
+            <p className="eyebrow">01 / Who we are</p>
+            <h2 className={styles.h2}>
+              Built for buyers who can&apos;t wait on a slow supply chain.
+            </h2>
+            <div className={styles.prose}>
               <p>
-                Aurelis Chemicals is a visionary new enterprise built for the modern era of chemical distribution. We recognized that the traditional supply chain was too slow and inflexible for today&apos;s fast-paced industries. 
+                Aurelis Chemicals supplies the bulk trade and distribution of solvents,
+                polymers and specialty chemicals to industrial buyers worldwide. We pair a
+                deep global sourcing network with agile logistics to keep material moving.
               </p>
               <p>
-                By combining deep market intelligence, robust global sourcing networks, and agile logistics, we provide comprehensive solutions for the bulk trade and distribution of chemicals, solvents, polymers, and specialty chemicals.
+                Our infrastructure lets us import, stock and distribute premium raw
+                materials efficiently, so partners across 40+ markets get the grade they
+                ordered, on the schedule they need.
               </p>
               <p>
-                Our modern infrastructure enables us to efficiently import, stock, and distribute premium raw materials, ensuring that our partners across 40+ countries receive uncompromising quality exactly when they need it.
+                We behave less like a broker and more like an extension of your procurement
+                team: quicker to answer, clearer on documentation, easier to plan around.
               </p>
             </div>
-          </motion.div>
-          <motion.div 
-            className={styles.introImageWrapper}
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-          >
-            <img src="/images/about_facility.png" alt="Aurelis Chemicals Corporate Facility" className={styles.aboutImg} />
-          </motion.div>
+          </Reveal>
+          <Reveal className={styles.introVisual} delay={80}>
+            <img
+              src="/images/about_facility.png"
+              alt="Aurelis Chemicals warehousing and distribution facility"
+              className={styles.introImg}
+            />
+            <div className={styles.introTag}>
+              <span>OPERATION</span>
+              <span>MUMBAI · WORLDWIDE</span>
+            </div>
+          </Reveal>
         </div>
       </section>
 
       {/* Mission & Vision */}
-      <section className={`section ${styles.missionSection}`}>
-        <div className="container">
-          <motion.div 
-            className={styles.missionGrid}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
-            variants={staggerContainer}
-          >
-            <motion.div variants={fadeUp} className={styles.missionCard}>
-              <div className={styles.iconWrapper}>
-                <Target size={36} />
-              </div>
-              <h3 className={styles.cardTitle}>Our Mission</h3>
-              <p className={styles.cardText}>
-                To redefine reliability in the chemical supply chain through modern, agile procurement, uncompromising quality assurance, and exceptional customer service.
-              </p>
-            </motion.div>
-            
-            <motion.div variants={fadeUp} className={styles.missionCard}>
-              <div className={styles.iconWrapper}>
-                <Eye size={36} />
-              </div>
-              <h3 className={styles.cardTitle}>Our Vision</h3>
-              <p className={styles.cardText}>
-                To become the industry&apos;s most dynamic and innovative distributor, empowering global manufacturers with the exact chemical solutions they need to thrive.
-              </p>
-            </motion.div>
-          </motion.div>
+      <section className={styles.mvSection}>
+        <div className={`container ${styles.mvGrid}`}>
+          <Reveal as="article" className={styles.mvCard}>
+            <span className={styles.mvIcon}>
+              <Target size={26} strokeWidth={1.6} />
+            </span>
+            <p className="eyebrow eyebrow--on-dark">Mission</p>
+            <h3 className={styles.mvTitle}>
+              Redefine reliability in the chemical supply chain.
+            </h3>
+            <p className={styles.mvBody}>
+              Modern, agile procurement and uncompromising quality assurance, delivered
+              with service that treats every order as if our name is on the drum.
+            </p>
+          </Reveal>
+          <Reveal as="article" className={styles.mvCard} delay={90}>
+            <span className={styles.mvIcon}>
+              <Eye size={26} strokeWidth={1.6} />
+            </span>
+            <p className="eyebrow eyebrow--on-dark">Vision</p>
+            <h3 className={styles.mvTitle}>
+              Become the distributor industrial buyers reach for first.
+            </h3>
+            <p className={styles.mvBody}>
+              The most dynamic and dependable name on the supplier list, giving global
+              manufacturers exactly the chemistry they need to keep producing.
+            </p>
+          </Reveal>
         </div>
       </section>
 
-      {/* Core Values */}
+      {/* Core values */}
       <section className="section">
         <div className="container">
-          <motion.h2 
-            className={`${styles.sectionTitle} text-center`} 
-            style={{marginBottom: 'var(--space-xl)'}}
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-          >
-            Our Core Values
-          </motion.h2>
-          
-          <motion.div 
-            className={styles.valuesGrid}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
-            variants={staggerContainer}
-          >
-            <motion.div variants={fadeUp} className={styles.valueItem}>
-              <div className={styles.valueIconWrapper}>
-                <ShieldCheck size={40} className={styles.valueIcon} />
-              </div>
-              <h3 className={styles.valueTitle}>Uncompromising Quality</h3>
-              <p className={styles.valueText}>
-                Rigorous testing and compliance with international standards for all our products.
-              </p>
-            </motion.div>
-            
-            <motion.div variants={fadeUp} className={styles.valueItem}>
-              <div className={styles.valueIconWrapper}>
-                <Zap size={40} className={styles.valueIcon} />
-              </div>
-              <h3 className={styles.valueTitle}>Agility & Innovation</h3>
-              <p className={styles.valueText}>
-                Leveraging modern logistics and real-time market insights to adapt quickly to your needs.
-              </p>
-            </motion.div>
-            
-            <motion.div variants={fadeUp} className={styles.valueItem}>
-              <div className={styles.valueIconWrapper}>
-                <Truck size={40} className={styles.valueIcon} />
-              </div>
-              <h3 className={styles.valueTitle}>Reliable Supply</h3>
-              <p className={styles.valueText}>
-                A robust global network ensuring uninterrupted supply and timely delivery worldwide.
-              </p>
-            </motion.div>
-          </motion.div>
+          <Reveal>
+            <p className="eyebrow">02 / What we stand on</p>
+            <h2 className={styles.h2}>Three commitments behind every order.</h2>
+          </Reveal>
+          <div className={styles.valuesGrid}>
+            {values.map((v, i) => (
+              <Reveal as="article" key={v.title} className={styles.valueItem} delay={i * 80}>
+                <span className={styles.valueIcon}>
+                  <v.icon size={28} strokeWidth={1.6} />
+                </span>
+                <h3 className={styles.valueTitle}>{v.title}</h3>
+                <p className={styles.valueBody}>{v.body}</p>
+              </Reveal>
+            ))}
+          </div>
         </div>
       </section>
 
-      {/* CTA */}
-      <section className={styles.ctaSection}>
-        <motion.div 
-          className="container text-center"
-          initial={{ opacity: 0, scale: 0.95 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-        >
-          <div className="glass-dark" style={{ padding: 'var(--space-2xl) var(--space-xl)', borderRadius: 'var(--radius-xl)' }}>
-            <h2 className={styles.ctaTitle}>Partner With Us Today</h2>
-            <p className={styles.ctaText}>
-              Experience the new standard of premium, agile chemical distribution.
-            </p>
-            <Link href="/contact" className="btn btn-secondary">
-              Get in Touch
-            </Link>
-          </div>
-        </motion.div>
+      {/* Closing link */}
+      <section className={styles.closing}>
+        <div className={`container ${styles.closingRow}`}>
+          <h2 className={styles.closingTitle}>See what we keep in stock.</h2>
+          <Link href="/products" className="btn btn-primary">
+            Browse the catalog <ArrowRight size={16} />
+          </Link>
+        </div>
       </section>
     </div>
   );
