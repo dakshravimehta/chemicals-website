@@ -1,0 +1,1096 @@
+{
+  "2-ethyl Hexanoic Acid": {
+    "formula": "C8H16O2",
+    "molarMass": "144.21",
+    "iupac": "2-ethylhexanoic acid",
+    "cas": "149-57-5",
+    "source": "pubchem",
+    "query": "2-ethylhexanoic acid"
+  },
+  "2-ethyl Hexanol": {
+    "formula": "C8H18O",
+    "molarMass": "130.23",
+    "iupac": "2-ethylhexan-1-ol",
+    "cas": "104-76-7",
+    "source": "pubchem",
+    "query": "2-ethylhexanol"
+  },
+  "2-ethyl Hexyl Acrylate": {
+    "formula": "C11H20O2",
+    "molarMass": "184.27",
+    "iupac": "2-ethylhexyl prop-2-enoate",
+    "cas": "103-11-7",
+    "source": "pubchem",
+    "query": "2-ethylhexyl acrylate"
+  },
+  "2-methyl Tetrahydrofuran (2-mthf)": {
+    "formula": "C5H10O",
+    "molarMass": "86.13",
+    "iupac": "2-methyloxolane",
+    "cas": "96-47-9",
+    "source": "pubchem",
+    "query": "2-methyltetrahydrofuran"
+  },
+  "Acetic Acid": {
+    "formula": "C2H4O2",
+    "molarMass": "60.05",
+    "iupac": "acetic acid",
+    "cas": "64-19-7",
+    "source": "pubchem",
+    "query": "acetic acid"
+  },
+  "Acetone": {
+    "formula": "C3H6O",
+    "molarMass": "58.08",
+    "iupac": "propan-2-one",
+    "cas": "67-64-1",
+    "source": "pubchem",
+    "query": "acetone"
+  },
+  "Acetonitrile": {
+    "formula": "C2H3N",
+    "molarMass": "41.05",
+    "iupac": "acetonitrile",
+    "cas": "75-05-8",
+    "source": "pubchem",
+    "query": "acetonitrile"
+  },
+  "Acetophenone": {
+    "formula": "C8H8O",
+    "molarMass": "120.15",
+    "iupac": "1-phenylethanone",
+    "cas": "98-86-2",
+    "source": "pubchem",
+    "query": "acetophenone"
+  },
+  "Acetyl Acetone": {
+    "formula": "C5H8O2",
+    "molarMass": "100.12",
+    "iupac": "pentane-2,4-dione",
+    "cas": "123-54-6",
+    "source": "pubchem",
+    "query": "acetylacetone"
+  },
+  "Acrylamide": {
+    "formula": "C3H5NO",
+    "molarMass": "71.08",
+    "iupac": "prop-2-enamide",
+    "cas": "79-06-1",
+    "source": "pubchem",
+    "query": "acrylamide"
+  },
+  "Acrylic Acid": {
+    "formula": "C3H4O2",
+    "molarMass": "72.06",
+    "iupac": "prop-2-enoic acid",
+    "cas": "79-10-7",
+    "source": "pubchem",
+    "query": "acrylic acid"
+  },
+  "Acrylonitrile": {
+    "formula": "C3H3N",
+    "molarMass": "53.06",
+    "iupac": "prop-2-enenitrile",
+    "cas": "107-13-1",
+    "source": "pubchem",
+    "query": "acrylonitrile"
+  },
+  "Adipic Acid": {
+    "formula": "C6H10O4",
+    "molarMass": "146.14",
+    "iupac": "hexanedioic acid",
+    "cas": "124-04-9",
+    "source": "pubchem",
+    "query": "adipic acid"
+  },
+  "Allyl Alcohol": {
+    "formula": "C3H6O",
+    "molarMass": "58.08",
+    "iupac": "prop-2-en-1-ol",
+    "cas": "107-18-6",
+    "source": "pubchem",
+    "query": "allyl alcohol"
+  },
+  "Aniline Oil": {
+    "formula": "C6H7N",
+    "molarMass": "93.13",
+    "iupac": "aniline",
+    "cas": "62-53-3",
+    "source": "pubchem",
+    "query": "aniline"
+  },
+  "Benzoic Acid": {
+    "formula": "C7H6O2",
+    "molarMass": "122.12",
+    "iupac": "benzoic acid",
+    "cas": "65-85-0",
+    "source": "pubchem",
+    "query": "benzoic acid"
+  },
+  "Benzophenone": {
+    "formula": "C13H10O",
+    "molarMass": "182.22",
+    "iupac": "diphenylmethanone",
+    "cas": "119-61-9",
+    "source": "pubchem",
+    "query": "benzophenone"
+  },
+  "Benzylamine": {
+    "formula": "C7H9N",
+    "molarMass": "107.15",
+    "iupac": "phenylmethanamine",
+    "cas": "100-46-9",
+    "source": "pubchem",
+    "query": "benzylamine"
+  },
+  "Bisphenol-a": {
+    "formula": "C15H16O2",
+    "molarMass": "228.29",
+    "iupac": "4-[2-(4-hydroxyphenyl)propan-2-yl]phenol",
+    "cas": "80-05-7",
+    "source": "pubchem",
+    "query": "bisphenol a"
+  },
+  "Butyl Acetate": {
+    "formula": "C6H12O2",
+    "molarMass": "116.16",
+    "iupac": "butyl acetate",
+    "cas": "123-86-4",
+    "source": "pubchem",
+    "query": "butyl acetate"
+  },
+  "Butyl Acrylate": {
+    "formula": "C7H12O2",
+    "molarMass": "128.17",
+    "iupac": "butyl prop-2-enoate",
+    "cas": "141-32-2",
+    "source": "pubchem",
+    "query": "butyl acrylate"
+  },
+  "Butyl Acrylate Monomer": {
+    "formula": "C7H12O2",
+    "molarMass": "128.17",
+    "iupac": "butyl prop-2-enoate",
+    "cas": "141-32-2",
+    "source": "pubchem",
+    "query": "butyl acrylate"
+  },
+  "Caustic Potash Flakes": {
+    "formula": "HKO",
+    "molarMass": "56.106",
+    "iupac": "potassium hydroxide",
+    "cas": "1310-58-3",
+    "source": "pubchem",
+    "query": "potassium hydroxide"
+  },
+  "Caustic Soda Lye": {
+    "formula": "HNaO",
+    "molarMass": "39.997",
+    "iupac": "sodium hydroxide",
+    "cas": "1310-73-2",
+    "source": "pubchem",
+    "query": "sodium hydroxide"
+  },
+  "Chloroform": {
+    "formula": "CHCl3",
+    "molarMass": "119.37",
+    "iupac": "chloroform",
+    "cas": "67-66-3",
+    "source": "pubchem",
+    "query": "chloroform"
+  },
+  "Citric Acid Anhydrous": {
+    "formula": "C6H8O7",
+    "molarMass": "192.12",
+    "iupac": "2-hydroxypropane-1,2,3-tricarboxylic acid",
+    "cas": "77-92-9",
+    "source": "pubchem",
+    "query": "citric acid"
+  },
+  "Citric Acid Monohydrate": {
+    "formula": "C6H10O8",
+    "molarMass": "210.14",
+    "iupac": "2-hydroxypropane-1,2,3-tricarboxylic acid;hydrate",
+    "cas": "5949-29-1",
+    "source": "pubchem",
+    "query": "citric acid monohydrate"
+  },
+  "Cyclohexane": {
+    "formula": "C6H12",
+    "molarMass": "84.16",
+    "iupac": "cyclohexane",
+    "cas": "110-82-7",
+    "source": "pubchem",
+    "query": "cyclohexane"
+  },
+  "Cyclohexanol": {
+    "formula": "C6H12O",
+    "molarMass": "100.16",
+    "iupac": "cyclohexanol",
+    "cas": "108-93-0",
+    "source": "pubchem",
+    "query": "cyclohexanol"
+  },
+  "Cyclohexanone": {
+    "formula": "C6H10O",
+    "molarMass": "98.14",
+    "iupac": "cyclohexanone",
+    "cas": "108-94-1",
+    "source": "pubchem",
+    "query": "cyclohexanone"
+  },
+  "Cyclohexylamine": {
+    "formula": "C6H13N",
+    "molarMass": "99.17",
+    "iupac": "cyclohexanamine",
+    "cas": "108-91-8",
+    "source": "pubchem",
+    "query": "cyclohexylamine"
+  },
+  "Diacetone Alcohol": {
+    "formula": "C6H12O2",
+    "molarMass": "116.16",
+    "iupac": "4-hydroxy-4-methylpentan-2-one",
+    "cas": "123-42-2",
+    "source": "pubchem",
+    "query": "diacetone alcohol"
+  },
+  "Diethanolamine": {
+    "formula": "C4H11NO2",
+    "molarMass": "105.14",
+    "iupac": "2-(2-hydroxyethylamino)ethanol",
+    "cas": "111-42-2",
+    "source": "pubchem",
+    "query": "diethanolamine"
+  },
+  "Diethyl Carbonate": {
+    "formula": "C5H10O3",
+    "molarMass": "118.13",
+    "iupac": "diethyl carbonate",
+    "cas": "105-58-8",
+    "source": "pubchem",
+    "query": "diethyl carbonate"
+  },
+  "Diethylamine": {
+    "formula": "C4H11N",
+    "molarMass": "73.14",
+    "iupac": "N-ethylethanamine",
+    "cas": "109-89-7",
+    "source": "pubchem",
+    "query": "diethylamine"
+  },
+  "Diethylene Triamine (Deta)": {
+    "formula": "C4H13N3",
+    "molarMass": "103.17",
+    "iupac": "N'-(2-aminoethyl)ethane-1,2-diamine",
+    "cas": "111-40-0",
+    "source": "pubchem",
+    "query": "diethylenetriamine"
+  },
+  "Diethylene glycol (DEG)": {
+    "formula": "C4H10O3",
+    "molarMass": "106.12",
+    "iupac": "2-(2-hydroxyethoxy)ethanol",
+    "cas": "111-46-6",
+    "source": "pubchem",
+    "query": "diethylene glycol"
+  },
+  "Dimethyl Acetamide": {
+    "formula": "C4H9NO",
+    "molarMass": "87.12",
+    "iupac": "N,N-dimethylacetamide",
+    "cas": "127-19-5",
+    "source": "pubchem",
+    "query": "n,n-dimethylacetamide"
+  },
+  "Dimethyl Carbonate": {
+    "formula": "C3H6O3",
+    "molarMass": "90.08",
+    "iupac": "dimethyl carbonate",
+    "cas": "616-38-6",
+    "source": "pubchem",
+    "query": "dimethyl carbonate"
+  },
+  "Dimethyl Formamide": {
+    "formula": "C3H7NO",
+    "molarMass": "73.09",
+    "iupac": "N,N-dimethylformamide",
+    "cas": "68-12-2",
+    "source": "pubchem",
+    "query": "n,n-dimethylformamide"
+  },
+  "Dimethyl Sulfoxide": {
+    "formula": "C2H6OS",
+    "molarMass": "78.14",
+    "iupac": "methylsulfinylmethane",
+    "cas": "67-68-5",
+    "source": "pubchem",
+    "query": "dimethyl sulfoxide"
+  },
+  "Dipropylene Glycol": {
+    "formula": "C12H28O6",
+    "molarMass": "268.35",
+    "iupac": "2-(1-hydroxypropan-2-yloxy)propan-1-ol;1-(2-hydroxypropoxy)propan-2-ol",
+    "cas": "25265-71-8",
+    "source": "pubchem",
+    "query": "dipropylene glycol"
+  },
+  "Epichlorohydrine (Ech)": {
+    "formula": "C3H5ClO",
+    "molarMass": "92.52",
+    "iupac": "2-(chloromethyl)oxirane",
+    "cas": "106-89-8",
+    "source": "pubchem",
+    "query": "epichlorohydrin"
+  },
+  "Ethyl Acetate": {
+    "formula": "C4H8O2",
+    "molarMass": "88.11",
+    "iupac": "ethyl acetate",
+    "cas": "141-78-6",
+    "source": "pubchem",
+    "query": "ethyl acetate"
+  },
+  "Ethyl Acetoacetate": {
+    "formula": "C6H10O3",
+    "molarMass": "130.14",
+    "iupac": "ethyl 3-oxobutanoate",
+    "cas": "141-97-9",
+    "source": "pubchem",
+    "query": "ethyl acetoacetate"
+  },
+  "Ethyl Acrylate": {
+    "formula": "C5H8O2",
+    "molarMass": "100.12",
+    "iupac": "ethyl prop-2-enoate",
+    "cas": "140-88-5",
+    "source": "pubchem",
+    "query": "ethyl acrylate"
+  },
+  "Ethylene Dichloride": {
+    "formula": "C2H4Cl2",
+    "molarMass": "98.96",
+    "iupac": "1,2-dichloroethane",
+    "cas": "107-06-2",
+    "source": "pubchem",
+    "query": "1,2-dichloroethane"
+  },
+  "Ethylenediamine (Eda)": {
+    "formula": "C2H8N2",
+    "molarMass": "60.10",
+    "iupac": "ethane-1,2-diamine",
+    "cas": "107-15-3",
+    "source": "pubchem",
+    "query": "ethylenediamine"
+  },
+  "Formic Acid 85%": {
+    "formula": "CH2O2",
+    "molarMass": "46.025",
+    "iupac": "formic acid",
+    "cas": "64-18-6",
+    "source": "pubchem",
+    "query": "formic acid"
+  },
+  "Formic Acid 99%": {
+    "formula": "CH2O2",
+    "molarMass": "46.025",
+    "iupac": "formic acid",
+    "cas": "64-18-6",
+    "source": "pubchem",
+    "query": "formic acid"
+  },
+  "Fumaric Acid": {
+    "formula": "C4H4O4",
+    "molarMass": "116.07",
+    "iupac": "(E)-but-2-enedioic acid",
+    "cas": "110-17-8",
+    "source": "pubchem",
+    "query": "fumaric acid"
+  },
+  "Furfuryl Alcohol": {
+    "formula": "C5H6O2",
+    "molarMass": "98.10",
+    "iupac": "furan-2-ylmethanol",
+    "cas": "98-00-0",
+    "source": "pubchem",
+    "query": "furfuryl alcohol"
+  },
+  "Gamma Butyrolactone": {
+    "formula": "C4H6O2",
+    "molarMass": "86.09",
+    "iupac": "oxolan-2-one",
+    "cas": "96-48-0",
+    "source": "pubchem",
+    "query": "gamma-butyrolactone"
+  },
+  "Glycerine": {
+    "formula": "C3H8O3",
+    "molarMass": "92.09",
+    "iupac": "propane-1,2,3-triol",
+    "cas": "56-81-5",
+    "source": "pubchem",
+    "query": "glycerol"
+  },
+  "Glycine": {
+    "formula": "C2H5NO2",
+    "molarMass": "75.07",
+    "iupac": "2-aminoacetic acid",
+    "cas": "56-40-6",
+    "source": "pubchem",
+    "query": "glycine"
+  },
+  "Heptane": {
+    "formula": "C7H16",
+    "molarMass": "100.20",
+    "iupac": "heptane",
+    "cas": "142-82-5",
+    "source": "pubchem",
+    "query": "heptane"
+  },
+  "Hexamine": {
+    "formula": "C6H12N4",
+    "molarMass": "140.19",
+    "iupac": "1,3,5,7-tetrazatricyclo[3.3.1.13,7]decane",
+    "cas": "100-97-0",
+    "source": "pubchem",
+    "query": "hexamethylenetetramine"
+  },
+  "Hexane": {
+    "formula": "C6H14",
+    "molarMass": "86.18",
+    "iupac": "hexane",
+    "cas": "110-54-3",
+    "source": "pubchem",
+    "query": "hexane"
+  },
+  "Hexylene Glycol": {
+    "formula": "C6H14O2",
+    "molarMass": "118.17",
+    "iupac": "2-methylpentane-2,4-diol",
+    "cas": "107-41-5",
+    "source": "pubchem",
+    "query": "hexylene glycol"
+  },
+  "Hydrogen Peroxide": {
+    "formula": "H2O2",
+    "molarMass": "34.015",
+    "iupac": "hydrogen peroxide",
+    "cas": "7722-84-1",
+    "source": "pubchem",
+    "query": "hydrogen peroxide"
+  },
+  "Hydroquinone (Hq)": {
+    "formula": "C6H6O2",
+    "molarMass": "110.11",
+    "iupac": "benzene-1,4-diol",
+    "cas": "123-31-9",
+    "source": "pubchem",
+    "query": "hydroquinone"
+  },
+  "Imidazole": {
+    "formula": "C3H4N2",
+    "molarMass": "68.08",
+    "iupac": "1H-imidazole",
+    "cas": "288-32-4",
+    "source": "pubchem",
+    "query": "imidazole"
+  },
+  "Iodine": {
+    "formula": "I2",
+    "molarMass": "253.8089",
+    "iupac": "molecular iodine",
+    "cas": "7553-56-2",
+    "source": "pubchem",
+    "query": "iodine"
+  },
+  "Iso Butanol": {
+    "formula": "C4H10O",
+    "molarMass": "74.12",
+    "iupac": "2-methylpropan-1-ol",
+    "cas": "78-83-1",
+    "source": "pubchem",
+    "query": "isobutanol"
+  },
+  "Isobutanol": {
+    "formula": "C4H10O",
+    "molarMass": "74.12",
+    "iupac": "2-methylpropan-1-ol",
+    "cas": "78-83-1",
+    "source": "pubchem",
+    "query": "isobutanol"
+  },
+  "Isobutyraldehyde": {
+    "formula": "C4H8O",
+    "molarMass": "72.11",
+    "iupac": "2-methylpropanal",
+    "cas": "78-84-2",
+    "source": "pubchem",
+    "query": "isobutyraldehyde"
+  },
+  "Isophorone": {
+    "formula": "C9H14O",
+    "molarMass": "138.21",
+    "iupac": "3,5,5-trimethylcyclohex-2-en-1-one",
+    "cas": "78-59-1",
+    "source": "pubchem",
+    "query": "isophorone"
+  },
+  "Isophthalic Acid": {
+    "formula": "C8H6O4",
+    "molarMass": "166.13",
+    "iupac": "benzene-1,3-dicarboxylic acid",
+    "cas": "121-91-5",
+    "source": "pubchem",
+    "query": "isophthalic acid"
+  },
+  "Isophthalic acid": {
+    "formula": "C8H6O4",
+    "molarMass": "166.13",
+    "iupac": "benzene-1,3-dicarboxylic acid",
+    "cas": "121-91-5",
+    "source": "pubchem",
+    "query": "isophthalic acid"
+  },
+  "Isopropyl Acetate": {
+    "formula": "C5H10O2",
+    "molarMass": "102.13",
+    "iupac": "propan-2-yl acetate",
+    "cas": "108-21-4",
+    "source": "pubchem",
+    "query": "isopropyl acetate"
+  },
+  "Isopropyl Alcohol": {
+    "formula": "C3H8O",
+    "molarMass": "60.10",
+    "iupac": "propan-2-ol",
+    "cas": "67-63-0",
+    "source": "pubchem",
+    "query": "2-propanol"
+  },
+  "Maliec Anhydride": {
+    "formula": "C4H2O3",
+    "molarMass": "98.06",
+    "iupac": "furan-2,5-dione",
+    "cas": "108-31-6",
+    "source": "pubchem",
+    "query": "maleic anhydride"
+  },
+  "Melamine": {
+    "formula": "C3H6N6",
+    "molarMass": "126.12",
+    "iupac": "1,3,5-triazine-2,4,6-triamine",
+    "cas": "108-78-1",
+    "source": "pubchem",
+    "query": "melamine"
+  },
+  "Meta Cresol": {
+    "formula": "C7H8O",
+    "molarMass": "108.14",
+    "iupac": "3-methylphenol",
+    "cas": "108-39-4",
+    "source": "pubchem",
+    "query": "m-cresol"
+  },
+  "Meta Xylene": {
+    "formula": "C8H10",
+    "molarMass": "106.16",
+    "iupac": "1,3-xylene",
+    "cas": "108-38-3",
+    "source": "pubchem",
+    "query": "m-xylene"
+  },
+  "Methanol": {
+    "formula": "CH4O",
+    "molarMass": "32.042",
+    "iupac": "methanol",
+    "cas": "67-56-1",
+    "source": "pubchem",
+    "query": "methanol"
+  },
+  "Methy Isobutyl Ketone": {
+    "formula": "C6H12O",
+    "molarMass": "100.16",
+    "iupac": "4-methylpentan-2-one",
+    "cas": "108-10-1",
+    "source": "pubchem",
+    "query": "4-methyl-2-pentanone"
+  },
+  "Methyl Acetoacetate": {
+    "formula": "C5H8O3",
+    "molarMass": "116.11",
+    "iupac": "methyl 3-oxobutanoate",
+    "cas": "105-45-3",
+    "source": "pubchem",
+    "query": "methyl acetoacetate"
+  },
+  "Methyl Acrylate": {
+    "formula": "C4H6O2",
+    "molarMass": "86.09",
+    "iupac": "methyl prop-2-enoate",
+    "cas": "96-33-3",
+    "source": "pubchem",
+    "query": "methyl acrylate"
+  },
+  "Methyl Ethyl Ketone": {
+    "formula": "C4H8O",
+    "molarMass": "72.11",
+    "iupac": "butan-2-one",
+    "cas": "78-93-3",
+    "source": "pubchem",
+    "query": "2-butanone"
+  },
+  "Methyl Ethyl Ketone (Mek)": {
+    "formula": "C4H8O",
+    "molarMass": "72.11",
+    "iupac": "butan-2-one",
+    "cas": "78-93-3",
+    "source": "pubchem",
+    "query": "2-butanone"
+  },
+  "Methyl Isobutyl Ketone (Mibk)": {
+    "formula": "C6H12O",
+    "molarMass": "100.16",
+    "iupac": "4-methylpentan-2-one",
+    "cas": "108-10-1",
+    "source": "pubchem",
+    "query": "4-methyl-2-pentanone"
+  },
+  "Methyl Methacrylate (Mma)": {
+    "formula": "C5H8O2",
+    "molarMass": "100.12",
+    "iupac": "methyl 2-methylprop-2-enoate",
+    "cas": "80-62-6",
+    "source": "pubchem",
+    "query": "methyl methacrylate"
+  },
+  "Methyl Tertiary Butyl Ether (Mtbe)": {
+    "formula": "C5H12O",
+    "molarMass": "88.15",
+    "iupac": "2-methoxy-2-methylpropane",
+    "cas": "1634-04-4",
+    "source": "pubchem",
+    "query": "methyl tert-butyl ether"
+  },
+  "Methylcyclohexane": {
+    "formula": "C7H14",
+    "molarMass": "98.19",
+    "iupac": "methylcyclohexane",
+    "cas": "108-87-2",
+    "source": "pubchem",
+    "query": "methylcyclohexane"
+  },
+  "Methylene Chloride": {
+    "formula": "CH2Cl2",
+    "molarMass": "84.93",
+    "iupac": "dichloromethane",
+    "cas": "75-09-2",
+    "source": "pubchem",
+    "query": "dichloromethane"
+  },
+  "Methylene Diphenyl Diisocyante (Mdi)": {
+    "formula": "C15H10N2O2",
+    "molarMass": "250.25",
+    "cas": "26447-40-5",
+    "source": "fixed"
+  },
+  "Methylene diphenyl diisocyanate (MDI)": {
+    "formula": "C15H10N2O2",
+    "molarMass": "250.25",
+    "cas": "26447-40-5",
+    "source": "fixed"
+  },
+  "Mix Xylene (Mx)": {
+    "formula": "C8H10",
+    "molarMass": "106.16",
+    "cas": "1330-20-7",
+    "source": "fixed"
+  },
+  "Monochlorobenzene": {
+    "formula": "C6H5Cl",
+    "molarMass": "112.55",
+    "iupac": "chlorobenzene",
+    "cas": "108-90-7",
+    "source": "pubchem",
+    "query": "chlorobenzene"
+  },
+  "Monoethanolamine": {
+    "formula": "C2H7NO",
+    "molarMass": "61.08",
+    "iupac": "2-aminoethanol",
+    "cas": "141-43-5",
+    "source": "pubchem",
+    "query": "ethanolamine"
+  },
+  "Monoethylene Glycol (Meg)": {
+    "formula": "C2H6O2",
+    "molarMass": "62.07",
+    "iupac": "ethane-1,2-diol",
+    "cas": "107-21-1",
+    "source": "pubchem",
+    "query": "ethylene glycol"
+  },
+  "Morpholine": {
+    "formula": "C4H9NO",
+    "molarMass": "87.12",
+    "iupac": "morpholine",
+    "cas": "110-91-8",
+    "source": "pubchem",
+    "query": "morpholine"
+  },
+  "N-butanol": {
+    "formula": "C4H10O",
+    "molarMass": "74.12",
+    "iupac": "butan-1-ol",
+    "cas": "71-36-3",
+    "source": "pubchem",
+    "query": "1-butanol"
+  },
+  "N-butyraldehyde": {
+    "formula": "C4H8O",
+    "molarMass": "72.11",
+    "iupac": "butanal",
+    "cas": "123-72-8",
+    "source": "pubchem",
+    "query": "butyraldehyde"
+  },
+  "N-heptane": {
+    "formula": "C7H16",
+    "molarMass": "100.20",
+    "iupac": "heptane",
+    "cas": "142-82-5",
+    "source": "pubchem",
+    "query": "heptane"
+  },
+  "N-hexane 99%": {
+    "formula": "C6H14",
+    "molarMass": "86.18",
+    "iupac": "hexane",
+    "cas": "110-54-3",
+    "source": "pubchem",
+    "query": "hexane"
+  },
+  "N-methyl-2-pyrrolidone (Nmp)": {
+    "formula": "C5H9NO",
+    "molarMass": "99.13",
+    "iupac": "1-methylpyrrolidin-2-one",
+    "cas": "872-50-4",
+    "source": "pubchem",
+    "query": "1-methyl-2-pyrrolidinone"
+  },
+  "N-pentane": {
+    "formula": "C5H12",
+    "molarMass": "72.15",
+    "iupac": "pentane",
+    "cas": "109-66-0",
+    "source": "pubchem",
+    "query": "pentane"
+  },
+  "N-propanol": {
+    "formula": "C3H8O",
+    "molarMass": "60.10",
+    "iupac": "propan-1-ol",
+    "cas": "71-23-8",
+    "source": "pubchem",
+    "query": "1-propanol"
+  },
+  "N-propyl Acetate": {
+    "formula": "C5H10O2",
+    "molarMass": "102.13",
+    "iupac": "propyl acetate",
+    "cas": "109-60-4",
+    "source": "pubchem",
+    "query": "propyl acetate"
+  },
+  "Neopentyl Glycol": {
+    "formula": "C5H12O2",
+    "molarMass": "104.15",
+    "iupac": "2,2-dimethylpropane-1,3-diol",
+    "cas": "126-30-7",
+    "source": "pubchem",
+    "query": "neopentyl glycol"
+  },
+  "Nitromethane": {
+    "formula": "CH3NO2",
+    "molarMass": "61.040",
+    "iupac": "nitromethane",
+    "cas": "75-52-5",
+    "source": "pubchem",
+    "query": "nitromethane"
+  },
+  "Nonylphenol": {
+    "formula": "C15H24O",
+    "molarMass": "220.35",
+    "cas": "25154-52-3",
+    "source": "fixed"
+  },
+  "Ortho Xylene (Ox)": {
+    "formula": "C8H10",
+    "molarMass": "106.16",
+    "iupac": "1,2-xylene",
+    "cas": "95-47-6",
+    "source": "pubchem",
+    "query": "o-xylene"
+  },
+  "PVC Resin": {
+    "formula": "(C2H3Cl)n",
+    "molarMass": "—",
+    "cas": "9002-86-2",
+    "source": "fixed"
+  },
+  "Penta erythritol": {
+    "formula": "C5H12O4",
+    "molarMass": "136.15",
+    "iupac": "2,2-bis(hydroxymethyl)propane-1,3-diol",
+    "cas": "115-77-5",
+    "source": "pubchem",
+    "query": "pentaerythritol"
+  },
+  "Perchloroethylene": {
+    "formula": "C2Cl4",
+    "molarMass": "165.8",
+    "iupac": "1,1,2,2-tetrachloroethene",
+    "cas": "127-18-4",
+    "source": "pubchem",
+    "query": "tetrachloroethylene"
+  },
+  "Phenol": {
+    "formula": "C6H6O",
+    "molarMass": "94.11",
+    "iupac": "phenol",
+    "cas": "108-95-2",
+    "source": "pubchem",
+    "query": "phenol"
+  },
+  "Phosphoric Acid (Food Grade)": {
+    "formula": "H3O4P",
+    "molarMass": "97.995",
+    "iupac": "phosphoric acid",
+    "cas": "7664-38-2",
+    "source": "pubchem",
+    "query": "phosphoric acid"
+  },
+  "Phosphoric Acid (Technical)": {
+    "formula": "H3O4P",
+    "molarMass": "97.995",
+    "iupac": "phosphoric acid",
+    "cas": "7664-38-2",
+    "source": "pubchem",
+    "query": "phosphoric acid"
+  },
+  "Phthalic Anhydride": {
+    "formula": "C8H4O3",
+    "molarMass": "148.11",
+    "iupac": "2-benzofuran-1,3-dione",
+    "cas": "85-44-9",
+    "source": "pubchem",
+    "query": "phthalic anhydride"
+  },
+  "Piperazine Anhydrous": {
+    "formula": "C4H10N2",
+    "molarMass": "86.14",
+    "iupac": "piperazine",
+    "cas": "110-85-0",
+    "source": "pubchem",
+    "query": "piperazine"
+  },
+  "Piperidine": {
+    "formula": "C5H11N",
+    "molarMass": "85.15",
+    "iupac": "piperidine",
+    "cas": "110-89-4",
+    "source": "pubchem",
+    "query": "piperidine"
+  },
+  "Polyvinyl Chloride Resin (Pvc Resin)": {
+    "formula": "(C2H3Cl)n",
+    "molarMass": "—",
+    "cas": "9002-86-2",
+    "source": "fixed"
+  },
+  "Potassium Carbonate": {
+    "formula": "CK2O3",
+    "molarMass": "138.205",
+    "iupac": "dipotassium;carbonate",
+    "cas": "584-08-7",
+    "source": "pubchem",
+    "query": "potassium carbonate"
+  },
+  "Potassium Permanganate": {
+    "formula": "KMnO4",
+    "molarMass": "158.034",
+    "iupac": "potassium permanganate",
+    "cas": "7722-64-7",
+    "source": "pubchem",
+    "query": "potassium permanganate"
+  },
+  "Propionic Acid": {
+    "formula": "C3H6O2",
+    "molarMass": "74.08",
+    "iupac": "propanoic acid",
+    "cas": "79-09-4",
+    "source": "pubchem",
+    "query": "propionic acid"
+  },
+  "Propylene Glycol (Technical)": {
+    "formula": "C3H8O2",
+    "molarMass": "76.09",
+    "iupac": "propane-1,2-diol",
+    "cas": "57-55-6",
+    "source": "pubchem",
+    "query": "propylene glycol"
+  },
+  "Propylene Glycol (Usp)": {
+    "formula": "C3H8O2",
+    "molarMass": "76.09",
+    "iupac": "propane-1,2-diol",
+    "cas": "57-55-6",
+    "source": "pubchem",
+    "query": "propylene glycol"
+  },
+  "Propylene Glycol Mono Methyl Ether (Pm)": {
+    "formula": "C4H10O2",
+    "molarMass": "90.12",
+    "iupac": "1-methoxypropan-2-ol",
+    "cas": "107-98-2",
+    "source": "pubchem",
+    "query": "1-methoxy-2-propanol"
+  },
+  "Pyridine": {
+    "formula": "C5H5N",
+    "molarMass": "79.10",
+    "iupac": "pyridine",
+    "cas": "110-86-1",
+    "source": "pubchem",
+    "query": "pyridine"
+  },
+  "Resorcinol": {
+    "formula": "C6H6O2",
+    "molarMass": "110.11",
+    "iupac": "benzene-1,3-diol",
+    "cas": "108-46-3",
+    "source": "pubchem",
+    "query": "resorcinol"
+  },
+  "Soda Ash": {
+    "formula": "CNa2O3",
+    "molarMass": "105.988",
+    "iupac": "disodium;carbonate",
+    "cas": "497-19-8",
+    "source": "pubchem",
+    "query": "sodium carbonate"
+  },
+  "Sodium Cyanide": {
+    "formula": "CNNa",
+    "molarMass": "49.007",
+    "iupac": "sodium cyanide",
+    "cas": "143-33-9",
+    "source": "pubchem",
+    "query": "sodium cyanide"
+  },
+  "Sodium Gluconate": {
+    "formula": "C6H11NaO7",
+    "molarMass": "218.14",
+    "iupac": "sodium (2R,3S,4R,5R)-2,3,4,5,6-pentahydroxyhexanoate",
+    "cas": "527-07-1",
+    "source": "pubchem",
+    "query": "sodium gluconate"
+  },
+  "Sodium Nitrate": {
+    "formula": "NNaO3",
+    "molarMass": "84.995",
+    "iupac": "sodium nitrate",
+    "cas": "7631-99-4",
+    "source": "pubchem",
+    "query": "sodium nitrate"
+  },
+  "Sodium Nitrite": {
+    "formula": "NNaO2",
+    "molarMass": "68.995",
+    "iupac": "sodium nitrite",
+    "cas": "7632-00-0",
+    "source": "pubchem",
+    "query": "sodium nitrite"
+  },
+  "Styrene Monomer": {
+    "formula": "C8H8",
+    "molarMass": "104.15",
+    "iupac": "styrene",
+    "cas": "100-42-5",
+    "source": "pubchem",
+    "query": "styrene"
+  },
+  "Tetrahydrofuran": {
+    "formula": "C4H8O",
+    "molarMass": "72.11",
+    "iupac": "oxolane",
+    "cas": "109-99-9",
+    "source": "pubchem",
+    "query": "tetrahydrofuran"
+  },
+  "Thiourea": {
+    "formula": "CH4N2S",
+    "molarMass": "76.12",
+    "iupac": "thiourea",
+    "cas": "62-56-6",
+    "source": "pubchem",
+    "query": "thiourea"
+  },
+  "Titanium Dioxide": {
+    "formula": "O2Ti",
+    "molarMass": "79.87",
+    "cas": "13463-67-7",
+    "source": "fixed"
+  },
+  "Toluene": {
+    "formula": "C7H8",
+    "molarMass": "92.14",
+    "iupac": "toluene",
+    "cas": "108-88-3",
+    "source": "pubchem",
+    "query": "toluene"
+  },
+  "Toluene Diisocyanate (TDI)": {
+    "formula": "C9H6N2O2",
+    "molarMass": "174.16",
+    "cas": "26471-62-5",
+    "source": "fixed"
+  },
+  "Toluene Diisocyanate (Tdl)": {
+    "formula": "C9H6N2O2",
+    "molarMass": "174.16",
+    "cas": "26471-62-5",
+    "source": "fixed"
+  },
+  "Triethanolamine 85% & 99%": {
+    "formula": "C6H15NO3",
+    "molarMass": "149.19",
+    "iupac": "2-[bis(2-hydroxyethyl)amino]ethanol",
+    "cas": "102-71-6",
+    "source": "pubchem",
+    "query": "triethanolamine"
+  },
+  "Triethylamine": {
+    "formula": "C6H15N",
+    "molarMass": "101.19",
+    "iupac": "N,N-diethylethanamine",
+    "cas": "121-44-8",
+    "source": "pubchem",
+    "query": "triethylamine"
+  },
+  "Urea (Technical Grade)": {
+    "formula": "CH4N2O",
+    "molarMass": "60.056",
+    "iupac": "urea",
+    "cas": "57-13-6",
+    "source": "pubchem",
+    "query": "urea"
+  },
+  "Vinyl Acetate Monomer": {
+    "formula": "C4H6O2",
+    "molarMass": "86.09",
+    "iupac": "ethenyl acetate",
+    "cas": "108-05-4",
+    "source": "pubchem",
+    "query": "vinyl acetate"
+  }
+}
