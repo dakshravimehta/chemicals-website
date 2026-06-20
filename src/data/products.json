@@ -2007,5 +2007,194 @@
     "category": "Chemicals",
     "code": "AUR-URE-287",
     "description": "High-quality Urea (Technical Grade) suitable for various industrial applications."
+  },
+  {
+    "id": "288",
+    "name": "Sodium Carboxymethyl Cellulose (Sodium CMC)",
+    "category": "Paint",
+    "code": "AMR-SOD-288",
+    "description": "High-quality Sodium Carboxymethyl Cellulose (Sodium CMC) from Amrit Polychem."
+  },
+  {
+    "id": "289",
+    "name": "Hydroxyethyl Cellulose (HEC)",
+    "category": "Paint",
+    "code": "AMR-HYD-289",
+    "description": "High-quality Hydroxyethyl Cellulose (HEC) from Amrit Polychem."
+  },
+  {
+    "id": "290",
+    "name": "Carboxymethyl Cellulose (CMC)",
+    "category": "Paint",
+    "code": "AMR-CAR-290",
+    "description": "High-quality Carboxymethyl Cellulose (CMC) from Amrit Polychem."
+  },
+  {
+    "id": "291",
+    "name": "Carbon Black",
+    "category": "Paint",
+    "code": "AMR-CAR-291",
+    "description": "High-quality Carbon Black from Amrit Polychem."
+  },
+  {
+    "id": "292",
+    "name": "Titanium Dioxide",
+    "category": "Paint",
+    "code": "AMR-TIT-292",
+    "description": "High-quality Titanium Dioxide from Amrit Polychem."
+  },
+  {
+    "id": "293",
+    "name": "Wanhua 8018",
+    "category": "Automobile",
+    "code": "AMR-WAN-293",
+    "description": "High-quality Wanhua 8018 from Amrit Polychem."
+  },
+  {
+    "id": "294",
+    "name": "TOSOH Coronate 1342",
+    "category": "Automobile",
+    "code": "AMR-TOS-294",
+    "description": "High-quality TOSOH Coronate 1342 from Amrit Polychem."
+  },
+  {
+    "id": "295",
+    "name": "POP 44%- 49% Solid",
+    "category": "Furniture & Mattress",
+    "code": "AMR-POP-295",
+    "description": "High-quality POP 44%- 49% Solid from Amrit Polychem."
+  },
+  {
+    "id": "296",
+    "name": "HS200",
+    "category": "Furniture & Mattress",
+    "code": "AMR-HS2-296",
+    "description": "High-quality HS200 from Amrit Polychem."
+  },
+  {
+    "id": "297",
+    "name": "Korea Conix 878",
+    "category": "Furniture & Mattress",
+    "code": "AMR-KOR-297",
+    "description": "High-quality Korea Conix 878 from Amrit Polychem."
+  },
+  {
+    "id": "298",
+    "name": "W60",
+    "category": "Furniture & Mattress",
+    "code": "AMR-W60-298",
+    "description": "High-quality W60 from Amrit Polychem."
+  },
+  {
+    "id": "299",
+    "name": "TEDA LV33",
+    "category": "Furniture & Mattress",
+    "code": "AMR-TED-299",
+    "description": "High-quality TEDA LV33 from Amrit Polychem."
+  },
+  {
+    "id": "300",
+    "name": "A1 Catalyst",
+    "category": "Furniture & Mattress",
+    "code": "AMR-A1C-300",
+    "description": "High-quality A1 Catalyst from Amrit Polychem."
+  },
+  {
+    "id": "301",
+    "name": "Sodium Lauryl Sulphate (SLS)",
+    "category": "Soaps & Detergents",
+    "code": "AMR-SOD-301",
+    "description": "High-quality Sodium Lauryl Sulphate (SLS) from Amrit Polychem."
+  },
+  {
+    "id": "302",
+    "name": "Sodium Lauryl Ether Sulphate (SLES)",
+    "category": "Soaps & Detergents",
+    "code": "AMR-SOD-302",
+    "description": "High-quality Sodium Lauryl Ether Sulphate (SLES) from Amrit Polychem."
+  },
+  {
+    "id": "303",
+    "name": "Linear Alkyl Benzene Sulphonic Acid (LABSA)",
+    "category": "Soaps & Detergents",
+    "code": "AMR-LIN-303",
+    "description": "High-quality Linear Alkyl Benzene Sulphonic Acid (LABSA) from Amrit Polychem."
+  },
+  {
+    "id": "304",
+    "name": "Sodium Tripolyphosphate (STPP)",
+    "category": "Others",
+    "code": "AMR-SOD-304",
+    "description": "High-quality Sodium Tripolyphosphate (STPP) from Amrit Polychem."
+  },
+  {
+    "id": "305",
+    "name": "Sodium Ligno Sulphonate (SLS)",
+    "category": "Others",
+    "code": "AMR-SOD-305",
+    "description": "High-quality Sodium Ligno Sulphonate (SLS) from Amrit Polychem."
+  },
+  {
+    "id": "306",
+    "name": "Nonylphenol 9.5 (NPE)",
+    "category": "Others",
+    "code": "AMR-NON-306",
+    "description": "High-quality Nonylphenol 9.5 (NPE) from Amrit Polychem."
+  },
+  {
+    "id": "307",
+    "name": "Isophthalic acid",
+    "category": "Others",
+    "code": "AMR-ISO-307",
+    "description": "High-quality Isophthalic acid from Amrit Polychem."
+  },
+  {
+    "id": "308",
+    "name": "Potassium Carbonate",
+    "category": "Others",
+    "code": "AMR-POT-308",
+    "description": "High-quality Potassium Carbonate from Amrit Polychem."
+  },
+  {
+    "id": "309",
+    "name": "Melamine",
+    "category": "Others",
+    "code": "AMR-MEL-309",
+    "description": "High-quality Melamine from Amrit Polychem."
+  },
+  {
+    "id": "310",
+    "name": "PE Wax",
+    "category": "Others",
+    "code": "AMR-PEW-310",
+    "description": "High-quality PE Wax from Amrit Polychem."
+  },
+  {
+    "id": "311",
+    "name": "Diethylene glycol (DEG)",
+    "category": "Others",
+    "code": "AMR-DIE-311",
+    "description": "High-quality Diethylene glycol (DEG) from Amrit Polychem."
+  },
+  {
+    "id": "312",
+    "name": "Glycerine",
+    "category": "Others",
+    "code": "AMR-GLY-312",
+    "description": "High-quality Glycerine from Amrit Polychem."
+  },
+  {
+    "id": "313",
+    "name": "PVC Resin",
+    "category": "Others",
+    "code": "AMR-PVC-313",
+    "description": "High-quality PVC Resin from Amrit Polychem."
+  },
+  {
+    "id": "314",
+    "name": "Para Tertiary Butylphenol (PTBP)",
+    "category": "Others",
+    "code": "AMR-PAR-314",
+    "description": "High-quality Para Tertiary Butylphenol (PTBP) from Amrit Polychem."
   }
 ]
