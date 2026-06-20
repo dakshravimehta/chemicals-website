@@ -1,5 +1,6 @@
 import { MapPin, Phone, Mail, MessageCircle, Clock, ArrowUpRight } from "lucide-react";
 import PageHeader from "@/components/PageHeader/PageHeader";
+import ContactForm from "./ContactForm";
 import styles from "./page.module.css";
 
 export const metadata = {
@@ -89,56 +90,7 @@ export default function Contact() {
           </div>
 
           {/* Right: form */}
-          <div className={styles.formPanel}>
-            <h2 className={styles.formTitle}>Send an inquiry</h2>
-            <p className={styles.formNote}>
-              Share quantity and specification, the more detail, the sharper the quote.
-            </p>
-            <form className={styles.form}>
-              <div className={styles.field}>
-                <label htmlFor="name" className={styles.label}>Full name</label>
-                <input id="name" type="text" className={styles.input} placeholder="Jane Doe" required />
-              </div>
-              <div className={styles.field}>
-                <label htmlFor="company" className={styles.label}>Company</label>
-                <input id="company" type="text" className={styles.input} placeholder="Acme Manufacturing" required />
-              </div>
-              <div className={styles.row}>
-                <div className={styles.field}>
-                  <label htmlFor="email" className={styles.label}>Email</label>
-                  <input id="email" type="email" className={styles.input} placeholder="jane@acme.com" required />
-                </div>
-                <div className={styles.field}>
-                  <label htmlFor="phone" className={styles.label}>Phone</label>
-                  <input id="phone" type="tel" className={styles.input} placeholder="+91 00000 00000" />
-                </div>
-              </div>
-              <div className={styles.field}>
-                <label htmlFor="interest" className={styles.label}>Product interest</label>
-                <select id="interest" className={styles.input} defaultValue="">
-                  <option value="" disabled>Select a category</option>
-                  <option value="solvents">Solvents &amp; Alcohols</option>
-                  <option value="polymers">Polymers &amp; Resins</option>
-                  <option value="specialty">Specialty &amp; Fine Chemicals</option>
-                  <option value="acids">Acids &amp; Intermediates</option>
-                  <option value="other">Other / Not sure</option>
-                </select>
-              </div>
-              <div className={styles.field}>
-                <label htmlFor="message" className={styles.label}>Requirements</label>
-                <textarea
-                  id="message"
-                  className={styles.textarea}
-                  rows={5}
-                  placeholder="e.g. 5 MT Acetone, technical grade, drums, delivered Pune."
-                  required
-                />
-              </div>
-              <button type="submit" className={`btn btn-primary ${styles.submit}`}>
-                Submit inquiry <ArrowUpRight size={16} />
-              </button>
-            </form>
-          </div>
+          <ContactForm />
         </div>
       </section>
     </div>
