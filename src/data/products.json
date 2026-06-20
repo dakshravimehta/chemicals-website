@@ -1,0 +1,2011 @@
+[
+  {
+    "id": "1",
+    "name": "Ethylene Vinyl Acetate (Eva)",
+    "category": "Polymers",
+    "code": "AUR-ETH-001",
+    "description": "High-quality Ethylene Vinyl Acetate (Eva) suitable for various industrial applications."
+  },
+  {
+    "id": "2",
+    "name": "Polyethylene Terephthalate (Pet Resin)",
+    "category": "Polymers",
+    "code": "AUR-POL-002",
+    "description": "High-quality Polyethylene Terephthalate (Pet Resin) suitable for various industrial applications."
+  },
+  {
+    "id": "3",
+    "name": "Polyvinyl Chloride Resin (Pvc Resin)",
+    "category": "Polymers",
+    "code": "AUR-POL-003",
+    "description": "High-quality Polyvinyl Chloride Resin (Pvc Resin) suitable for various industrial applications."
+  },
+  {
+    "id": "4",
+    "name": "2-ethyl Hexanol",
+    "category": "Chemicals",
+    "code": "AUR-2-E-004",
+    "description": "High-quality 2-ethyl Hexanol suitable for various industrial applications."
+  },
+  {
+    "id": "5",
+    "name": "Acetic Acid",
+    "category": "Chemicals",
+    "code": "AUR-ACE-005",
+    "description": "High-quality Acetic Acid suitable for various industrial applications."
+  },
+  {
+    "id": "6",
+    "name": "Acetone",
+    "category": "Chemicals",
+    "code": "AUR-ACE-006",
+    "description": "High-quality Acetone suitable for various industrial applications."
+  },
+  {
+    "id": "7",
+    "name": "Acrylonitrile",
+    "category": "Chemicals",
+    "code": "AUR-ACR-007",
+    "description": "High-quality Acrylonitrile suitable for various industrial applications."
+  },
+  {
+    "id": "8",
+    "name": "Butyl Acetate",
+    "category": "Solvents",
+    "code": "AUR-BUT-008",
+    "description": "High-quality Butyl Acetate suitable for various industrial applications."
+  },
+  {
+    "id": "9",
+    "name": "Butyl Acrylate Monomer",
+    "category": "Chemicals",
+    "code": "AUR-BUT-009",
+    "description": "High-quality Butyl Acrylate Monomer suitable for various industrial applications."
+  },
+  {
+    "id": "10",
+    "name": "Butyl Glycol",
+    "category": "Chemicals",
+    "code": "AUR-BUT-010",
+    "description": "High-quality Butyl Glycol suitable for various industrial applications."
+  },
+  {
+    "id": "11",
+    "name": "C-9",
+    "category": "Chemicals",
+    "code": "AUR-C-9-011",
+    "description": "High-quality C-9 suitable for various industrial applications."
+  },
+  {
+    "id": "12",
+    "name": "Caustic Soda Lye",
+    "category": "Chemicals",
+    "code": "AUR-CAU-012",
+    "description": "High-quality Caustic Soda Lye suitable for various industrial applications."
+  },
+  {
+    "id": "13",
+    "name": "Cyclohexanone",
+    "category": "Chemicals",
+    "code": "AUR-CYC-013",
+    "description": "High-quality Cyclohexanone suitable for various industrial applications."
+  },
+  {
+    "id": "14",
+    "name": "Ethylene Dichloride",
+    "category": "Chemicals",
+    "code": "AUR-ETH-014",
+    "description": "High-quality Ethylene Dichloride suitable for various industrial applications."
+  },
+  {
+    "id": "15",
+    "name": "Hexane",
+    "category": "Solvents",
+    "code": "AUR-HEX-015",
+    "description": "High-quality Hexane suitable for various industrial applications."
+  },
+  {
+    "id": "16",
+    "name": "Iso Butanol",
+    "category": "Chemicals",
+    "code": "AUR-ISO-016",
+    "description": "High-quality Iso Butanol suitable for various industrial applications."
+  },
+  {
+    "id": "17",
+    "name": "Isopropyl Alcohol",
+    "category": "Solvents",
+    "code": "AUR-ISO-017",
+    "description": "High-quality Isopropyl Alcohol suitable for various industrial applications."
+  },
+  {
+    "id": "18",
+    "name": "Methanol",
+    "category": "Chemicals",
+    "code": "AUR-MET-018",
+    "description": "High-quality Methanol suitable for various industrial applications."
+  },
+  {
+    "id": "19",
+    "name": "Methy Isobutyl Ketone",
+    "category": "Solvents",
+    "code": "AUR-MET-019",
+    "description": "High-quality Methy Isobutyl Ketone suitable for various industrial applications."
+  },
+  {
+    "id": "20",
+    "name": "Methyl Ethyl Ketone",
+    "category": "Solvents",
+    "code": "AUR-MET-020",
+    "description": "High-quality Methyl Ethyl Ketone suitable for various industrial applications."
+  },
+  {
+    "id": "21",
+    "name": "Methyl Methacrylate (Mma)",
+    "category": "Chemicals",
+    "code": "AUR-MET-021",
+    "description": "High-quality Methyl Methacrylate (Mma) suitable for various industrial applications."
+  },
+  {
+    "id": "22",
+    "name": "Methylene Chloride",
+    "category": "Chemicals",
+    "code": "AUR-MET-022",
+    "description": "High-quality Methylene Chloride suitable for various industrial applications."
+  },
+  {
+    "id": "23",
+    "name": "Mix Xylene (Mx)",
+    "category": "Chemicals",
+    "code": "AUR-MIX-023",
+    "description": "High-quality Mix Xylene (Mx) suitable for various industrial applications."
+  },
+  {
+    "id": "24",
+    "name": "Mp Dial Glycol",
+    "category": "Chemicals",
+    "code": "AUR-MP -024",
+    "description": "High-quality Mp Dial Glycol suitable for various industrial applications."
+  },
+  {
+    "id": "25",
+    "name": "N-butanol",
+    "category": "Chemicals",
+    "code": "AUR-N-B-025",
+    "description": "High-quality N-butanol suitable for various industrial applications."
+  },
+  {
+    "id": "26",
+    "name": "N-propanol",
+    "category": "Chemicals",
+    "code": "AUR-N-P-026",
+    "description": "High-quality N-propanol suitable for various industrial applications."
+  },
+  {
+    "id": "27",
+    "name": "Ortho Xylene (Ox)",
+    "category": "Chemicals",
+    "code": "AUR-ORT-027",
+    "description": "High-quality Ortho Xylene (Ox) suitable for various industrial applications."
+  },
+  {
+    "id": "28",
+    "name": "Phenol",
+    "category": "Chemicals",
+    "code": "AUR-PHE-028",
+    "description": "High-quality Phenol suitable for various industrial applications."
+  },
+  {
+    "id": "29",
+    "name": "Styrene Monomer",
+    "category": "Chemicals",
+    "code": "AUR-STY-029",
+    "description": "High-quality Styrene Monomer suitable for various industrial applications."
+  },
+  {
+    "id": "30",
+    "name": "Toluene",
+    "category": "Chemicals",
+    "code": "AUR-TOL-030",
+    "description": "High-quality Toluene suitable for various industrial applications."
+  },
+  {
+    "id": "31",
+    "name": "Vinyl Acetate Monomer",
+    "category": "Solvents",
+    "code": "AUR-VIN-031",
+    "description": "High-quality Vinyl Acetate Monomer suitable for various industrial applications."
+  },
+  {
+    "id": "32",
+    "name": "l-bromo- 3-chloropropane",
+    "category": "Chemicals",
+    "code": "AUR-L-B-032",
+    "description": "High-quality l-bromo- 3-chloropropane suitable for various industrial applications."
+  },
+  {
+    "id": "33",
+    "name": "1,2,4,H-triazole",
+    "category": "Chemicals",
+    "code": "AUR-1,2-033",
+    "description": "High-quality 1,2,4,H-triazole suitable for various industrial applications."
+  },
+  {
+    "id": "34",
+    "name": "l,4-butanediol",
+    "category": "Chemicals",
+    "code": "AUR-L,4-034",
+    "description": "High-quality l,4-butanediol suitable for various industrial applications."
+  },
+  {
+    "id": "35",
+    "name": "lA-dioxane",
+    "category": "Chemicals",
+    "code": "AUR-LA--035",
+    "description": "High-quality lA-dioxane suitable for various industrial applications."
+  },
+  {
+    "id": "36",
+    "name": "l,6-hexanediol",
+    "category": "Solvents",
+    "code": "AUR-L,6-036",
+    "description": "High-quality l,6-hexanediol suitable for various industrial applications."
+  },
+  {
+    "id": "37",
+    "name": "2-ethyl Hexanoic Acid",
+    "category": "Chemicals",
+    "code": "AUR-2-E-037",
+    "description": "High-quality 2-ethyl Hexanoic Acid suitable for various industrial applications."
+  },
+  {
+    "id": "38",
+    "name": "2-ethyl Hexyl Acrylate",
+    "category": "Chemicals",
+    "code": "AUR-2-E-038",
+    "description": "High-quality 2-ethyl Hexyl Acrylate suitable for various industrial applications."
+  },
+  {
+    "id": "39",
+    "name": "2-hydroxyethyl Methacrylate (2-hema)",
+    "category": "Chemicals",
+    "code": "AUR-2-H-039",
+    "description": "High-quality 2-hydroxyethyl Methacrylate (2-hema) suitable for various industrial applications."
+  },
+  {
+    "id": "40",
+    "name": "2-methyl Tetrahydrofuran (2-mthf)",
+    "category": "Chemicals",
+    "code": "AUR-2-M-040",
+    "description": "High-quality 2-methyl Tetrahydrofuran (2-mthf) suitable for various industrial applications."
+  },
+  {
+    "id": "41",
+    "name": "2,2-dimethoxy Propane",
+    "category": "Chemicals",
+    "code": "AUR-2,2-041",
+    "description": "High-quality 2,2-dimethoxy Propane suitable for various industrial applications."
+  },
+  {
+    "id": "42",
+    "name": "2,4-dichloro Benzyl Chloride",
+    "category": "Chemicals",
+    "code": "AUR-2,4-042",
+    "description": "High-quality 2,4-dichloro Benzyl Chloride suitable for various industrial applications."
+  },
+  {
+    "id": "43",
+    "name": "4-dimethyl Aminopyridine",
+    "category": "Chemicals",
+    "code": "AUR-4-D-043",
+    "description": "High-quality 4-dimethyl Aminopyridine suitable for various industrial applications."
+  },
+  {
+    "id": "44",
+    "name": "4-hydroxy Benzaldehyde",
+    "category": "Chemicals",
+    "code": "AUR-4-H-044",
+    "description": "High-quality 4-hydroxy Benzaldehyde suitable for various industrial applications."
+  },
+  {
+    "id": "45",
+    "name": "Acetic Acid",
+    "category": "Chemicals",
+    "code": "AUR-ACE-045",
+    "description": "High-quality Acetic Acid suitable for various industrial applications."
+  },
+  {
+    "id": "46",
+    "name": "Acetone",
+    "category": "Chemicals",
+    "code": "AUR-ACE-046",
+    "description": "High-quality Acetone suitable for various industrial applications."
+  },
+  {
+    "id": "47",
+    "name": "Acetonitrile",
+    "category": "Chemicals",
+    "code": "AUR-ACE-047",
+    "description": "High-quality Acetonitrile suitable for various industrial applications."
+  },
+  {
+    "id": "48",
+    "name": "Acetophenone",
+    "category": "Chemicals",
+    "code": "AUR-ACE-048",
+    "description": "High-quality Acetophenone suitable for various industrial applications."
+  },
+  {
+    "id": "49",
+    "name": "Acetyl Acetone",
+    "category": "Chemicals",
+    "code": "AUR-ACE-049",
+    "description": "High-quality Acetyl Acetone suitable for various industrial applications."
+  },
+  {
+    "id": "50",
+    "name": "Acrylamide",
+    "category": "Chemicals",
+    "code": "AUR-ACR-050",
+    "description": "High-quality Acrylamide suitable for various industrial applications."
+  },
+  {
+    "id": "51",
+    "name": "Acrylic Acid",
+    "category": "Chemicals",
+    "code": "AUR-ACR-051",
+    "description": "High-quality Acrylic Acid suitable for various industrial applications."
+  },
+  {
+    "id": "52",
+    "name": "Acrylonitrile",
+    "category": "Chemicals",
+    "code": "AUR-ACR-052",
+    "description": "High-quality Acrylonitrile suitable for various industrial applications."
+  },
+  {
+    "id": "53",
+    "name": "Adipic Acid",
+    "category": "Chemicals",
+    "code": "AUR-ADI-053",
+    "description": "High-quality Adipic Acid suitable for various industrial applications."
+  },
+  {
+    "id": "54",
+    "name": "Allyl Alcohol",
+    "category": "Solvents",
+    "code": "AUR-ALL-054",
+    "description": "High-quality Allyl Alcohol suitable for various industrial applications."
+  },
+  {
+    "id": "55",
+    "name": "Alpha Naphthol",
+    "category": "Chemicals",
+    "code": "AUR-ALP-055",
+    "description": "High-quality Alpha Naphthol suitable for various industrial applications."
+  },
+  {
+    "id": "56",
+    "name": "Amino Ethylethanalomine",
+    "category": "Chemicals",
+    "code": "AUR-AMI-056",
+    "description": "High-quality Amino Ethylethanalomine suitable for various industrial applications."
+  },
+  {
+    "id": "57",
+    "name": "Amminoguanidine Bicarbonate",
+    "category": "Chemicals",
+    "code": "AUR-AMM-057",
+    "description": "High-quality Amminoguanidine Bicarbonate suitable for various industrial applications."
+  },
+  {
+    "id": "58",
+    "name": "Ammonium Bicarbonate",
+    "category": "Chemicals",
+    "code": "AUR-AMM-058",
+    "description": "High-quality Ammonium Bicarbonate suitable for various industrial applications."
+  },
+  {
+    "id": "59",
+    "name": "Ammonium Thiocyante",
+    "category": "Chemicals",
+    "code": "AUR-AMM-059",
+    "description": "High-quality Ammonium Thiocyante suitable for various industrial applications."
+  },
+  {
+    "id": "60",
+    "name": "Aniline Oil",
+    "category": "Chemicals",
+    "code": "AUR-ANI-060",
+    "description": "High-quality Aniline Oil suitable for various industrial applications."
+  },
+  {
+    "id": "61",
+    "name": "Benzoic Acid",
+    "category": "Chemicals",
+    "code": "AUR-BEN-061",
+    "description": "High-quality Benzoic Acid suitable for various industrial applications."
+  },
+  {
+    "id": "62",
+    "name": "Benzophenone",
+    "category": "Chemicals",
+    "code": "AUR-BEN-062",
+    "description": "High-quality Benzophenone suitable for various industrial applications."
+  },
+  {
+    "id": "63",
+    "name": "Benzylamine",
+    "category": "Chemicals",
+    "code": "AUR-BEN-063",
+    "description": "High-quality Benzylamine suitable for various industrial applications."
+  },
+  {
+    "id": "64",
+    "name": "Beta Naphthol",
+    "category": "Chemicals",
+    "code": "AUR-BET-064",
+    "description": "High-quality Beta Naphthol suitable for various industrial applications."
+  },
+  {
+    "id": "65",
+    "name": "Bisphenol-a",
+    "category": "Chemicals",
+    "code": "AUR-BIS-065",
+    "description": "High-quality Bisphenol-a suitable for various industrial applications."
+  },
+  {
+    "id": "66",
+    "name": "Butyl Acetate",
+    "category": "Solvents",
+    "code": "AUR-BUT-066",
+    "description": "High-quality Butyl Acetate suitable for various industrial applications."
+  },
+  {
+    "id": "67",
+    "name": "Butyl Acrylate",
+    "category": "Chemicals",
+    "code": "AUR-BUT-067",
+    "description": "High-quality Butyl Acrylate suitable for various industrial applications."
+  },
+  {
+    "id": "68",
+    "name": "Butyl Carbitol",
+    "category": "Chemicals",
+    "code": "AUR-BUT-068",
+    "description": "High-quality Butyl Carbitol suitable for various industrial applications."
+  },
+  {
+    "id": "69",
+    "name": "Butyl Carbitol Acetate",
+    "category": "Solvents",
+    "code": "AUR-BUT-069",
+    "description": "High-quality Butyl Carbitol Acetate suitable for various industrial applications."
+  },
+  {
+    "id": "70",
+    "name": "Butyl Cellosolve Acetate",
+    "category": "Solvents",
+    "code": "AUR-BUT-070",
+    "description": "High-quality Butyl Cellosolve Acetate suitable for various industrial applications."
+  },
+  {
+    "id": "71",
+    "name": "Butyl Glycol! Cellosolve",
+    "category": "Chemicals",
+    "code": "AUR-BUT-071",
+    "description": "High-quality Butyl Glycol! Cellosolve suitable for various industrial applications."
+  },
+  {
+    "id": "72",
+    "name": "Caustic Potash Flakes",
+    "category": "Chemicals",
+    "code": "AUR-CAU-072",
+    "description": "High-quality Caustic Potash Flakes suitable for various industrial applications."
+  },
+  {
+    "id": "73",
+    "name": "Chloroform",
+    "category": "Chemicals",
+    "code": "AUR-CHL-073",
+    "description": "High-quality Chloroform suitable for various industrial applications."
+  },
+  {
+    "id": "74",
+    "name": "Citric Acid Anhydrous",
+    "category": "Food & Nutrition",
+    "code": "AUR-CIT-074",
+    "description": "High-quality Citric Acid Anhydrous suitable for various industrial applications."
+  },
+  {
+    "id": "75",
+    "name": "Citric Acid Monohydrate",
+    "category": "Food & Nutrition",
+    "code": "AUR-CIT-075",
+    "description": "High-quality Citric Acid Monohydrate suitable for various industrial applications."
+  },
+  {
+    "id": "76",
+    "name": "Cyanoacetamide",
+    "category": "Chemicals",
+    "code": "AUR-CYA-076",
+    "description": "High-quality Cyanoacetamide suitable for various industrial applications."
+  },
+  {
+    "id": "77",
+    "name": "Cyclohexane",
+    "category": "Solvents",
+    "code": "AUR-CYC-077",
+    "description": "High-quality Cyclohexane suitable for various industrial applications."
+  },
+  {
+    "id": "78",
+    "name": "Cyclohexanol",
+    "category": "Chemicals",
+    "code": "AUR-CYC-078",
+    "description": "High-quality Cyclohexanol suitable for various industrial applications."
+  },
+  {
+    "id": "79",
+    "name": "Cyclohexanone",
+    "category": "Chemicals",
+    "code": "AUR-CYC-079",
+    "description": "High-quality Cyclohexanone suitable for various industrial applications."
+  },
+  {
+    "id": "80",
+    "name": "Cyclohexylamine",
+    "category": "Chemicals",
+    "code": "AUR-CYC-080",
+    "description": "High-quality Cyclohexylamine suitable for various industrial applications."
+  },
+  {
+    "id": "81",
+    "name": "Cyclopropylamine",
+    "category": "Chemicals",
+    "code": "AUR-CYC-081",
+    "description": "High-quality Cyclopropylamine suitable for various industrial applications."
+  },
+  {
+    "id": "82",
+    "name": "0- Tartaric Acid",
+    "category": "Chemicals",
+    "code": "AUR-0- -082",
+    "description": "High-quality 0- Tartaric Acid suitable for various industrial applications."
+  },
+  {
+    "id": "83",
+    "name": "Di Methyl Terephthalte",
+    "category": "Chemicals",
+    "code": "AUR-DI -083",
+    "description": "High-quality Di Methyl Terephthalte suitable for various industrial applications."
+  },
+  {
+    "id": "84",
+    "name": "Di-n-butylamine",
+    "category": "Chemicals",
+    "code": "AUR-DI--084",
+    "description": "High-quality Di-n-butylamine suitable for various industrial applications."
+  },
+  {
+    "id": "85",
+    "name": "Di-tert-butyl Dicarbonate (Diboc)",
+    "category": "Chemicals",
+    "code": "AUR-DI--085",
+    "description": "High-quality Di-tert-butyl Dicarbonate (Diboc) suitable for various industrial applications."
+  },
+  {
+    "id": "86",
+    "name": "Diacetone Alcohol",
+    "category": "Solvents",
+    "code": "AUR-DIA-086",
+    "description": "High-quality Diacetone Alcohol suitable for various industrial applications."
+  },
+  {
+    "id": "87",
+    "name": "Dibasic Ester",
+    "category": "Chemicals",
+    "code": "AUR-DIB-087",
+    "description": "High-quality Dibasic Ester suitable for various industrial applications."
+  },
+  {
+    "id": "88",
+    "name": "Dicyandiaminde",
+    "category": "Chemicals",
+    "code": "AUR-DIC-088",
+    "description": "High-quality Dicyandiaminde suitable for various industrial applications."
+  },
+  {
+    "id": "89",
+    "name": "Dicyclohexylamine",
+    "category": "Chemicals",
+    "code": "AUR-DIC-089",
+    "description": "High-quality Dicyclohexylamine suitable for various industrial applications."
+  },
+  {
+    "id": "90",
+    "name": "Dicyclohexylcabodiimide",
+    "category": "Chemicals",
+    "code": "AUR-DIC-090",
+    "description": "High-quality Dicyclohexylcabodiimide suitable for various industrial applications."
+  },
+  {
+    "id": "91",
+    "name": "Diehtyl Ether",
+    "category": "Chemicals",
+    "code": "AUR-DIE-091",
+    "description": "High-quality Diehtyl Ether suitable for various industrial applications."
+  },
+  {
+    "id": "92",
+    "name": "Diehtyl Sulphate",
+    "category": "Surfactants",
+    "code": "AUR-DIE-092",
+    "description": "High-quality Diehtyl Sulphate suitable for various industrial applications."
+  },
+  {
+    "id": "93",
+    "name": "Diethanolamine",
+    "category": "Chemicals",
+    "code": "AUR-DIE-093",
+    "description": "High-quality Diethanolamine suitable for various industrial applications."
+  },
+  {
+    "id": "94",
+    "name": "Diethyl Carbonate",
+    "category": "Chemicals",
+    "code": "AUR-DIE-094",
+    "description": "High-quality Diethyl Carbonate suitable for various industrial applications."
+  },
+  {
+    "id": "95",
+    "name": "Diethyl Malonate",
+    "category": "Chemicals",
+    "code": "AUR-DIE-095",
+    "description": "High-quality Diethyl Malonate suitable for various industrial applications."
+  },
+  {
+    "id": "96",
+    "name": "Diethylamine",
+    "category": "Chemicals",
+    "code": "AUR-DIE-096",
+    "description": "High-quality Diethylamine suitable for various industrial applications."
+  },
+  {
+    "id": "97",
+    "name": "Diethylene Triamine (Deta)",
+    "category": "Chemicals",
+    "code": "AUR-DIE-097",
+    "description": "High-quality Diethylene Triamine (Deta) suitable for various industrial applications."
+  },
+  {
+    "id": "98",
+    "name": "Diglyme",
+    "category": "Chemicals",
+    "code": "AUR-DIG-098",
+    "description": "High-quality Diglyme suitable for various industrial applications."
+  },
+  {
+    "id": "99",
+    "name": "Diisopropyl Ether (Dipe)",
+    "category": "Chemicals",
+    "code": "AUR-DII-099",
+    "description": "High-quality Diisopropyl Ether (Dipe) suitable for various industrial applications."
+  },
+  {
+    "id": "100",
+    "name": "Dilsopropylamine",
+    "category": "Chemicals",
+    "code": "AUR-DIL-100",
+    "description": "High-quality Dilsopropylamine suitable for various industrial applications."
+  },
+  {
+    "id": "101",
+    "name": "Dimethyl Acetamide",
+    "category": "Chemicals",
+    "code": "AUR-DIM-101",
+    "description": "High-quality Dimethyl Acetamide suitable for various industrial applications."
+  },
+  {
+    "id": "102",
+    "name": "Dimethyl Amine 40%",
+    "category": "Chemicals",
+    "code": "AUR-DIM-102",
+    "description": "High-quality Dimethyl Amine 40% suitable for various industrial applications."
+  },
+  {
+    "id": "103",
+    "name": "Dimethyl Carbonate",
+    "category": "Chemicals",
+    "code": "AUR-DIM-103",
+    "description": "High-quality Dimethyl Carbonate suitable for various industrial applications."
+  },
+  {
+    "id": "104",
+    "name": "Dimethyl Formamide",
+    "category": "Chemicals",
+    "code": "AUR-DIM-104",
+    "description": "High-quality Dimethyl Formamide suitable for various industrial applications."
+  },
+  {
+    "id": "105",
+    "name": "Dimethyl Malonate",
+    "category": "Chemicals",
+    "code": "AUR-DIM-105",
+    "description": "High-quality Dimethyl Malonate suitable for various industrial applications."
+  },
+  {
+    "id": "106",
+    "name": "Dimethyl Sulfoxide",
+    "category": "Chemicals",
+    "code": "AUR-DIM-106",
+    "description": "High-quality Dimethyl Sulfoxide suitable for various industrial applications."
+  },
+  {
+    "id": "107",
+    "name": "Dipropylene Glycol",
+    "category": "Chemicals",
+    "code": "AUR-DIP-107",
+    "description": "High-quality Dipropylene Glycol suitable for various industrial applications."
+  },
+  {
+    "id": "108",
+    "name": "01Tartaric Acid",
+    "category": "Chemicals",
+    "code": "AUR-01T-108",
+    "description": "High-quality 01Tartaric Acid suitable for various industrial applications."
+  },
+  {
+    "id": "109",
+    "name": "Epichlorohydrine (Ech)",
+    "category": "Chemicals",
+    "code": "AUR-EPI-109",
+    "description": "High-quality Epichlorohydrine (Ech) suitable for various industrial applications."
+  },
+  {
+    "id": "110",
+    "name": "Epoxy Resin",
+    "category": "Polymers",
+    "code": "AUR-EPO-110",
+    "description": "High-quality Epoxy Resin suitable for various industrial applications."
+  },
+  {
+    "id": "111",
+    "name": "Ethyl Acetate",
+    "category": "Solvents",
+    "code": "AUR-ETH-111",
+    "description": "High-quality Ethyl Acetate suitable for various industrial applications."
+  },
+  {
+    "id": "112",
+    "name": "Ethyl Acetoacetate",
+    "category": "Solvents",
+    "code": "AUR-ETH-112",
+    "description": "High-quality Ethyl Acetoacetate suitable for various industrial applications."
+  },
+  {
+    "id": "113",
+    "name": "Ethyl Acrylate",
+    "category": "Chemicals",
+    "code": "AUR-ETH-113",
+    "description": "High-quality Ethyl Acrylate suitable for various industrial applications."
+  },
+  {
+    "id": "114",
+    "name": "Ethyl Chloroformate",
+    "category": "Chemicals",
+    "code": "AUR-ETH-114",
+    "description": "High-quality Ethyl Chloroformate suitable for various industrial applications."
+  },
+  {
+    "id": "115",
+    "name": "Ethyl Cyanoacetate",
+    "category": "Solvents",
+    "code": "AUR-ETH-115",
+    "description": "High-quality Ethyl Cyanoacetate suitable for various industrial applications."
+  },
+  {
+    "id": "116",
+    "name": "Ethylenediamine (Eda)",
+    "category": "Chemicals",
+    "code": "AUR-ETH-116",
+    "description": "High-quality Ethylenediamine (Eda) suitable for various industrial applications."
+  },
+  {
+    "id": "117",
+    "name": "Fluorobenzene",
+    "category": "Solvents",
+    "code": "AUR-FLU-117",
+    "description": "High-quality Fluorobenzene suitable for various industrial applications."
+  },
+  {
+    "id": "118",
+    "name": "Formamide",
+    "category": "Chemicals",
+    "code": "AUR-FOR-118",
+    "description": "High-quality Formamide suitable for various industrial applications."
+  },
+  {
+    "id": "119",
+    "name": "Formic Acid 85%",
+    "category": "Chemicals",
+    "code": "AUR-FOR-119",
+    "description": "High-quality Formic Acid 85% suitable for various industrial applications."
+  },
+  {
+    "id": "120",
+    "name": "Formic Acid 99%",
+    "category": "Chemicals",
+    "code": "AUR-FOR-120",
+    "description": "High-quality Formic Acid 99% suitable for various industrial applications."
+  },
+  {
+    "id": "121",
+    "name": "Fumaric Acid",
+    "category": "Chemicals",
+    "code": "AUR-FUM-121",
+    "description": "High-quality Fumaric Acid suitable for various industrial applications."
+  },
+  {
+    "id": "122",
+    "name": "Furfuryl Alcohol",
+    "category": "Solvents",
+    "code": "AUR-FUR-122",
+    "description": "High-quality Furfuryl Alcohol suitable for various industrial applications."
+  },
+  {
+    "id": "123",
+    "name": "Gamma Butyrolactone",
+    "category": "Chemicals",
+    "code": "AUR-GAM-123",
+    "description": "High-quality Gamma Butyrolactone suitable for various industrial applications."
+  },
+  {
+    "id": "124",
+    "name": "Glycerine",
+    "category": "Chemicals",
+    "code": "AUR-GLY-124",
+    "description": "High-quality Glycerine suitable for various industrial applications."
+  },
+  {
+    "id": "125",
+    "name": "Glycine",
+    "category": "Chemicals",
+    "code": "AUR-GLY-125",
+    "description": "High-quality Glycine suitable for various industrial applications."
+  },
+  {
+    "id": "126",
+    "name": "Heptane",
+    "category": "Chemicals",
+    "code": "AUR-HEP-126",
+    "description": "High-quality Heptane suitable for various industrial applications."
+  },
+  {
+    "id": "127",
+    "name": "Hexamethyldisilazane (Hmds)",
+    "category": "Chemicals",
+    "code": "AUR-HEX-127",
+    "description": "High-quality Hexamethyldisilazane (Hmds) suitable for various industrial applications."
+  },
+  {
+    "id": "128",
+    "name": "Hexamine",
+    "category": "Chemicals",
+    "code": "AUR-HEX-128",
+    "description": "High-quality Hexamine suitable for various industrial applications."
+  },
+  {
+    "id": "129",
+    "name": "Hexylene Glycol",
+    "category": "Chemicals",
+    "code": "AUR-HEX-129",
+    "description": "High-quality Hexylene Glycol suitable for various industrial applications."
+  },
+  {
+    "id": "130",
+    "name": "Hydrazine Hydrate 100%",
+    "category": "Chemicals",
+    "code": "AUR-HYD-130",
+    "description": "High-quality Hydrazine Hydrate 100% suitable for various industrial applications."
+  },
+  {
+    "id": "131",
+    "name": "Hydrazine Hydrate 80%",
+    "category": "Chemicals",
+    "code": "AUR-HYD-131",
+    "description": "High-quality Hydrazine Hydrate 80% suitable for various industrial applications."
+  },
+  {
+    "id": "132",
+    "name": "Hydrobromic Acid 48%",
+    "category": "Chemicals",
+    "code": "AUR-HYD-132",
+    "description": "High-quality Hydrobromic Acid 48% suitable for various industrial applications."
+  },
+  {
+    "id": "133",
+    "name": "Hydrogen Peroxide",
+    "category": "Chemicals",
+    "code": "AUR-HYD-133",
+    "description": "High-quality Hydrogen Peroxide suitable for various industrial applications."
+  },
+  {
+    "id": "134",
+    "name": "Hydroquinone (Hq)",
+    "category": "Chemicals",
+    "code": "AUR-HYD-134",
+    "description": "High-quality Hydroquinone (Hq) suitable for various industrial applications."
+  },
+  {
+    "id": "135",
+    "name": "2-ethyl Hexanol",
+    "category": "Chemicals",
+    "code": "AUR-2-E-135",
+    "description": "High-quality 2-ethyl Hexanol suitable for various industrial applications."
+  },
+  {
+    "id": "136",
+    "name": "Acetic Acid",
+    "category": "Chemicals",
+    "code": "AUR-ACE-136",
+    "description": "High-quality Acetic Acid suitable for various industrial applications."
+  },
+  {
+    "id": "137",
+    "name": "Acetone",
+    "category": "Chemicals",
+    "code": "AUR-ACE-137",
+    "description": "High-quality Acetone suitable for various industrial applications."
+  },
+  {
+    "id": "138",
+    "name": "Acrylonitrile",
+    "category": "Chemicals",
+    "code": "AUR-ACR-138",
+    "description": "High-quality Acrylonitrile suitable for various industrial applications."
+  },
+  {
+    "id": "139",
+    "name": "Butyl Acetate",
+    "category": "Solvents",
+    "code": "AUR-BUT-139",
+    "description": "High-quality Butyl Acetate suitable for various industrial applications."
+  },
+  {
+    "id": "140",
+    "name": "Butyl Acrylate Monomer",
+    "category": "Chemicals",
+    "code": "AUR-BUT-140",
+    "description": "High-quality Butyl Acrylate Monomer suitable for various industrial applications."
+  },
+  {
+    "id": "141",
+    "name": "Butyl Glycol",
+    "category": "Chemicals",
+    "code": "AUR-BUT-141",
+    "description": "High-quality Butyl Glycol suitable for various industrial applications."
+  },
+  {
+    "id": "142",
+    "name": "C-9",
+    "category": "Chemicals",
+    "code": "AUR-C-9-142",
+    "description": "High-quality C-9 suitable for various industrial applications."
+  },
+  {
+    "id": "143",
+    "name": "Caustic Soda Lye",
+    "category": "Chemicals",
+    "code": "AUR-CAU-143",
+    "description": "High-quality Caustic Soda Lye suitable for various industrial applications."
+  },
+  {
+    "id": "144",
+    "name": "Cyclohexanone",
+    "category": "Chemicals",
+    "code": "AUR-CYC-144",
+    "description": "High-quality Cyclohexanone suitable for various industrial applications."
+  },
+  {
+    "id": "145",
+    "name": "Ethylene Dichloride",
+    "category": "Chemicals",
+    "code": "AUR-ETH-145",
+    "description": "High-quality Ethylene Dichloride suitable for various industrial applications."
+  },
+  {
+    "id": "146",
+    "name": "Hexane",
+    "category": "Solvents",
+    "code": "AUR-HEX-146",
+    "description": "High-quality Hexane suitable for various industrial applications."
+  },
+  {
+    "id": "147",
+    "name": "Iso Butanol",
+    "category": "Chemicals",
+    "code": "AUR-ISO-147",
+    "description": "High-quality Iso Butanol suitable for various industrial applications."
+  },
+  {
+    "id": "148",
+    "name": "Isopropyl Alcohol",
+    "category": "Solvents",
+    "code": "AUR-ISO-148",
+    "description": "High-quality Isopropyl Alcohol suitable for various industrial applications."
+  },
+  {
+    "id": "149",
+    "name": "Hydroxylamine Hydrochloride (Hahcl)",
+    "category": "Chemicals",
+    "code": "AUR-HYD-149",
+    "description": "High-quality Hydroxylamine Hydrochloride (Hahcl) suitable for various industrial applications."
+  },
+  {
+    "id": "150",
+    "name": "Hydroxylamine Sulphate (Has)",
+    "category": "Surfactants",
+    "code": "AUR-HYD-150",
+    "description": "High-quality Hydroxylamine Sulphate (Has) suitable for various industrial applications."
+  },
+  {
+    "id": "151",
+    "name": "Imidazole",
+    "category": "Chemicals",
+    "code": "AUR-IMI-151",
+    "description": "High-quality Imidazole suitable for various industrial applications."
+  },
+  {
+    "id": "152",
+    "name": "Iodine",
+    "category": "Chemicals",
+    "code": "AUR-IOD-152",
+    "description": "High-quality Iodine suitable for various industrial applications."
+  },
+  {
+    "id": "153",
+    "name": "Isobutanol",
+    "category": "Chemicals",
+    "code": "AUR-ISO-153",
+    "description": "High-quality Isobutanol suitable for various industrial applications."
+  },
+  {
+    "id": "154",
+    "name": "Isobutyraldehyde",
+    "category": "Chemicals",
+    "code": "AUR-ISO-154",
+    "description": "High-quality Isobutyraldehyde suitable for various industrial applications."
+  },
+  {
+    "id": "155",
+    "name": "Isobutyric Acid",
+    "category": "Chemicals",
+    "code": "AUR-ISO-155",
+    "description": "High-quality Isobutyric Acid suitable for various industrial applications."
+  },
+  {
+    "id": "156",
+    "name": "Isophorone",
+    "category": "Chemicals",
+    "code": "AUR-ISO-156",
+    "description": "High-quality Isophorone suitable for various industrial applications."
+  },
+  {
+    "id": "157",
+    "name": "Isophorone Diamine",
+    "category": "Chemicals",
+    "code": "AUR-ISO-157",
+    "description": "High-quality Isophorone Diamine suitable for various industrial applications."
+  },
+  {
+    "id": "158",
+    "name": "Isophthalic Acid",
+    "category": "Chemicals",
+    "code": "AUR-ISO-158",
+    "description": "High-quality Isophthalic Acid suitable for various industrial applications."
+  },
+  {
+    "id": "159",
+    "name": "Isopropyl Acetate",
+    "category": "Solvents",
+    "code": "AUR-ISO-159",
+    "description": "High-quality Isopropyl Acetate suitable for various industrial applications."
+  },
+  {
+    "id": "160",
+    "name": "Isopropyl Alcohol",
+    "category": "Solvents",
+    "code": "AUR-ISO-160",
+    "description": "High-quality Isopropyl Alcohol suitable for various industrial applications."
+  },
+  {
+    "id": "161",
+    "name": "Isovaleraldehyde",
+    "category": "Chemicals",
+    "code": "AUR-ISO-161",
+    "description": "High-quality Isovaleraldehyde suitable for various industrial applications."
+  },
+  {
+    "id": "162",
+    "name": "L+ Tartaric Acid",
+    "category": "Chemicals",
+    "code": "AUR-L+ -162",
+    "description": "High-quality L+ Tartaric Acid suitable for various industrial applications."
+  },
+  {
+    "id": "163",
+    "name": "Lactose",
+    "category": "Chemicals",
+    "code": "AUR-LAC-163",
+    "description": "High-quality Lactose suitable for various industrial applications."
+  },
+  {
+    "id": "164",
+    "name": "Lithium Carbonate",
+    "category": "Chemicals",
+    "code": "AUR-LIT-164",
+    "description": "High-quality Lithium Carbonate suitable for various industrial applications."
+  },
+  {
+    "id": "165",
+    "name": "Lithium Hydroxide",
+    "category": "Chemicals",
+    "code": "AUR-LIT-165",
+    "description": "High-quality Lithium Hydroxide suitable for various industrial applications."
+  },
+  {
+    "id": "166",
+    "name": "Maliec Anhydride",
+    "category": "Chemicals",
+    "code": "AUR-MAL-166",
+    "description": "High-quality Maliec Anhydride suitable for various industrial applications."
+  },
+  {
+    "id": "167",
+    "name": "Malonic Acid",
+    "category": "Chemicals",
+    "code": "AUR-MAL-167",
+    "description": "High-quality Malonic Acid suitable for various industrial applications."
+  },
+  {
+    "id": "168",
+    "name": "Malononitrile",
+    "category": "Chemicals",
+    "code": "AUR-MAL-168",
+    "description": "High-quality Malononitrile suitable for various industrial applications."
+  },
+  {
+    "id": "169",
+    "name": "Melamine",
+    "category": "Chemicals",
+    "code": "AUR-MEL-169",
+    "description": "High-quality Melamine suitable for various industrial applications."
+  },
+  {
+    "id": "170",
+    "name": "Meta Cresol",
+    "category": "Chemicals",
+    "code": "AUR-MET-170",
+    "description": "High-quality Meta Cresol suitable for various industrial applications."
+  },
+  {
+    "id": "171",
+    "name": "Meta Xylene",
+    "category": "Chemicals",
+    "code": "AUR-MET-171",
+    "description": "High-quality Meta Xylene suitable for various industrial applications."
+  },
+  {
+    "id": "172",
+    "name": "Methaacrylic Acid (Maa)",
+    "category": "Chemicals",
+    "code": "AUR-MET-172",
+    "description": "High-quality Methaacrylic Acid (Maa) suitable for various industrial applications."
+  },
+  {
+    "id": "173",
+    "name": "Methane Suiphonic Acid (Msa)",
+    "category": "Chemicals",
+    "code": "AUR-MET-173",
+    "description": "High-quality Methane Suiphonic Acid (Msa) suitable for various industrial applications."
+  },
+  {
+    "id": "174",
+    "name": "Methane Sulphonyl Chloride (Msc)",
+    "category": "Chemicals",
+    "code": "AUR-MET-174",
+    "description": "High-quality Methane Sulphonyl Chloride (Msc) suitable for various industrial applications."
+  },
+  {
+    "id": "175",
+    "name": "Methyl Acetoacetate",
+    "category": "Solvents",
+    "code": "AUR-MET-175",
+    "description": "High-quality Methyl Acetoacetate suitable for various industrial applications."
+  },
+  {
+    "id": "176",
+    "name": "Methyl Acrylate",
+    "category": "Chemicals",
+    "code": "AUR-MET-176",
+    "description": "High-quality Methyl Acrylate suitable for various industrial applications."
+  },
+  {
+    "id": "177",
+    "name": "Methyl Chloroformate (Mcl)",
+    "category": "Chemicals",
+    "code": "AUR-MET-177",
+    "description": "High-quality Methyl Chloroformate (Mcl) suitable for various industrial applications."
+  },
+  {
+    "id": "178",
+    "name": "Methyl Cyanoacetate",
+    "category": "Solvents",
+    "code": "AUR-MET-178",
+    "description": "High-quality Methyl Cyanoacetate suitable for various industrial applications."
+  },
+  {
+    "id": "179",
+    "name": "Methyl Ethyl Ketone (Mek)",
+    "category": "Solvents",
+    "code": "AUR-MET-179",
+    "description": "High-quality Methyl Ethyl Ketone (Mek) suitable for various industrial applications."
+  },
+  {
+    "id": "180",
+    "name": "Methyl Isobutyl Ketone (Mibk)",
+    "category": "Solvents",
+    "code": "AUR-MET-180",
+    "description": "High-quality Methyl Isobutyl Ketone (Mibk) suitable for various industrial applications."
+  },
+  {
+    "id": "181",
+    "name": "Methyl Methacrylate (Mma)",
+    "category": "Chemicals",
+    "code": "AUR-MET-181",
+    "description": "High-quality Methyl Methacrylate (Mma) suitable for various industrial applications."
+  },
+  {
+    "id": "182",
+    "name": "Methyl Tertiary Butyl Ether (Mtbe)",
+    "category": "Chemicals",
+    "code": "AUR-MET-182",
+    "description": "High-quality Methyl Tertiary Butyl Ether (Mtbe) suitable for various industrial applications."
+  },
+  {
+    "id": "183",
+    "name": "Methylcyclohexane",
+    "category": "Solvents",
+    "code": "AUR-MET-183",
+    "description": "High-quality Methylcyclohexane suitable for various industrial applications."
+  },
+  {
+    "id": "184",
+    "name": "Methylene Chloride",
+    "category": "Chemicals",
+    "code": "AUR-MET-184",
+    "description": "High-quality Methylene Chloride suitable for various industrial applications."
+  },
+  {
+    "id": "185",
+    "name": "Methylene Diphenyl Diisocyante (Mdi)",
+    "category": "Chemicals",
+    "code": "AUR-MET-185",
+    "description": "High-quality Methylene Diphenyl Diisocyante (Mdi) suitable for various industrial applications."
+  },
+  {
+    "id": "186",
+    "name": "Monochlorobenzene",
+    "category": "Solvents",
+    "code": "AUR-MON-186",
+    "description": "High-quality Monochlorobenzene suitable for various industrial applications."
+  },
+  {
+    "id": "187",
+    "name": "Monoethanolamine",
+    "category": "Chemicals",
+    "code": "AUR-MON-187",
+    "description": "High-quality Monoethanolamine suitable for various industrial applications."
+  },
+  {
+    "id": "188",
+    "name": "Monoethylamine",
+    "category": "Chemicals",
+    "code": "AUR-MON-188",
+    "description": "High-quality Monoethylamine suitable for various industrial applications."
+  },
+  {
+    "id": "189",
+    "name": "Monoethylene Glycol (Meg)",
+    "category": "Chemicals",
+    "code": "AUR-MON-189",
+    "description": "High-quality Monoethylene Glycol (Meg) suitable for various industrial applications."
+  },
+  {
+    "id": "190",
+    "name": "Monoglyme",
+    "category": "Chemicals",
+    "code": "AUR-MON-190",
+    "description": "High-quality Monoglyme suitable for various industrial applications."
+  },
+  {
+    "id": "191",
+    "name": "Monoisopropylamine 70%",
+    "category": "Chemicals",
+    "code": "AUR-MON-191",
+    "description": "High-quality Monoisopropylamine 70% suitable for various industrial applications."
+  },
+  {
+    "id": "192",
+    "name": "Monoisopropylamine 99%",
+    "category": "Chemicals",
+    "code": "AUR-MON-192",
+    "description": "High-quality Monoisopropylamine 99% suitable for various industrial applications."
+  },
+  {
+    "id": "193",
+    "name": "Monomethylamine",
+    "category": "Chemicals",
+    "code": "AUR-MON-193",
+    "description": "High-quality Monomethylamine suitable for various industrial applications."
+  },
+  {
+    "id": "194",
+    "name": "Morpholine",
+    "category": "Chemicals",
+    "code": "AUR-MOR-194",
+    "description": "High-quality Morpholine suitable for various industrial applications."
+  },
+  {
+    "id": "195",
+    "name": "Mp Diol Glycol",
+    "category": "Chemicals",
+    "code": "AUR-MP -195",
+    "description": "High-quality Mp Diol Glycol suitable for various industrial applications."
+  },
+  {
+    "id": "196",
+    "name": "N-aminoethylpiperazine (N-aep)",
+    "category": "Chemicals",
+    "code": "AUR-N-A-196",
+    "description": "High-quality N-aminoethylpiperazine (N-aep) suitable for various industrial applications."
+  },
+  {
+    "id": "197",
+    "name": "N-butanol",
+    "category": "Chemicals",
+    "code": "AUR-N-B-197",
+    "description": "High-quality N-butanol suitable for various industrial applications."
+  },
+  {
+    "id": "198",
+    "name": "N-butyl Methacrylate",
+    "category": "Chemicals",
+    "code": "AUR-N-B-198",
+    "description": "High-quality N-butyl Methacrylate suitable for various industrial applications."
+  },
+  {
+    "id": "199",
+    "name": "N-butyraldehyde",
+    "category": "Chemicals",
+    "code": "AUR-N-B-199",
+    "description": "High-quality N-butyraldehyde suitable for various industrial applications."
+  },
+  {
+    "id": "200",
+    "name": "N-butyric Acid",
+    "category": "Chemicals",
+    "code": "AUR-N-B-200",
+    "description": "High-quality N-butyric Acid suitable for various industrial applications."
+  },
+  {
+    "id": "201",
+    "name": "N-ethyl Piperazine",
+    "category": "Chemicals",
+    "code": "AUR-N-E-201",
+    "description": "High-quality N-ethyl Piperazine suitable for various industrial applications."
+  },
+  {
+    "id": "202",
+    "name": "N-heptane",
+    "category": "Chemicals",
+    "code": "AUR-N-H-202",
+    "description": "High-quality N-heptane suitable for various industrial applications."
+  },
+  {
+    "id": "203",
+    "name": "N-hexane 99%",
+    "category": "Solvents",
+    "code": "AUR-N-H-203",
+    "description": "High-quality N-hexane 99% suitable for various industrial applications."
+  },
+  {
+    "id": "204",
+    "name": "N-methyl Piperazine",
+    "category": "Chemicals",
+    "code": "AUR-N-M-204",
+    "description": "High-quality N-methyl Piperazine suitable for various industrial applications."
+  },
+  {
+    "id": "205",
+    "name": "N-methyl-2-pyrrolidone (Nmp)",
+    "category": "Chemicals",
+    "code": "AUR-N-M-205",
+    "description": "High-quality N-methyl-2-pyrrolidone (Nmp) suitable for various industrial applications."
+  },
+  {
+    "id": "206",
+    "name": "N-pentane",
+    "category": "Chemicals",
+    "code": "AUR-N-P-206",
+    "description": "High-quality N-pentane suitable for various industrial applications."
+  },
+  {
+    "id": "207",
+    "name": "N-propanol",
+    "category": "Chemicals",
+    "code": "AUR-N-P-207",
+    "description": "High-quality N-propanol suitable for various industrial applications."
+  },
+  {
+    "id": "208",
+    "name": "N-propyl Acetate",
+    "category": "Solvents",
+    "code": "AUR-N-P-208",
+    "description": "High-quality N-propyl Acetate suitable for various industrial applications."
+  },
+  {
+    "id": "209",
+    "name": "Napthalene Crude",
+    "category": "Chemicals",
+    "code": "AUR-NAP-209",
+    "description": "High-quality Napthalene Crude suitable for various industrial applications."
+  },
+  {
+    "id": "210",
+    "name": "Napthalene Refined",
+    "category": "Chemicals",
+    "code": "AUR-NAP-210",
+    "description": "High-quality Napthalene Refined suitable for various industrial applications."
+  },
+  {
+    "id": "211",
+    "name": "Neopentyl Glycol",
+    "category": "Chemicals",
+    "code": "AUR-NEO-211",
+    "description": "High-quality Neopentyl Glycol suitable for various industrial applications."
+  },
+  {
+    "id": "212",
+    "name": "Nitromethane",
+    "category": "Chemicals",
+    "code": "AUR-NIT-212",
+    "description": "High-quality Nitromethane suitable for various industrial applications."
+  },
+  {
+    "id": "213",
+    "name": "Nonylphenol",
+    "category": "Chemicals",
+    "code": "AUR-NON-213",
+    "description": "High-quality Nonylphenol suitable for various industrial applications."
+  },
+  {
+    "id": "214",
+    "name": "Ortho Toluene Diamine",
+    "category": "Chemicals",
+    "code": "AUR-ORT-214",
+    "description": "High-quality Ortho Toluene Diamine suitable for various industrial applications."
+  },
+  {
+    "id": "215",
+    "name": "Oxone Ps-16",
+    "category": "Chemicals",
+    "code": "AUR-OXO-215",
+    "description": "High-quality Oxone Ps-16 suitable for various industrial applications."
+  },
+  {
+    "id": "216",
+    "name": "Para Tertiary Butylphenol (Ptbp)",
+    "category": "Chemicals",
+    "code": "AUR-PAR-216",
+    "description": "High-quality Para Tertiary Butylphenol (Ptbp) suitable for various industrial applications."
+  },
+  {
+    "id": "217",
+    "name": "Para Tertiary Octylphenol (Ptop)",
+    "category": "Chemicals",
+    "code": "AUR-PAR-217",
+    "description": "High-quality Para Tertiary Octylphenol (Ptop) suitable for various industrial applications."
+  },
+  {
+    "id": "218",
+    "name": "Para Toluenesulfonyl Chloride (Ptsc)",
+    "category": "Chemicals",
+    "code": "AUR-PAR-218",
+    "description": "High-quality Para Toluenesulfonyl Chloride (Ptsc) suitable for various industrial applications."
+  },
+  {
+    "id": "219",
+    "name": "Paraformaldehyde 91%",
+    "category": "Chemicals",
+    "code": "AUR-PAR-219",
+    "description": "High-quality Paraformaldehyde 91% suitable for various industrial applications."
+  },
+  {
+    "id": "220",
+    "name": "Paraformaldehyde 96%",
+    "category": "Chemicals",
+    "code": "AUR-PAR-220",
+    "description": "High-quality Paraformaldehyde 96% suitable for various industrial applications."
+  },
+  {
+    "id": "221",
+    "name": "Penta erythritol",
+    "category": "Chemicals",
+    "code": "AUR-PEN-221",
+    "description": "High-quality Penta erythritol suitable for various industrial applications."
+  },
+  {
+    "id": "222",
+    "name": "Perchloroethylene",
+    "category": "Chemicals",
+    "code": "AUR-PER-222",
+    "description": "High-quality Perchloroethylene suitable for various industrial applications."
+  },
+  {
+    "id": "223",
+    "name": "Phenol",
+    "category": "Chemicals",
+    "code": "AUR-PHE-223",
+    "description": "High-quality Phenol suitable for various industrial applications."
+  },
+  {
+    "id": "224",
+    "name": "Phenyl Chloroformate",
+    "category": "Chemicals",
+    "code": "AUR-PHE-224",
+    "description": "High-quality Phenyl Chloroformate suitable for various industrial applications."
+  },
+  {
+    "id": "225",
+    "name": "Phosphoric Acid (Food Grade)",
+    "category": "Chemicals",
+    "code": "AUR-PHO-225",
+    "description": "High-quality Phosphoric Acid (Food Grade) suitable for various industrial applications."
+  },
+  {
+    "id": "226",
+    "name": "Phosphoric Acid (Technical)",
+    "category": "Chemicals",
+    "code": "AUR-PHO-226",
+    "description": "High-quality Phosphoric Acid (Technical) suitable for various industrial applications."
+  },
+  {
+    "id": "227",
+    "name": "Phosphorus Oxychloride",
+    "category": "Chemicals",
+    "code": "AUR-PHO-227",
+    "description": "High-quality Phosphorus Oxychloride suitable for various industrial applications."
+  },
+  {
+    "id": "228",
+    "name": "Phosphorus Pentaoxide",
+    "category": "Chemicals",
+    "code": "AUR-PHO-228",
+    "description": "High-quality Phosphorus Pentaoxide suitable for various industrial applications."
+  },
+  {
+    "id": "229",
+    "name": "Phthalic Anhydride",
+    "category": "Chemicals",
+    "code": "AUR-PHT-229",
+    "description": "High-quality Phthalic Anhydride suitable for various industrial applications."
+  },
+  {
+    "id": "230",
+    "name": "Piperazine Anhydrous",
+    "category": "Chemicals",
+    "code": "AUR-PIP-230",
+    "description": "High-quality Piperazine Anhydrous suitable for various industrial applications."
+  },
+  {
+    "id": "231",
+    "name": "Piperidine",
+    "category": "Chemicals",
+    "code": "AUR-PIP-231",
+    "description": "High-quality Piperidine suitable for various industrial applications."
+  },
+  {
+    "id": "232",
+    "name": "Polyethylene Glycol 200,400 & 800",
+    "category": "Polymers",
+    "code": "AUR-POL-232",
+    "description": "High-quality Polyethylene Glycol 200,400 & 800 suitable for various industrial applications."
+  },
+  {
+    "id": "233",
+    "name": "Polypropylene Glycol lOOOd",
+    "category": "Polymers",
+    "code": "AUR-POL-233",
+    "description": "High-quality Polypropylene Glycol lOOOd suitable for various industrial applications."
+  },
+  {
+    "id": "234",
+    "name": "Polypropylene Glycol 2000d",
+    "category": "Polymers",
+    "code": "AUR-POL-234",
+    "description": "High-quality Polypropylene Glycol 2000d suitable for various industrial applications."
+  },
+  {
+    "id": "235",
+    "name": "Polyvinyl Alcohol",
+    "category": "Polymers",
+    "code": "AUR-POL-235",
+    "description": "High-quality Polyvinyl Alcohol suitable for various industrial applications."
+  },
+  {
+    "id": "236",
+    "name": "Potassium Bicarbonate",
+    "category": "Chemicals",
+    "code": "AUR-POT-236",
+    "description": "High-quality Potassium Bicarbonate suitable for various industrial applications."
+  },
+  {
+    "id": "237",
+    "name": "Potassium Carbonate (Granular)",
+    "category": "Chemicals",
+    "code": "AUR-POT-237",
+    "description": "High-quality Potassium Carbonate (Granular) suitable for various industrial applications."
+  },
+  {
+    "id": "238",
+    "name": "Potassium Carbonate (Powder)",
+    "category": "Chemicals",
+    "code": "AUR-POT-238",
+    "description": "High-quality Potassium Carbonate (Powder) suitable for various industrial applications."
+  },
+  {
+    "id": "239",
+    "name": "Potassium Permanganate",
+    "category": "Chemicals",
+    "code": "AUR-POT-239",
+    "description": "High-quality Potassium Permanganate suitable for various industrial applications."
+  },
+  {
+    "id": "240",
+    "name": "Pottasium Tertiary Butoxide",
+    "category": "Chemicals",
+    "code": "AUR-POT-240",
+    "description": "High-quality Pottasium Tertiary Butoxide suitable for various industrial applications."
+  },
+  {
+    "id": "241",
+    "name": "Propargyl Alcohol",
+    "category": "Solvents",
+    "code": "AUR-PRO-241",
+    "description": "High-quality Propargyl Alcohol suitable for various industrial applications."
+  },
+  {
+    "id": "242",
+    "name": "Propionaldehyde",
+    "category": "Chemicals",
+    "code": "AUR-PRO-242",
+    "description": "High-quality Propionaldehyde suitable for various industrial applications."
+  },
+  {
+    "id": "243",
+    "name": "Propionic Acid",
+    "category": "Chemicals",
+    "code": "AUR-PRO-243",
+    "description": "High-quality Propionic Acid suitable for various industrial applications."
+  },
+  {
+    "id": "244",
+    "name": "Propionic Anhydride",
+    "category": "Chemicals",
+    "code": "AUR-PRO-244",
+    "description": "High-quality Propionic Anhydride suitable for various industrial applications."
+  },
+  {
+    "id": "245",
+    "name": "Propylene Glycol (Technical)",
+    "category": "Chemicals",
+    "code": "AUR-PRO-245",
+    "description": "High-quality Propylene Glycol (Technical) suitable for various industrial applications."
+  },
+  {
+    "id": "246",
+    "name": "Propylene Glycol (Usp)",
+    "category": "Chemicals",
+    "code": "AUR-PRO-246",
+    "description": "High-quality Propylene Glycol (Usp) suitable for various industrial applications."
+  },
+  {
+    "id": "247",
+    "name": "Propylene Glycol Mono Methyl Ether (Pm)",
+    "category": "Chemicals",
+    "code": "AUR-PRO-247",
+    "description": "High-quality Propylene Glycol Mono Methyl Ether (Pm) suitable for various industrial applications."
+  },
+  {
+    "id": "248",
+    "name": "Propylene Glycol Mono Methyl Ether Acetate (Pma)",
+    "category": "Solvents",
+    "code": "AUR-PRO-248",
+    "description": "High-quality Propylene Glycol Mono Methyl Ether Acetate (Pma) suitable for various industrial applications."
+  },
+  {
+    "id": "249",
+    "name": "Pyridine",
+    "category": "Chemicals",
+    "code": "AUR-PYR-249",
+    "description": "High-quality Pyridine suitable for various industrial applications."
+  },
+  {
+    "id": "250",
+    "name": "Pyrrolidine",
+    "category": "Chemicals",
+    "code": "AUR-PYR-250",
+    "description": "High-quality Pyrrolidine suitable for various industrial applications."
+  },
+  {
+    "id": "251",
+    "name": "Resorcinol",
+    "category": "Chemicals",
+    "code": "AUR-RES-251",
+    "description": "High-quality Resorcinol suitable for various industrial applications."
+  },
+  {
+    "id": "252",
+    "name": "Soda Ash",
+    "category": "Chemicals",
+    "code": "AUR-SOD-252",
+    "description": "High-quality Soda Ash suitable for various industrial applications."
+  },
+  {
+    "id": "253",
+    "name": "Sodium Borohydride (Granular)",
+    "category": "Chemicals",
+    "code": "AUR-SOD-253",
+    "description": "High-quality Sodium Borohydride (Granular) suitable for various industrial applications."
+  },
+  {
+    "id": "254",
+    "name": "Sodium Borohydride (Powder)",
+    "category": "Chemicals",
+    "code": "AUR-SOD-254",
+    "description": "High-quality Sodium Borohydride (Powder) suitable for various industrial applications."
+  },
+  {
+    "id": "255",
+    "name": "Sodium Cyanide",
+    "category": "Chemicals",
+    "code": "AUR-SOD-255",
+    "description": "High-quality Sodium Cyanide suitable for various industrial applications."
+  },
+  {
+    "id": "256",
+    "name": "Sodium Gluconate",
+    "category": "Chemicals",
+    "code": "AUR-SOD-256",
+    "description": "High-quality Sodium Gluconate suitable for various industrial applications."
+  },
+  {
+    "id": "257",
+    "name": "Sodium Lignosulphonate",
+    "category": "Chemicals",
+    "code": "AUR-SOD-257",
+    "description": "High-quality Sodium Lignosulphonate suitable for various industrial applications."
+  },
+  {
+    "id": "258",
+    "name": "Sodium Metabisulphite",
+    "category": "Chemicals",
+    "code": "AUR-SOD-258",
+    "description": "High-quality Sodium Metabisulphite suitable for various industrial applications."
+  },
+  {
+    "id": "259",
+    "name": "Sodium Metal",
+    "category": "Chemicals",
+    "code": "AUR-SOD-259",
+    "description": "High-quality Sodium Metal suitable for various industrial applications."
+  },
+  {
+    "id": "260",
+    "name": "Sodium Methoxide Powder",
+    "category": "Chemicals",
+    "code": "AUR-SOD-260",
+    "description": "High-quality Sodium Methoxide Powder suitable for various industrial applications."
+  },
+  {
+    "id": "261",
+    "name": "Sodium Nitrate",
+    "category": "Chemicals",
+    "code": "AUR-SOD-261",
+    "description": "High-quality Sodium Nitrate suitable for various industrial applications."
+  },
+  {
+    "id": "262",
+    "name": "Sodium Nitrite",
+    "category": "Chemicals",
+    "code": "AUR-SOD-262",
+    "description": "High-quality Sodium Nitrite suitable for various industrial applications."
+  },
+  {
+    "id": "263",
+    "name": "Sodium Thiocyanate",
+    "category": "Chemicals",
+    "code": "AUR-SOD-263",
+    "description": "High-quality Sodium Thiocyanate suitable for various industrial applications."
+  },
+  {
+    "id": "264",
+    "name": "Sodium Tripolyphosphate (Stpp)",
+    "category": "Polymers",
+    "code": "AUR-SOD-264",
+    "description": "High-quality Sodium Tripolyphosphate (Stpp) suitable for various industrial applications."
+  },
+  {
+    "id": "265",
+    "name": "Tertiary Butanol (Tba)",
+    "category": "Chemicals",
+    "code": "AUR-TER-265",
+    "description": "High-quality Tertiary Butanol (Tba) suitable for various industrial applications."
+  },
+  {
+    "id": "266",
+    "name": "Tertiary Butyl Acetate",
+    "category": "Solvents",
+    "code": "AUR-TER-266",
+    "description": "High-quality Tertiary Butyl Acetate suitable for various industrial applications."
+  },
+  {
+    "id": "267",
+    "name": "Tertiary Butylamine",
+    "category": "Chemicals",
+    "code": "AUR-TER-267",
+    "description": "High-quality Tertiary Butylamine suitable for various industrial applications."
+  },
+  {
+    "id": "268",
+    "name": "Tetrahydrofuran",
+    "category": "Chemicals",
+    "code": "AUR-TET-268",
+    "description": "High-quality Tetrahydrofuran suitable for various industrial applications."
+  },
+  {
+    "id": "269",
+    "name": "Thiophenol",
+    "category": "Chemicals",
+    "code": "AUR-THI-269",
+    "description": "High-quality Thiophenol suitable for various industrial applications."
+  },
+  {
+    "id": "270",
+    "name": "Thiourea",
+    "category": "Chemicals",
+    "code": "AUR-THI-270",
+    "description": "High-quality Thiourea suitable for various industrial applications."
+  },
+  {
+    "id": "271",
+    "name": "Toluene Diisocyanate (Tdl)",
+    "category": "Chemicals",
+    "code": "AUR-TOL-271",
+    "description": "High-quality Toluene Diisocyanate (Tdl) suitable for various industrial applications."
+  },
+  {
+    "id": "272",
+    "name": "Tri Methyl Chlorosilane (Tmcs)",
+    "category": "Chemicals",
+    "code": "AUR-TRI-272",
+    "description": "High-quality Tri Methyl Chlorosilane (Tmcs) suitable for various industrial applications."
+  },
+  {
+    "id": "273",
+    "name": "Tri-n-butylamine",
+    "category": "Chemicals",
+    "code": "AUR-TRI-273",
+    "description": "High-quality Tri-n-butylamine suitable for various industrial applications."
+  },
+  {
+    "id": "274",
+    "name": "Trichloroethylene",
+    "category": "Chemicals",
+    "code": "AUR-TRI-274",
+    "description": "High-quality Trichloroethylene suitable for various industrial applications."
+  },
+  {
+    "id": "275",
+    "name": "Triethanolamine 85% & 99%",
+    "category": "Chemicals",
+    "code": "AUR-TRI-275",
+    "description": "High-quality Triethanolamine 85% & 99% suitable for various industrial applications."
+  },
+  {
+    "id": "276",
+    "name": "Triethyl Orthoformate (Teol)",
+    "category": "Chemicals",
+    "code": "AUR-TRI-276",
+    "description": "High-quality Triethyl Orthoformate (Teol) suitable for various industrial applications."
+  },
+  {
+    "id": "277",
+    "name": "Triethyl Phosphate",
+    "category": "Chemicals",
+    "code": "AUR-TRI-277",
+    "description": "High-quality Triethyl Phosphate suitable for various industrial applications."
+  },
+  {
+    "id": "278",
+    "name": "Triethylamine",
+    "category": "Chemicals",
+    "code": "AUR-TRI-278",
+    "description": "High-quality Triethylamine suitable for various industrial applications."
+  },
+  {
+    "id": "279",
+    "name": "Triethylene Pentamine (Tepa)",
+    "category": "Chemicals",
+    "code": "AUR-TRI-279",
+    "description": "High-quality Triethylene Pentamine (Tepa) suitable for various industrial applications."
+  },
+  {
+    "id": "280",
+    "name": "Triethylene Tetramine (Teta)",
+    "category": "Chemicals",
+    "code": "AUR-TRI-280",
+    "description": "High-quality Triethylene Tetramine (Teta) suitable for various industrial applications."
+  },
+  {
+    "id": "281",
+    "name": "Trimellitic Anhydride",
+    "category": "Chemicals",
+    "code": "AUR-TRI-281",
+    "description": "High-quality Trimellitic Anhydride suitable for various industrial applications."
+  },
+  {
+    "id": "282",
+    "name": "Trimethyl Orthoacetate (Tmoc)",
+    "category": "Solvents",
+    "code": "AUR-TRI-282",
+    "description": "High-quality Trimethyl Orthoacetate (Tmoc) suitable for various industrial applications."
+  },
+  {
+    "id": "283",
+    "name": "Trimethyl Orthoformate (Tmof)",
+    "category": "Chemicals",
+    "code": "AUR-TRI-283",
+    "description": "High-quality Trimethyl Orthoformate (Tmof) suitable for various industrial applications."
+  },
+  {
+    "id": "284",
+    "name": "Trimethylamine",
+    "category": "Chemicals",
+    "code": "AUR-TRI-284",
+    "description": "High-quality Trimethylamine suitable for various industrial applications."
+  },
+  {
+    "id": "285",
+    "name": "Trimethylol Propane",
+    "category": "Chemicals",
+    "code": "AUR-TRI-285",
+    "description": "High-quality Trimethylol Propane suitable for various industrial applications."
+  },
+  {
+    "id": "286",
+    "name": "Triphosgene",
+    "category": "Chemicals",
+    "code": "AUR-TRI-286",
+    "description": "High-quality Triphosgene suitable for various industrial applications."
+  },
+  {
+    "id": "287",
+    "name": "Urea (Technical Grade)",
+    "category": "Chemicals",
+    "code": "AUR-URE-287",
+    "description": "High-quality Urea (Technical Grade) suitable for various industrial applications."
+  }
+]
