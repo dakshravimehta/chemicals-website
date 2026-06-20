@@ -27,6 +27,21 @@ export const metadata: Metadata = {
   title: "Aurelis Chemicals | Bulk Solvents, Polymers & Specialty Chemicals",
   description:
     "Aurelis Chemicals supplies bulk solvents, polymers, and specialty chemicals to industrial buyers worldwide. Reliable sourcing, drum-to-bulk packaging, and fast quotes.",
+  openGraph: {
+    title: "Aurelis Chemicals | Bulk Solvents & Polymers",
+    description: "Global bulk chemical distribution without the lag. Supplying solvents, polymers, and specialty chemicals.",
+    url: "https://aurelischemicals.com",
+    siteName: "Aurelis Chemicals",
+    images: [
+      {
+        url: "/images/hero_bg.png",
+        width: 1200,
+        height: 630,
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
 };
 
 export default function RootLayout({

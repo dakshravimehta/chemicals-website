@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import {
   ArrowUpRight,
   ArrowRight,
@@ -44,6 +45,11 @@ const categories = [
     icon: TestTube,
     name: "Acids & Intermediates",
     desc: "Organic and inorganic acids and building blocks for synthesis.",
+  },
+  {
+    icon: FlaskConical,
+    name: "Polyurethanes",
+    desc: "TDI, MDI and polyols for rigid/flexible foams and coatings.",
   },
 ];
 
@@ -123,10 +129,12 @@ export default function Home() {
 
           <div className={styles.heroVisual}>
             <div className={styles.heroFrame}>
-              <img
+              <Image
                 src="/images/hero_bg.png"
                 alt="Industrial chemical storage and process infrastructure"
+                fill
                 className={styles.heroImg}
+                priority
               />
               <div className={styles.heroFrameTag}>
                 <span>SUPPLY · 001</span>
@@ -156,7 +164,7 @@ export default function Home() {
             <div>
               <p className="eyebrow">01 / What we supply</p>
               <h2 className={styles.blockTitle}>
-                Four core lines, one organized catalog.
+                Five core lines, one organized catalog.
               </h2>
             </div>
             <p className={styles.blockIntro}>
@@ -219,9 +227,10 @@ export default function Home() {
       <section className="section">
         <div className={`container ${styles.opGrid}`}>
           <Reveal className={styles.opVisual}>
-            <img
+            <Image
               src="/images/about_facility.png"
               alt="Aurelis Chemicals warehousing and distribution facility"
+              fill
               className={styles.opImg}
             />
           </Reveal>
@@ -263,7 +272,7 @@ export default function Home() {
             {industries.map((ind, i) => (
               <Reveal as="div" key={ind.name} delay={i * 50}>
                 <Link href="/industries" className={styles.indCard}>
-                  <img src={ind.img} alt={ind.name} className={styles.indImg} />
+                  <Image src={ind.img} alt={ind.name} fill className={styles.indImg} />
                   <div className={styles.indVeil} />
                   <span className={styles.indNum}>{String(i + 1).padStart(2, "0")}</span>
                   <span className={styles.indName}>

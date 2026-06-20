@@ -1,6 +1,7 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, Suspense, useEffect } from "react";
+import { useRouter, useSearchParams } from "next/navigation";
 import Link from "next/link";
 import { Search, ArrowUpRight, X, Package } from "lucide-react";
 import PageHeader from "@/components/PageHeader/PageHeader";
@@ -9,10 +10,32 @@ import styles from "./page.module.css";
 
 const PAGE_SIZE = 24;
 
-export default function Products() {
+function ProductsContent() {
+  const router = useRouter();
+  const searchParams = useSearchParams();
+  
   const [search, setSearch] = useState("");
   const [category, setCategory] = useState("All");
   const [visible, setVisible] = useState(PAGE_SIZE);
+
+  // Sync state from URL
+  useEffect(() => {
+    const cat = searchParams.get("category");
+    if (cat) setCategory(cat);
+  }, [searchParams]);
+
+  // Update URL when category changes
+  const updateCategory = (newCat: string) => {
+    setCategory(newCat);
+    resetPaging();
+    const params = new URLSearchParams(searchParams.toString());
+    if (newCat === "All") {
+      params.delete("category");
+    } else {
+      params.set("category", newCat);
+    }
+    router.replace(`?${params.toString()}`, { scroll: false });
+  };
 
   const categories = useMemo(() => {
     const set = new Set(productsData.map((p) => p.category));
@@ -86,10 +109,7 @@ export default function Products() {
                 role="tab"
                 aria-selected={category === cat}
                 className={`${styles.chip} ${category === cat ? styles.chipActive : ""}`}
-                onClick={() => {
-                  setCategory(cat);
-                  resetPaging();
-                }}
+                onClick={() => updateCategory(cat)}
               >
                 {cat}
               </button>
@@ -113,11 +133,11 @@ export default function Products() {
                       <li>Spec sheet on request</li>
                     </ul>
                     <Link
-                      href="/contact"
+                      href={`/products/${p.id}`}
                       className={styles.quote}
-                      aria-label={`Request a quote for ${p.name}`}
+                      aria-label={`View details for ${p.name}`}
                     >
-                      Request quote <ArrowUpRight size={15} />
+                      View details <ArrowUpRight size={15} />
                     </Link>
                   </article>
                 ))}
@@ -152,8 +172,7 @@ export default function Products() {
                   className="btn btn-dark"
                   onClick={() => {
                     setSearch("");
-                    setCategory("All");
-                    resetPaging();
+                    updateCategory("All");
                   }}
                 >
                   Clear filters
@@ -167,5 +186,13 @@ export default function Products() {
         </div>
       </section>
     </div>
+  );
+}
+
+export default function Products() {
+  return (
+    <Suspense fallback={<div className="container" style={{ padding: "10vh 0", textAlign: "center" }}>Loading catalog...</div>}>
+      <ProductsContent />
+    </Suspense>
   );
 }
