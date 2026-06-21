@@ -47,12 +47,12 @@
 
 .logo { display: inline-flex; align-items: center; gap: 0.8rem; }
 .markImage {
-  width: 64px;
-  height: 64px;
+  width: 90px;
+  height: 90px;
   object-fit: contain;
-  transform: scale(2.8);
-  margin-right: 45px;
-  margin-left: 25px;
+  transform: scale(4.5);
+  margin-right: 120px;
+  margin-left: 80px;
 }
 .logoText { display: flex; flex-direction: column; line-height: 1; }
 .logoName {
