@@ -54,16 +54,18 @@ export default function Header() {
       {/* Main bar */}
       <div className={`container ${styles.bar}`}>
         <Link href="/" className={styles.logo} aria-label="Aurelis Chemicals home">
-          <div className={styles.logoWrapper}>
-            <Image 
-              src="/images/logo.png" 
-              alt="Aurelis Chemicals Logo" 
-              width={200} 
-              height={200} 
-              className={styles.logoImage} 
-              priority
-            />
-          </div>
+          <Image 
+            src="/images/mark.png" 
+            alt="Aurelis Mark" 
+            width={40} 
+            height={40} 
+            className={styles.markImage} 
+            priority
+          />
+          <span className={styles.logoText}>
+            <span className={styles.logoName}>Aurelis</span>
+            <span className={styles.logoSub}>Chemicals</span>
+          </span>
         </Link>
 
         <nav className={styles.nav} aria-label="Primary">
