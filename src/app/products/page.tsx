@@ -160,7 +160,7 @@ function ProductsContent() {
           ) : (
             <div className={styles.empty}>
               <span className={styles.emptyIcon}>
-                <Package size={28} strokeWidth={1.5} />
+                <Package size={28} strokeWidth={2.5} />
               </span>
               <h3 className={styles.emptyTitle}>No products match that search</h3>
               <p className={styles.emptyText}>
