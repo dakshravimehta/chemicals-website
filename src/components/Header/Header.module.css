@@ -50,6 +50,7 @@
   width: 54px;
   height: 54px;
   object-fit: contain;
+  transform: scale(1.5);
 }
 .logoText { display: flex; flex-direction: column; line-height: 1; }
 .logoName {
