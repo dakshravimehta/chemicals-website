@@ -45,14 +45,11 @@
   min-height: 74px;
 }
 
-.logo { display: inline-flex; align-items: center; gap: 0.8rem; }
+.logo { display: inline-flex; align-items: center; gap: 0.7rem; }
 .markImage {
-  width: 90px;
-  height: 90px;
+  width: 36px;
+  height: 36px;
   object-fit: contain;
-  transform: scale(4.5);
-  margin-right: 120px;
-  margin-left: 80px;
 }
 .logoText { display: flex; flex-direction: column; line-height: 1; }
 .logoName {
