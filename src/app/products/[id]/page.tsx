@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { ArrowLeft, ArrowUpRight, CheckCircle2, ShieldCheck, Truck } from "lucide-react";
+import { ArrowUpRight, CheckCircle2, ShieldCheck, Truck } from "lucide-react";
 import productsData from "@/data/products.json";
 import ProductActions from "@/components/ProductActions/ProductActions";
 import styles from "./page.module.css";
