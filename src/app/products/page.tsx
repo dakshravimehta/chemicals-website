@@ -4,11 +4,18 @@ import { useState, useMemo, Suspense, useEffect } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import Link from "next/link";
 import { Search, ArrowUpRight, X, Package } from "lucide-react";
+import Fuse from "fuse.js";
+import { useInView } from "react-intersection-observer";
 import PageHeader from "@/components/PageHeader/PageHeader";
 import productsData from "@/data/products.json";
 import styles from "./page.module.css";
 
 const PAGE_SIZE = 24;
+
+const fuse = new Fuse(productsData, {
+  keys: ["name", "code"],
+  threshold: 0.3,
+});
 
 function ProductsContent() {
   const router = useRouter();
@@ -17,6 +24,13 @@ function ProductsContent() {
   const [search, setSearch] = useState("");
   const [category, setCategory] = useState("All");
   const [visible, setVisible] = useState(PAGE_SIZE);
+  const { ref, inView } = useInView();
+
+  useEffect(() => {
+    if (inView && visible < productsData.length) {
+      setVisible((v) => v + PAGE_SIZE);
+    }
+  }, [inView, visible]);
 
   // Sync state from URL
   useEffect(() => {
@@ -43,14 +57,14 @@ function ProductsContent() {
   }, []);
 
   const filtered = useMemo(() => {
-    const q = search.trim().toLowerCase();
-    return productsData.filter((p) => {
-      const matchesQuery =
-        !q ||
-        p.name.toLowerCase().includes(q) ||
-        p.code.toLowerCase().includes(q);
-      const matchesCategory = category === "All" || p.category === category;
-      return matchesQuery && matchesCategory;
+    let baseData = productsData;
+    const q = search.trim();
+    if (q) {
+      const results = fuse.search(q);
+      baseData = results.map((r) => r.item);
+    }
+    return baseData.filter((p) => {
+      return category === "All" || p.category === category;
     });
   }, [search, category]);
 
@@ -144,16 +158,10 @@ function ProductsContent() {
               </div>
 
               {visible < filtered.length && (
-                <div className={styles.loadMore}>
+                <div ref={ref} className={styles.loadMore}>
                   <p className={styles.loadMoreText}>
-                    Showing {shown.length} of {filtered.length}
+                    Loading more products...
                   </p>
-                  <button
-                    className="btn btn-outline"
-                    onClick={() => setVisible((v) => v + PAGE_SIZE)}
-                  >
-                    Load more products
-                  </button>
                 </div>
               )}
             </>

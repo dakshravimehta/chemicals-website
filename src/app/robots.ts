@@ -1,14 +1,11 @@
-import { MetadataRoute } from 'next'
+import { MetadataRoute } from "next";
 
 export default function robots(): MetadataRoute.Robots {
-  const baseUrl = "https://aurelischemicals.com";
-
   return {
     rules: {
-      userAgent: '*',
-      allow: '/',
-      disallow: '/api/',
+      userAgent: "*",
+      allow: "/",
     },
-    sitemap: `${baseUrl}/sitemap.xml`,
-  }
+    sitemap: "https://aurelischemicals.vercel.app/sitemap.xml",
+  };
 }
