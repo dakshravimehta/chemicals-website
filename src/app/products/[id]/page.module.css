@@ -126,7 +126,6 @@
   color: var(--ink-2);
   font-size: 0.9rem;
 }
-}
 .related {
   margin-top: clamp(4rem, 8vw, 8rem);
   padding-top: var(--sp-8);
