@@ -131,7 +131,7 @@
 
 @media (max-width: 900px) {
   .nav { display: none; }
-  .cta { display: none; }
+  .cta { display: none !important; }
   .menuBtn { display: inline-flex; }
   .drawer { display: block; }
   .utilityContacts { gap: var(--sp-4); }
