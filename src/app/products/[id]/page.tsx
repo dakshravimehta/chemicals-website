@@ -12,8 +12,9 @@ export function generateStaticParams() {
   }));
 }
 
-export function generateMetadata({ params }: { params: { id: string } }) {
-  const product = productsData.find((p) => p.id === params.id);
+export async function generateMetadata({ params }: { params: Promise<{ id: string }> }) {
+  const resolvedParams = await params;
+  const product = productsData.find((p) => p.id === resolvedParams.id);
   if (!product) return { title: "Product Not Found" };
 
   return {
@@ -22,8 +23,9 @@ export function generateMetadata({ params }: { params: { id: string } }) {
   };
 }
 
-export default function ProductDetail({ params }: { params: { id: string } }) {
-  const product = productsData.find((p) => p.id === params.id);
+export default async function ProductDetail({ params }: { params: Promise<{ id: string }> }) {
+  const resolvedParams = await params;
+  const product = productsData.find((p) => p.id === resolvedParams.id);
 
   if (!product) {
     notFound();
