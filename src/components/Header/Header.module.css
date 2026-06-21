@@ -2,13 +2,12 @@
   position: sticky;
   top: 0;
   z-index: 100;
-  background: oklch(0.976 0.006 75 / 0.85);
-  backdrop-filter: blur(10px);
+  background: var(--surface);
   border-bottom: 1px solid var(--line);
   transition: box-shadow 0.3s var(--ease), background-color 0.3s var(--ease);
 }
 .header.scrolled {
-  background: oklch(0.976 0.006 75 / 0.96);
+  background: var(--surface);
   box-shadow: var(--shadow-2);
 }
 
@@ -89,8 +88,12 @@
 
 .menuBtn {
   display: none;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
   color: var(--ink);
-  padding: 0.4rem;
+  padding: 0;
 }
 
 /* Mobile drawer */

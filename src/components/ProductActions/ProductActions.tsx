@@ -73,15 +73,20 @@ export default function ProductActions({ productName, productCode }: ProductActi
       </div>
 
       <div className={`${styles.modalOverlay} ${modalOpen ? styles.modalOverlayOpen : ""}`}>
-        <div className={styles.modal}>
-          <button className={styles.closeBtn} onClick={closeModal} aria-label="Close">
+        <div 
+          className={styles.modal} 
+          role="dialog" 
+          aria-modal="true" 
+          aria-labelledby="modal-title"
+        >
+          <button className={styles.closeBtn} onClick={closeModal} aria-label="Close dialog">
             <X size={24} />
           </button>
 
           {success ? (
-            <div className={styles.successMsg}>
+            <div className={styles.successMsg} aria-live="polite">
               <CheckCircle2 size={48} className={styles.successIcon} />
-              <h3 className={styles.title}>Request Sent!</h3>
+              <h3 id="modal-title" className={styles.title}>Request Sent!</h3>
               <p className={styles.desc}>
                 We have received your request for the {productName} {docType}. Our team will email it to you shortly.
               </p>
@@ -91,7 +96,7 @@ export default function ProductActions({ productName, productCode }: ProductActi
             </div>
           ) : (
             <>
-              <h3 className={styles.title}>Request {docType}</h3>
+              <h3 id="modal-title" className={styles.title}>Request {docType}</h3>
               <p className={styles.desc}>
                 Please provide your details below to receive the {docType === "TDS" ? "Technical Data Sheet" : "Safety Data Sheet"} for <strong>{productName}</strong>.
               </p>
@@ -111,7 +116,7 @@ export default function ProductActions({ productName, productCode }: ProductActi
                 </div>
 
                 {error && (
-                  <div className={styles.error} style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
+                  <div className={styles.error} style={{ display: "flex", alignItems: "center", gap: "0.5rem" }} aria-live="assertive">
                     <AlertCircle size={14} /> {error}
                   </div>
                 )}

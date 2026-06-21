@@ -18,8 +18,7 @@
 .modalOverlay {
   position: fixed;
   inset: 0;
-  background: oklch(0 0 0 / 0.6);
-  backdrop-filter: blur(4px);
+  background: oklch(0 0 0 / 0.85);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -53,10 +52,14 @@
 
 .closeBtn {
   position: absolute;
-  top: var(--sp-4);
-  right: var(--sp-4);
+  top: var(--sp-3);
+  right: var(--sp-3);
   color: var(--ink-3);
-  padding: 0.2rem;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: var(--r-sm);
   transition: color 0.2s, background 0.2s;
 }
@@ -135,4 +138,13 @@
   color: red;
   font-size: 0.85rem;
   margin-top: 0.2rem;
+}
+
+@media (max-width: 540px) {
+  .modal {
+    padding: var(--sp-6) var(--sp-5);
+  }
+  .title {
+    font-size: 1.35rem;
+  }
 }

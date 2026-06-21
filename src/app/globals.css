@@ -5,10 +5,10 @@
    ========================================================================= */
 
 :root {
-  /* --- Light surfaces (warm bone "paper") --- */
-  --paper: oklch(0.976 0.006 75);
-  --paper-2: oklch(0.954 0.008 74);
-  --surface: oklch(0.992 0.004 75);
+  /* --- Light surfaces (sharp, clinical white) --- */
+  --paper: oklch(0.99 0 0);
+  --paper-2: oklch(0.97 0 0);
+  --surface: oklch(1 0 0);
 
   /* --- Ink (warm near-black, never #000) --- */
   --ink: oklch(0.23 0.013 65);
