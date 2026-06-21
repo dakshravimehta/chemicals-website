@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Target, Eye, ShieldCheck, Zap, Truck, ArrowRight } from "lucide-react";
 import PageHeader from "@/components/PageHeader/PageHeader";
 import Reveal from "@/components/Reveal/Reveal";
@@ -41,6 +42,15 @@ export default function About() {
       <section className="section">
         <div className={`container ${styles.introGrid}`}>
           <Reveal className={styles.introCopy}>
+            <div style={{ marginBottom: "2.5rem" }}>
+              <Image 
+                src="/images/logo.png" 
+                alt="Aurelis Chemicals Full Logo" 
+                width={280} 
+                height={280} 
+                style={{ objectFit: "contain", height: "auto", maxWidth: "100%" }} 
+              />
+            </div>
             <p className="eyebrow">01 / Who we are</p>
             <h2 className={styles.h2}>
               Built for buyers who can&apos;t wait on a slow supply chain.

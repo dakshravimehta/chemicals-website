@@ -45,30 +45,20 @@
   min-height: 74px;
 }
 
-.logo { display: inline-flex; align-items: center; gap: 0.7rem; }
-.mark {
-  width: 16px;
-  height: 16px;
-  background: var(--signal);
-  transform: rotate(45deg);
-  box-shadow: inset 0 0 0 3px oklch(0.976 0.006 75), 0 0 0 1.5px var(--signal);
-  flex-shrink: 0;
+.logo { display: inline-flex; align-items: center; }
+.logoWrapper {
+  width: 150px;
+  height: 52px;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
 }
-.logoText { display: flex; flex-direction: column; line-height: 1; }
-.logoName {
-  font-family: var(--font-display);
-  font-weight: 800;
-  font-size: 1.32rem;
-  letter-spacing: -0.02em;
-  color: var(--ink);
-}
-.logoSub {
-  font-family: var(--font-mono);
-  font-size: 0.6rem;
-  letter-spacing: 0.34em;
-  text-transform: uppercase;
-  color: var(--ink-3);
-  margin-top: 3px;
+.logoImage {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  object-position: top;
 }
 
 .nav { display: flex; align-items: center; gap: clamp(0.5rem, 1.5vw, 1.4rem); }

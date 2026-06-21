@@ -40,20 +40,11 @@
   padding-block: clamp(3rem, 2rem + 4vw, 5rem);
 }
 
-.logo { display: inline-flex; align-items: center; gap: 0.6rem; margin-bottom: var(--sp-4); }
-.mark {
-  width: 14px;
-  height: 14px;
-  background: var(--signal);
-  transform: rotate(45deg);
-  box-shadow: 0 0 0 1.5px var(--signal);
-}
-.logoName {
-  font-family: var(--font-display);
-  font-weight: 800;
-  font-size: 1.35rem;
-  letter-spacing: -0.02em;
-  color: var(--on-graphite);
+.logo { display: inline-flex; align-items: center; margin-bottom: var(--sp-4); }
+.fullLogoImage {
+  width: 180px;
+  height: auto;
+  object-fit: contain;
 }
 .blurb { max-width: 38ch; font-size: 0.95rem; line-height: 1.65; }
 .meta {

@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Menu, X, Phone, Mail, ArrowUpRight } from "lucide-react";
 import { useEffect, useState } from "react";
@@ -53,11 +54,16 @@ export default function Header() {
       {/* Main bar */}
       <div className={`container ${styles.bar}`}>
         <Link href="/" className={styles.logo} aria-label="Aurelis Chemicals home">
-          <span className={styles.mark} aria-hidden="true" />
-          <span className={styles.logoText}>
-            <span className={styles.logoName}>Aurelis</span>
-            <span className={styles.logoSub}>Chemicals</span>
-          </span>
+          <div className={styles.logoWrapper}>
+            <Image 
+              src="/images/logo.png" 
+              alt="Aurelis Chemicals Logo" 
+              width={200} 
+              height={200} 
+              className={styles.logoImage} 
+              priority
+            />
+          </div>
         </Link>
 
         <nav className={styles.nav} aria-label="Primary">

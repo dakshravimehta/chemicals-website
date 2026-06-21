@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Mail, Phone, MapPin, ArrowUpRight } from "lucide-react";
 import styles from "./Footer.module.css";
 
@@ -21,8 +22,13 @@ export default function Footer() {
       <div className={`container ${styles.main}`}>
         <div className={styles.brandCol}>
           <Link href="/" className={styles.logo}>
-            <span className={styles.mark} aria-hidden="true" />
-            <span className={styles.logoName}>Aurelis</span>
+            <Image 
+              src="/images/logo.png" 
+              alt="Aurelis Chemicals Logo" 
+              width={200} 
+              height={200} 
+              className={styles.fullLogoImage} 
+            />
           </Link>
           <p className={styles.blurb}>
             Bulk supply of solvents, polymers, and specialty chemicals for industrial
