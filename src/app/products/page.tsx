@@ -1,11 +1,10 @@
 "use client";
 
-import { useState, useMemo, Suspense, useEffect } from "react";
+import { useState, useMemo, Suspense, useEffect, useRef } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import Link from "next/link";
 import { Search, ArrowUpRight, X, Package } from "lucide-react";
 import Fuse from "fuse.js";
-import { useInView } from "react-intersection-observer";
 import PageHeader from "@/components/PageHeader/PageHeader";
 import productsData from "@/data/products.json";
 import styles from "./page.module.css";
@@ -24,13 +23,21 @@ function ProductsContent() {
   const [search, setSearch] = useState("");
   const [category, setCategory] = useState("All");
   const [visible, setVisible] = useState(PAGE_SIZE);
-  const { ref, inView } = useInView();
+  const loadMoreRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    if (inView && visible < productsData.length) {
-      setVisible((v) => v + PAGE_SIZE);
+    const observer = new IntersectionObserver((entries) => {
+      if (entries[0].isIntersecting && visible < productsData.length) {
+        setVisible((v) => v + PAGE_SIZE);
+      }
+    });
+
+    if (loadMoreRef.current) {
+      observer.observe(loadMoreRef.current);
     }
-  }, [inView, visible]);
+
+    return () => observer.disconnect();
+  }, [visible]);
 
   // Sync state from URL
   useEffect(() => {
@@ -158,7 +165,7 @@ function ProductsContent() {
               </div>
 
               {visible < filtered.length && (
-                <div ref={ref} className={styles.loadMore}>
+                <div ref={loadMoreRef} className={styles.loadMore}>
                   <p className={styles.loadMoreText}>
                     Loading more products...
                   </p>
