@@ -31,10 +31,6 @@ export default async function ProductDetail({ params }: { params: Promise<{ id: 
     notFound();
   }
 
-  const relatedProducts = productsData
-    .filter((p) => p.category === product.category && p.id !== product.id)
-    .slice(0, 3);
-
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Product",
@@ -113,21 +109,6 @@ export default async function ProductDetail({ params }: { params: Promise<{ id: 
             </div>
           </aside>
         </div>
-
-        {/* Related Products */}
-        {relatedProducts.length > 0 && (
-          <div className={styles.related}>
-            <h2 className={styles.relatedTitle}>More from {product.category}</h2>
-            <div className={styles.relatedGrid}>
-              {relatedProducts.map((p) => (
-                <Link href={`/products/${p.id}`} key={p.id} className={styles.relatedCard}>
-                  <h3 className={styles.relatedName}>{p.name}</h3>
-                  <p className={styles.relatedCode}>{p.code}</p>
-                </Link>
-              ))}
-            </div>
-          </div>
-        )}
       </div>
     </div>
   );
