@@ -57,8 +57,8 @@ export default function Header() {
           <Image 
             src="/images/mark.png" 
             alt="Aurelis Mark" 
-            width={72} 
-            height={72} 
+            width={216} 
+            height={216} 
             className={styles.markImage} 
             priority
           />
