@@ -214,4 +214,14 @@
 @media (max-width: 640px) {
   .toolbar { flex-direction: column; align-items: stretch; gap: var(--sp-3); }
   .count { text-align: right; }
+  .filters {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    margin-inline: calc(var(--sp-6) * -1);
+    padding-inline: var(--sp-6);
+  }
+  .filters::-webkit-scrollbar { display: none; }
+  .chip { flex-shrink: 0; }
 }

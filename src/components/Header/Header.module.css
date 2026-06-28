@@ -137,8 +137,10 @@
   .utilityContacts { gap: var(--sp-4); }
   .utilityTag { display: none; }
   .utilityRow { justify-content: center; }
+  .markImage { width: 120px; height: 120px; }
 }
 
 @media (max-width: 540px) {
   .utilityLink { font-size: 0.62rem; }
+  .markImage { width: 84px; height: 84px; }
 }

@@ -70,12 +70,27 @@
 
   --maxw: 1240px;
 
-  /* Shadows: tight, low, warm-tinted */
   --shadow-1: 0 1px 2px oklch(0.23 0.013 65 / 0.06);
   --shadow-2: 0 8px 24px -12px oklch(0.23 0.013 65 / 0.22);
   --shadow-lift: 0 18px 40px -20px oklch(0.23 0.013 65 / 0.32);
 
   --ease: cubic-bezier(0.22, 1, 0.36, 1); /* ease-out-quint-ish */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: oklch(0.16 0.01 66);
+    --paper-2: oklch(0.18 0.01 66);
+    --surface: oklch(0.20 0.01 66);
+    --ink: oklch(0.96 0.005 80);
+    --ink-2: oklch(0.78 0.01 75);
+    --ink-3: oklch(0.60 0.01 75);
+    --line: oklch(0.26 0.01 66);
+    --line-2: oklch(0.32 0.01 66);
+    --shadow-1: 0 1px 2px oklch(0 0 0 / 0.3);
+    --shadow-2: 0 8px 24px -12px oklch(0 0 0 / 0.5);
+    --shadow-lift: 0 18px 40px -20px oklch(0 0 0 / 0.6);
+  }
 }
 
 * {
@@ -131,8 +146,8 @@ img { max-width: 100%; height: auto; display: block; }
 
 /* --- Accessibility --- */
 :focus-visible {
-  outline: 2.5px solid var(--signal-strong);
-  outline-offset: 2px;
+  outline: none;
+  box-shadow: 0 0 0 3px var(--surface), 0 0 0 5px var(--signal-strong);
   border-radius: var(--r-sm);
 }
 
@@ -230,11 +245,11 @@ img { max-width: 100%; height: auto; display: block; }
 .btn-primary {
   background: var(--signal);
   color: oklch(0.20 0.02 50);
-  box-shadow: var(--shadow-2);
+  box-shadow: inset 0 1px 0 oklch(1 1 1 / 0.25), var(--shadow-2);
 }
 .btn-primary:hover {
   background: oklch(0.70 0.19 44);
-  box-shadow: var(--shadow-lift);
+  box-shadow: inset 0 1px 0 oklch(1 1 1 / 0.25), var(--shadow-lift);
 }
 .btn-primary:hover svg { transform: translateX(3px); }
 
@@ -271,10 +286,10 @@ img { max-width: 100%; height: auto; display: block; }
 /* Reveal-on-scroll base (JS adds .is-in) */
 .reveal {
   opacity: 0;
-  transform: translateY(22px);
-  transition: opacity 0.7s var(--ease), transform 0.7s var(--ease);
+  transform: translateY(30px) scale(0.98);
+  transition: opacity 0.8s var(--ease), transform 0.8s var(--ease);
 }
-.reveal.is-in { opacity: 1; transform: none; }
+.reveal.is-in { opacity: 1; transform: translateY(0) scale(1); }
 
 /* =========================================================================
    Reduced motion

@@ -344,3 +344,14 @@
   .indGrid { grid-template-columns: 1fr; }
   .metricsRow { grid-template-columns: 1fr 1fr; }
 }
+
+@media (max-width: 420px) {
+  .metricsRow { grid-template-columns: 1fr; }
+  .metricCell { 
+    border-left: none; 
+    padding-left: 0; 
+    border-top: 1px solid var(--line-dark); 
+    padding-block: var(--sp-6);
+  }
+  .metricsRow .metricCell:first-child { border-top: none; }
+}
