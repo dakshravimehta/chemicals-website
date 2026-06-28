@@ -77,22 +77,6 @@
   --ease: cubic-bezier(0.22, 1, 0.36, 1); /* ease-out-quint-ish */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --paper: oklch(0.16 0.01 66);
-    --paper-2: oklch(0.18 0.01 66);
-    --surface: oklch(0.20 0.01 66);
-    --ink: oklch(0.96 0.005 80);
-    --ink-2: oklch(0.78 0.01 75);
-    --ink-3: oklch(0.60 0.01 75);
-    --line: oklch(0.26 0.01 66);
-    --line-2: oklch(0.32 0.01 66);
-    --shadow-1: 0 1px 2px oklch(0 0 0 / 0.3);
-    --shadow-2: 0 8px 24px -12px oklch(0 0 0 / 0.5);
-    --shadow-lift: 0 18px 40px -20px oklch(0 0 0 / 0.6);
-  }
-}
-
 * {
   box-sizing: border-box;
   margin: 0;
